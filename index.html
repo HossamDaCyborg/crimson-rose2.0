@@ -7,39 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>crimson rose</title>
     <link rel="shortcut icon" href="assets/favIcon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+   
+
+
 </head>
 <body>
-    <section class="w-full ">
-        <div class="w-full flex -z-10  h-full bg-cover bg-no-repeat bg-top absolute top-0 left-0" style="background-image: url('assets/back.png');">
-            <div class="h-full w-full bg-cover bg-left md:bg-center bg-no-repeat" style="background-image:url('assets/Rectangle\ 30.png') ;"></div>
+    <section class="w-full relative">
+        <div class="w-full flex -z-10  h-full bg-cover bg-no-repeat bg-top absolute top-0 left-0" style="background-image: url('assets/Back.svg');">
+            <div class="h-full w-full bg-cover bg-left md:bg-center bg-no-repeat" style="background-image:url('assets/Rectangle\ 30.svg') ;"></div>
             
         </div>
         <!-- top nav -->
-        <nav class="w-100 bg-transparent pt-2 flex justify-end space-x-7 pr-3 smm:pr-4 sm:pr-8 md:pr-12 lg:pr-24">
+        <!-- <nav class="w-100 bg-transparent pt-2 flex justify-end space-x-7 pr-3 smm:pr-4 sm:pr-8 md:pr-12 lg:pr-24">
             <a href="#"><img class="h-4" src="assets/gram.svg" alt=""></a>
             <a href="#"><img class="h-4" src="assets/twitter.svg" alt=""></a>
             <a href="#"><img class="h-4" src="assets/facebook.svg" alt=""></a>
-        </nav>
+        </nav> -->
+        <div class="bg-transparent flex justify-end space-x-8 items-center pr-10 lg:pr-28 pt-4">
+            <a href="#"><img class="h-4" src="assets/gram.svg" alt=""></a>
+            <a href="#"><img class="h-4" src="assets/twitter.svg" alt=""></a>
+            <a href="#"><img class="h-5" src="assets/facebook.svg" alt=""></a>
+        </div>
 
         <!-- second nav -->
-        <nav class="w-full pb-3 flex relative items-center pr-3 smm:pr-4 sm:pr-8 md:pr-12 lg:pr-24">
+        <nav class="w-full pb-3 flex relative items-center px-0 lg:px-10  xl:px-24 pr-3 smm:pr-4 sm:pr-8 md:pr-12">
             <!-- logo -->
-            <a href="#"><img src="assets/logo.svg" class="h-14 ml-2 md:h-full" alt=""></a>
+            <a href="#"><img src="assets/logo.svg" class="h-14 md:h-20 ml-2 smm:ml-3 sm:ml-4 md:ml-6 lg:m-0" alt=""></a>
             <!-- navs -->
-            <ul class="hidden md:flex justify-around w-1/2 mx-auto">
-                <a href="#"><button class="btn btn-ghost">Home</button></a>
-                <a href="#"><button class="btn btn-ghost md:text-xs lg:text-base text-gray-400">Find a home </button></a>
-                <a href="#"><button class="btn btn-ghost md:text-xs lg:text-base text-gray-400">About us</button></a>
-                <a href="#"><button class="btn btn-ghost md:text-xs lg:text-base text-gray-400">contact us</button></a>
+            <ul class="hidden lg:flex justify-around items-center  grow px-5">
+                <a href="#" class="font-extrabold text-xl text-darkGray hover:first-letter:text-middleGray">Home</a>
+                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >Find a home</a>
+                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >About us</a>
+                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >contact us</a>
             </ul>
             <!-- red second nav -->
-            <ul class="hidden md:flex space-x-3">
-                <a href="#" class="text-red-600 text-center underline">add property</a>
-                <button class="btn btn-sm hover:bg-red-500 active:bg-red-500 focus:bg-red-500 border-0 bg-red-600 text-white">log in</button>
-                <button class="btn btn-outline btn-error btn-sm">sign up</button>
+            <ul class="hidden lg:flex items-center">
+                <a href="#" class="text-crimson text-center hover:text-crimsonHover font-medium text-xl underline">add property</a>
+                <button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">log in</button>
+                <button class="bg-transparent active:bg-crimson active:text-white hover:bg-crimsonHover  hover:text-white text-crimson ml-3 text-lg font-medium rounded-xl border-crimson border-solid border  py-2 px-5">log in</button>
             </ul>
             <!-- toggler -->
-           <div  class="md:hidden  ml-auto z-40">
+           <div  class="lg:hidden  ml-auto z-40">
             <label  class="btn btn-circle swap tggler bg-transparent border-0 hover:bg-transparent swap-rotate">
   
                 <!-- this hidden checkbox controls the state -->
@@ -54,18 +65,18 @@
               </label>
               <!-- toggle menu -->
            </div>
-           <div id="navMenu" class="md:hidden duration-500 absolute w-full hidden h-0 top-0 justify-center">
+           <div id="navMenu" class="lg:hidden rounded-xl duration-500 absolute w-full hidden h-0 top-0 justify-center">
             <div class="w-11/12 bg-white rounded pb-2">
                 <div class="flex w-full justify-center"> <button class="btn btn-ghost">Home</button></div>
                 <div class="flex w-full justify-center"> <button class="btn btn-ghost">find a home</button></div>
                 <div class="flex w-full justify-center"> <button class="btn btn-ghost">contact us</button></div>
                 <div class="flex w-full justify-center"> <button class="btn btn-ghost">about us</button></div>
                
-                <div class="flex w-full justify-center space-x-1 smm:space-x-3 sm:space-x-4"> 
-                    <a href="#" class="text-red-600 text-center text-xs smm:text-sm underline">add property</a>
-                    <button class="btn btn-xs  smm:btn-sm  hover:bg-red-500 active:bg-red-500 focus:bg-red-500 border-0 bg-red-600 text-white">log in</button>
-                    <button class="btn btn-outline btn-xs btn-error smm:btn-sm">sign up</button>
-                </div>
+                <ul class="flex items-center justify-center pb-12 pt-3">
+                    <a href="#" class="text-crimson text-center hover:text-crimsonHover font-medium text-lg sm:text-xl underline">add property</a>
+                    <button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">log in</button>
+                    <button class="bg-transparent active:bg-crimson active:text-white hover:bg-crimsonHover  hover:text-white text-crimson ml-3 text-lg font-medium rounded-xl border-crimson border-solid mr-3 border py-2 px-5">log in</button>
+                </ul>
     
                </div>
     
@@ -74,10 +85,10 @@
         </nav>
         <!-- heading -->
 
-        <div class="mt-12 mb-8 sm:mt-14 md:mt-16 w-full sm:pl-14 px-6 md:pl-16 lg:pl-20  font-bold text-center sm:text-left text-lg sm:text-3xl md:text-4xl lg:text-5xl text-red-600">Find The Most Suitable Home</div>
+        <div id="header" class="pt-28 pb-9 text-center md:text-left md:pl-20 lg:pl-28 xl:pl-32 text-crimson font-extrabold text4xl text-2xl md:text-4xl lg:text-head ">Find The Most Suitable Home</div>
 
         <!-- two buttons -->
-        <div class="w-full pb-6 flex justify-center">
+        <!-- <div class="w-full pb-6 flex justify-center">
             <div class="w-9/12 flex  sm:w-7/12 md:w-4/12 lg:w-4/12 xl:w-80">
                 <div class="w-1/2 px-2">
                     <button class=" h-8 btn   btn-block bg-red-600 hover:bg-red-500 border-0  active:bg-red-500 focus:bg-red text-white">rent</button>
@@ -87,77 +98,92 @@
                 </div>
 
             </div>
+        </div> -->
+        <div class="pb-3 flex justify-center space-x-5 items-center">
+            <button class="py-3 px-6 smm:px-10 sm:px-16 font-medium text-medButton bg-crimson hover:bg-crimsonHover text-white rounded-meddButton">Rent</button>
+            <button class="py-3 px-6 smm:px-10 sm:px-16 font-medium text-medButton bg-white text-middleGray hover:bg-middleGray hover:text-white border border-middleGray border-solid rounded-meddButton">Buy</button>
         </div>
+
+
         <!-- search Boxws -->
 
-        <div class="w-full flex justify-center">
-            <div class="bg-gray-200 px-1 py-1 w-11/12 items-center rounded-xl flex flex-wrap">
+
+        <div class="px-8 md:px-16 lg:px-20 xl:px-28 xxl:px-32">
+            <div class="bg-lightGray w-full items-center rounded-2xl flex flex-wrap">
+                
                 <!-- first 2 -->
-                <div class="w-full flex py-2 lg:w-4/12">
-                    <div class="w-1/2 px-3">
-                        <div class="flex w-full relative items-center rounded-md bg-white px-3">
-                            <img src="assets/search.png" class="h-4 absolute top-1/2 -translate-y-1/2 left-2" alt="">
-                            <input type="text" placeholder="search" class="focus:outline-none w-full input">
+
+
+                <div class="w-full flex py-3 lg:py-5 lg:w-4/12">
+                    <div class="w-1/2 pl-3 lg:pl-4 xl:pl-5">
+                        <div class="flex items-center border border-solid border-middleGray rounded-meddButton px-2 xxl:px-3  bg-white">
+                            <img src="assets/search.svg" class="h-4 pr-2" alt="">
+                            <input type="text" placeholder="search" class="w-full  outline-none h-10 font-semibold text-textBox">
 
 
                         </div>
                     </div>
-                    <div class="w-1/2 px-3">
-                        <div class="flex w-full relative items-center rounded-md bg-white px-3">
-                            <img src="assets/res.png" class="h-4 absolute top-1/2 -translate-y-1/2 left-2" alt="">
-                            <select class="select focus:outline-none w-full">
+                    <div class="w-1/2 pl-3 lg:pl-5 pr-3 lg:pr-0">
+                        <div class="flex border border-solid border-middleGray items-center rounded-meddButton px-2 xxl:px-3 bg-white ">
+                            <img src="assets/res.svg" class="h-4 pr-2" alt="">
+                            <select class="w-full outline-none h-10 font-semibold text-middleGray text-textBox">
                                 <option value="Resedintials" selected disabled>Resedintials</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="">3</option>
                             </select>
-
-
                         </div>
                     </div>
                 </div>
+                
                 <!-- second two -->
-                <div class="w-full lg:w-3/12 py-2 flex">
-                    <div class="w-1/2 px-3">
-                        <div class="flex w-full relative items-center rounded-md bg-white px-3">
-                            <img src="assets/location.png" class="h-4 absolute top-1/2 -translate-y-1/2 left-2" alt="">
-                            <select class="select focus:outline-none w-full">
-                                <option value="location" selected disabled>location</option>
+
+
+                <div class="w-full lg:w-4/12 py-3 lg:py-5 flex">
+                    <div class="w-1/2 pl-3 lg:pl-5">
+                        <div class="flex border border-solid border-middleGray items-center rounded-meddButton px-2 xxl:px-3 bg-white ">
+                            <img src="assets/location.svg" class="h-4 pr-2" alt="">
+                            <select class="w-full outline-none text-middleGray h-10 font-semibold text-textBox">
+                                <option value="Location" selected disabled>Location</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="">3</option>
                             </select>
-                        </div>  
+                        </div>
                     </div>
-                    <div class="w-1/2 px-3">
-                        <div class="flex w-full relative items-center rounded-md bg-white px-3">
-                            <img src="assets/baths.png" class="h-4 absolute top-1/2 -translate-y-1/2 left-2" alt="">
-                            <select class="select focus:outline-none w-full">
+                    <div class="w-1/2 pl-3 lg:pl-5 pr-3 lg:pr-0">
+                        <div class="flex border border-solid border-middleGray items-center rounded-meddButton px-2 xxl:px-3 bg-white ">
+                            <img src="assets/Baths.svg" class="h-4 pr-2" alt="">
+                            <select class="w-full text-middleGray outline-none h-10 font-semibold text-textBox">
                                 <option value="Baths" selected disabled>Baths</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="">3</option>
-                            </select>    
+                            </select>
                         </div>
                     </div>
                 </div>
-                <!-- Final three -->
-                <div class="w-full lg:w-5/12  flex flex-wrap items-center">
-                    <div class="w-1/2 smm:w-1/3 py-2 px-3">
-                        <div class="flex w-full relative items-center rounded-md bg-white px-4">
-                            <img src="assets/beds.png" class="h-4 absolute top-1/2 -translate-y-1/2 left-2" alt="">
-                            <select class="select focus:outline-none w-full">
-                                <option value="beds" selected disabled>Beds</option>
+
+                <!-- final three -->
+
+
+
+
+                <div class="w-full lg:w-4/12 py-3 lg:py-5 flex items-center">
+                    <div class="w-1/3 pl-3 lg:pl-4 xxl:w-1/2">
+                        <div class="flex border border-solid border-middleGray items-center rounded-meddButton px-2 xxl:px-3 bg-white ">
+                            <img src="assets/Beds.svg" class="h-3 pr-2" alt="">
+                            <select class="w-full text-middleGray outline-none h-10 font-semibold text-textBox">
+                                <option value="Beds" selected disabled>Beds</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="">3</option>
                             </select>
                         </div>  
                     </div>
-                    <div class="w-1/2 smm:w-1/3 py-2 px-3">
-                        <div class="flex w-full relative items-center rounded-md bg-transparent px-4">
-                            <!-- <img src="assets/baths.png" class="h-4 absolute top-1/2 -translate-y-1/2 left-2" alt=""> -->
-                            <select class="select select-ghost focus:outline-none w-full">
+                    <div class="w-1/3 xxl:w-1/4 pl-1 smm:pl-2 sm:pl-3 lg:pl-4">
+                        <div class="flex   items-center rounded-meddButton  bg-transparent">
+                                <select class="bg-transparent text-middleGray underline w-16 smm:w-24 mx-auto h-10 font-semibold text-xs smm:text-textBox outline-none ">
                                 <option value="More filters" selected disabled>More filters</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -165,8 +191,8 @@
                             </select>    
                         </div>
                     </div>
-                    <div class="w-full smm:w-1/3 px-4 py-2 smm:py-0">
-                        <button class=" rounded-md btn btn-block     bg-red-600 hover:bg-red-500 border-0  active:bg-red-500 focus:bg-red  text-white">search</button>
+                    <div class="w-1/3 xxl:w-1/4 pl-1 smm:pl-2 sm:pl-3 flex lg:pl-4 pr-3 lg:pr-4 xl:pr-5">
+                       <button class="px-1 py-1 smm:px-2 smm:py2 sm:px-4 sm:py-3 bg-crimson text-white hover:bg-crimsonHover font-medium  text-xs smm:text-textBox rounded-meddButton mx-auto">Search</button>
                     </div>
                 </div>
                 
@@ -175,36 +201,17 @@
 
 
         </div>
+        
+
+
 
         <!-- four buttons -->
 
         <!-- <div class="w-full flex justify-center">
-            <div class="w-full sm:w-8/12 lg:w-7/12 xl:w-6/12 flex flex-wrap">
-                <div class="w-full md:w-1/2 flex pl-2 justify-around">
-                    <a href="#">
-                        <img src="assets/button1st.png" class="h-44 "  alt="">
-                    </a>
-                    <a href="#">
-                        <img src="assets/button2.png" class="h-44 "  alt="">
-                    </a>
-                </div>
-                <div class="w-full md:w-1/2 flex pr-2 justify-around">
-                    <a href="#">
-                        <img src="assets/button3.png" class="h-44 "  alt="">
-                    </a>
-                    <a href="#">
-                        <img src="assets/button4.png" class="h-44 "  alt="">
-                    </a>
-                   
-                </div>
-
-            </div>
-        </div> -->
-        <div class="w-full flex justify-center">
             <div class="md:flex">
                 <div class=" flex">
                     <a href="#">
-                        <img src="assets/button1st.png" class=" "  alt="">
+                        <img src="assets/button1st.svg" class=" "  alt="">
                     </a>
                     <a href="#">
                         <img src="assets/button2.png" class=" "  alt="">
@@ -220,6 +227,17 @@
                     </a>
 
                 </div>
+            </div>
+        </div> -->
+        <div class="flex justify-center px-0 md:px-28 flex-wrap">
+            <div class="flex">
+                <a href="#"><img src="assets/button1st.svg" alt=""></a>
+                <a href="#"><img src="assets/button2.svg" alt=""></a>
+
+            </div>
+            <div class="flex">
+                <a href="#"><img src="assets/button3.svg" alt=""></a>
+                <a href="#"><img src="assets/button4.svg" alt=""></a>
             </div>
         </div>
 
