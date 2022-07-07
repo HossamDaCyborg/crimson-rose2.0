@@ -19,16 +19,37 @@ module.exports = {
         darkGray:'hsla(0, 0%, 38%, 1)',
         lightGray:'hsla(0, 0%, 96%, 1)',
         middleGray:'hsla(240, 2%, 64%, 1)',
+        footer:'rgba(250, 250, 250, 1)',
       },
       fontSize:{
         head:['50px','34px'],
         textBox:['15px','18px'],
         medButton:['15px','17.58px'],
+        explore:['30px','30px'],
+        listHead:['28px','30px'],
+        propLoc:['14px','16.8px'],
+        propOfTheProp:['12px','14.4px'],
+        price:['18px','21.6px'],
+        footerHeader:['22px', '26px'],
+        footerBase:['20px','24px'],
+
   
       },
       borderRadius:{
         meddButton:'10px',
+        listRound:'20px',
+      },
+      boxShadow:{
+        card:'0px 0px 60px 0px rgba(0, 0, 0, 0.1)',
+      },
+      height:{
+        redlo:'14px',
+      },
+      width:{
+        propImage:'270px'
       }
+      
+      
   },
   },
   plugins: [require('daisyui')],
