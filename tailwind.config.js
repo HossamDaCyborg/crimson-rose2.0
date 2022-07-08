@@ -32,6 +32,8 @@ module.exports = {
         price:['18px','21.6px'],
         footerHeader:['22px', '26px'],
         footerBase:['20px','24px'],
+        signUp:['50px','60px'],
+        signUpLabel:['16px','19.2px'],
 
   
       },
