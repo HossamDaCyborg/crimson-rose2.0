@@ -13,7 +13,7 @@
   </head>
   <body>
 
-    <div class="h-screen relative">
+    <div class="relative">
 
         <!-- background -->
 
@@ -84,20 +84,87 @@
        </div>
     </nav>
 
-    <div class="pt-10 mt-px px-12 md:px-20 lg:px-24 xl:px-28 xxl:px-36 md:w-1/2">
-      <div class="font-black smm:text-3xl sm:text-4xl md:text-signUp text-crimson">Sign Up</div>
-      <div class="font-medium text-darkGray text-footerBase">Create an account to find the best Property for you.</div>
-      <div class="flex flex-wrap">
-        <div class="flex items-center w-full smm:w-1/2">
+    <div class="pt-10 mt-px px-2 smm:px-8 sm:px-12 md:px-20 lg:px-24 xl:px-28 xxl:px-36">
+      <div class="font-black text-3xl sm:text-4xl md:text-signUp text-crimson">Sign Up</div>
+      <div class="font-medium text-darkGray pt-5 text-footerBase">Create an account to find the best Property for you.</div>
+      <div class="flex md:w-1/2 flex-wrap">
+        <div class="flex items-center w-full pt-5 lg:w-1/2">
 
-          <div class="font-medium text-middleGray flex-none pr-5 text-signUpLabel">First Name</div>
-          <input type="text" placeholder="First Name" class="w-full flex-1  pl-px  bg-lightGray focus:bg-white outline-none border border-solid border-middleGray h-12 rounded-meddButton ">
+          <div class="font-medium text-middleGray flex-none w-24 text-signUpLabel">First Name</div>
+          <input type="text" placeholder="First Name" class="w-full flex-1 pl-2 ml-px  bg-lightGray focus:bg-white outline-none border border-solid border-middleGray h-12 rounded-meddButton ">
           <!-- <p class="text-lg pr-5 w-36 ">First name</p>
                 <input type="text" placeholder="First name" class="input h-10 border-middleGray border border-solid input-bordered w-full " />
              -->
-
-
         </div>
+        <div class="flex items-center w-full pt-5 lg:pl-3 lg:w-1/2">
+
+          <div class="font-medium text-middleGray flex-none w-24 text-signUpLabel">Last Name</div>
+          <input type="text" placeholder="Last Name" class="w-full flex-1 pl-2  ml-px  bg-lightGray focus:bg-white outline-none border border-solid border-middleGray h-12 rounded-meddButton ">
+          <!-- <p class="text-lg pr-5 w-36 ">First name</p>
+                <input type="text" placeholder="First name" class="input h-10 border-middleGray border border-solid input-bordered w-full " />
+             -->
+        </div>
+      </div>
+      <div class="flex md:w-1/2 items-center pt-5">
+        <div class="font-medium text-middleGray flex-none w-24 text-signUpLabel">Email</div>
+          <input type="text" placeholder="Email" class="w-full flex-1 pl-2  ml-px  bg-lightGray focus:bg-white outline-none border border-solid border-middleGray h-12 rounded-meddButton ">
+
+      </div>
+      <div class="flex md:w-1/2 items-center pt-5">
+        <div class="font-medium text-middleGray flex-none w-24 text-signUpLabel">Number</div>
+          <input type="text" placeholder="Number" class="w-full flex-1 pl-2  ml-px  bg-lightGray focus:bg-white outline-none border border-solid border-middleGray h-12 rounded-meddButton ">
+
+      </div>
+      <div class="flex md:w-1/2 items-center pt-5">
+        <div class="font-medium text-middleGray flex-none w-24 text-signUpLabel">Password</div>
+          <input type="text" placeholder="Password" class="w-full flex-1 pl-2  ml-px  bg-lightGray focus:bg-white outline-none border border-solid border-middleGray h-12 rounded-meddButton ">
+
+      </div>
+      <div class="flex md:w-1/2 items-center pt-5">
+        <div class="font-medium text-middleGray flex-none w-24 text-signUpLabel">Country</div>
+          <input type="text" placeholder="Country" class="w-full flex-1 pl-2  ml-px  bg-lightGray focus:bg-white outline-none border border-solid border-middleGray h-12 rounded-meddButton ">
+
+      </div>
+      <div class="pt-5 flex" >
+        <input type="checkbox" id="check" class="h-6 w-6 mr-4">
+        <p class=" text-darkGray pr-1 font-normal text-xs sm:text-price">i agree to </p><a href="#"><p class="font-bold text-xs sm:text-price text-crimson underline"> terms and condions</p></a>
+      </div>
+
+      <!-- two buttons -->
+
+      <div class="flex flex-wrap md:w-1/2">
+        <!-- <div class="w-full lg:w-1/2 pt-5 items-center  lg:pr-2">
+          <button class="w-full"></button>
+        </div>
+        <div class="w-full lg:w-1/2 pt-5 items-center  lg:pl-2">
+          <button class="py-3 pl-4 flex-1 flex rounded-meddButton bg-lightGray hover:bg-white border border-solid border-middleGray">
+            <img src="assets/signup/google.svg" class="h-" alt="">
+            <p class="font-normal text-price text-darkGray px-7 ml-auto">Sign Up with Google</p>
+          </button>
+        </div>  -->
+        <div class="w-full lg:w-1/2 pt-5 lg:pr-2">
+          <button class="flex w-full pl-5 h-12 py-px items-center bg-lightGray rounded-meddButton hover:bg-white border border-middleGray border-solid">
+            <img src="assets/signup/blueFacebook.svg" class="h-6 pr-7" alt="">
+            <p class="font-normal text-price text-darkGray">Sign Up with facebook</p>
+          </button>
+        </div>
+
+        <div class="w-full lg:w-1/2 pt-5 lg:pl-2">
+          <button class="flex w-full h-12 py-px items-center pl-4  bg-lightGray rounded-meddButton hover:bg-white border border-middleGray border-solid">
+            <img src="assets/signup/google.svg" class="h-6 pr-10" alt="">
+            <p class="font-normal text-price text-darkGray">Sign Up with Google</p>
+          </button>
+        </div>
+      </div>
+
+      <div class="flex md:w-1/2 py-5 ">
+        <button class="w-full bg-crimson hover:bg-crimsonHover font-medium text-white text-footerBase py-3 rounded-meddButton">Sign Up</button>
+
+      </div>
+
+      <div class="flex pb-12">
+        <p class="font-normal text-footerBase text-darkGray pr-5">Already Have an account?</p>
+        <a href="#"> <p class="text-crimson text-footerBase font-bold underline">Login</p> </a>
 
       </div>
 
@@ -106,6 +173,82 @@
 
 
     </div>
+    <footer class="w-full mx-0 mt-8 flex flex-wrap-reverse  bg-footer border-t border-t-crimson border-solid ">
+      <div class="w-full flex pt-14 justify-around md:justify-around md:pl-16 xl:pl-36  items-start  py-5 md:w-1/2">
+          <div class="">
+              <img src="assets/footerLogo.svg" class="h-20 pb-10 smm:h-32 " alt="">
+              <div class="flex items-center justify-center pt-1 space-x-8">
+                  <img src="assets/redGram.svg" class="h-6" alt="">
+                  <img src="assets/redTwitter.svg" class="h-6" alt="">
+                  <img src="assets/redFacebook.svg" class="h-6" alt="">
+              </div>
+          </div>
+          <div class="flex-col flex space-y-3">
+              <a href="#" class="text-crimson font-medium text-footerHeader">your accout</a>
+              <a href="#" class="text-darkGray text-footerBase font-medium">Notfications</a>
+              <a href="#" class="text-darkGray text-footerBase font-medium">your profile</a>
+              <a href="#" class="text-darkGray text-footerBase font-medium"> favorates</a>
+
+          </div>
+
+          
+
+      </div>
+      <div class="w-full flex pt-14 justify-around py-5 md:w-1/2">
+          <div class="flex-col flex space-y-3">
+              <a href="#" class="text-crimson font-medium text-footerHeader">important links</a>
+              <a href="#" class="text-darkGray text-footerBase font-medium">About us</a>
+              <a href="#" class="text-darkGray text-footerBase font-medium">Find home</a>
+
+          </div>
+          <div class="flex-col flex space-y-3">
+              <a href="#" class="text-crimson font-medium text-footerHeader">Contact us</a>
+              <a href="#">
+                  <div class="flex items-start">
+                      <img src="assets/redLoc.svg" class="h-4 pr-3" alt="">
+                      <div>
+                          <p class="font-medium text-textBox text-darkGray pb-1">217 Speers Road, Unit 4 Oakville, </p>
+                          <p class="font-medium text-textBox text-darkGray">Ontario L6K 0J3</p>
+                      </div>
+
+                  </div> 
+              </a>
+              <a href="#">
+                  <div class="flex items-start">
+                      <img src="assets/redMessage.svg" class="h-3 pr-3" alt="">
+                      <p class="font-medium text-textBox text-darkGray pb-1"> info@crlpm.com </p>
+                          
+
+                  </div> 
+              </a>
+              <a href="#" >
+                  <div class="flex items-start">
+                   <img src="assets/phone.svg" class="h-3 pr-3" alt="">
+                   <p class="font-medium text-textBox text-darkGray pb-1"> +19 052 081 000 </p>
+                      
+
+                  </div>
+              </a>
+              <a href="#">
+                  <div class="flex items-start">
+                      <img src="assets/redInfo.svg" class="h-4 pr-3" alt="">
+                      <div>
+                          <p class="font-medium text-textBox text-darkGray pb-1">opening hours</p>
+                          <p class="font-medium text-textBox text-darkGray">8:00 a.m - 9:00 p.m</p>
+                      </div>
+
+                  </div> 
+              </a>
+
+
+          </div>
+          
+          
+
+      </div>
+  </footer>
+  <div class="py-3 flex justify-center w-full text-center bg-footer text-gray-400">© 2022 Crimson Rose Living. All rights reserved</div>
+  
 
 
 

@@ -2940,6 +2940,14 @@ body[dir="rtl"] .checkbox:checked,
   margin-right: auto;
 }
 
+.ml-px {
+  margin-left: 1px;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -3012,6 +3020,10 @@ body[dir="rtl"] .checkbox:checked,
   height: 3rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -3070,6 +3082,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .w-80 {
   width: 20rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .flex-1 {
@@ -3368,6 +3384,16 @@ body[dir="rtl"] .checkbox:checked,
   padding-right: 16rem;
 }
 
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.py-px {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -3512,6 +3538,18 @@ body[dir="rtl"] .checkbox:checked,
   padding-top: 0.25rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pr-7 {
+  padding-right: 1.75rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -3593,6 +3631,11 @@ body[dir="rtl"] .checkbox:checked,
 .text-signUpLabel {
   font-size: 16px;
   line-height: 19.2px;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-extrabold {
@@ -3706,6 +3749,11 @@ body[dir="rtl"] .checkbox:checked,
   background-color: hsla(0, 0%, 96%, 1);
 }
 
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .hover\:text-darkGray:hover {
   color: hsla(0, 0%, 38%, 1);
 }
@@ -3760,6 +3808,10 @@ body[dir="rtl"] .checkbox:checked,
     height: 6rem;
   }
 
+  .smm\:h-32 {
+    height: 8rem;
+  }
+
   .smm\:w-24 {
     width: 6rem;
   }
@@ -3787,6 +3839,11 @@ body[dir="rtl"] .checkbox:checked,
     padding-right: 1rem;
   }
 
+  .smm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .smm\:pr-4 {
     padding-right: 1rem;
   }
@@ -3807,6 +3864,11 @@ body[dir="rtl"] .checkbox:checked,
   .smm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .smm\:text-price {
+    font-size: 18px;
+    line-height: 21.6px;
   }
 }
 
@@ -3856,6 +3918,11 @@ body[dir="rtl"] .checkbox:checked,
     padding-right: 2.5rem;
   }
 
+  .sm\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .sm\:pr-8 {
     padding-right: 2rem;
   }
@@ -3886,6 +3953,11 @@ body[dir="rtl"] .checkbox:checked,
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .sm\:text-price {
+    font-size: 18px;
+    line-height: 21.6px;
   }
 }
 
@@ -3924,6 +3996,10 @@ body[dir="rtl"] .checkbox:checked,
 
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
   }
 
   .md\:space-x-16 > :not([hidden]) ~ :not([hidden]) {
@@ -3967,6 +4043,10 @@ body[dir="rtl"] .checkbox:checked,
     padding-left: 4rem;
   }
 
+  .md\:pl-3 {
+    padding-left: 0.75rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -4002,6 +4082,10 @@ body[dir="rtl"] .checkbox:checked,
 
   .lg\:w-4\/12 {
     width: 33.333333%;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
   }
 
   .lg\:px-10 {
@@ -4065,6 +4149,18 @@ body[dir="rtl"] .checkbox:checked,
     padding-left: 3rem;
   }
 
+  .lg\:pl-3 {
+    padding-left: 0.75rem;
+  }
+
+  .lg\:pr-2 {
+    padding-right: 0.5rem;
+  }
+
+  .lg\:pl-2 {
+    padding-left: 0.5rem;
+  }
+
   .lg\:text-head {
     font-size: 50px;
     line-height: 34px;
@@ -4101,6 +4197,10 @@ body[dir="rtl"] .checkbox:checked,
 
   .xl\:pr-5 {
     padding-right: 1.25rem;
+  }
+
+  .xl\:pl-36 {
+    padding-left: 9rem;
   }
 }
 
