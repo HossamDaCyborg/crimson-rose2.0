@@ -96,33 +96,33 @@
 
         </div>
         <div class="md:w-1/2 pt-8  w-full flex items-center justify-end pr-2 sm:pr-14 md:pr-20 xxl:pr-32">
-            <div class="w-36 lg:w-44 mr-5 border border-solid rounded-meddButton h-10 border-middleGray pl-3 flex items-center">
-                <p class="font-medium text-textBox text-middleGray ">Sort by</p>
-            </div>
-            <button class="border border-solid border-middleGray p-2 rounded-meddButton cursor-pointer hover:bg-lightGray mr-5">
+            <input type="text" placeholder="Sort by" class="w-36 lg:w-44 mr-5 border border-solid rounded-meddButton h-10 border-middleGray pl-3 flex items-center">
+                
+            
+            <button id="cards" class="border playing border-solid border-crimson p-2 rounded-meddButton cursor-pointer hover:bg-lightGray mr-5">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="" xmlns="http://www.w3.org/2000/svg">
-                    <path class="fill-middleGray" d="M5.50409 0H0V5.5651H5.50409V0Z" />
-                    <path class="fill-middleGray" d="M5.50409 7.2168H0V12.7819H5.50409V7.2168Z" />
-                    <path class="fill-middleGray" d="M5.50409 14.4336H0V19.9987H5.50409V14.4336Z" />
-                    <path class="fill-middleGray" d="M20.0004 0.00976562H6.52246V5.55333H20.0004V0.00976562Z" />
-                    <path class="fill-middleGray" d="M20.0004 7.22656H6.52246V12.7701H20.0004V7.22656Z" />
-                    <path class="fill-middleGray" d="M20.0004 14.4453H6.52246V19.9889H20.0004V14.4453Z" />
+                    <path class="listPath fill-crimson" d="M5.50409 0H0V5.5651H5.50409V0Z" />
+                    <path class="listPath fill-crimson" d="M5.50409 7.2168H0V12.7819H5.50409V7.2168Z" />
+                    <path class="listPath fill-crimson" d="M5.50409 14.4336H0V19.9987H5.50409V14.4336Z" />
+                    <path class="listPath fill-crimson" d="M20.0004 0.00976562H6.52246V5.55333H20.0004V0.00976562Z" />
+                    <path class="listPath fill-crimson" d="M20.0004 7.22656H6.52246V12.7701H20.0004V7.22656Z" />
+                    <path class="listPath fill-crimson" d="M20.0004 14.4453H6.52246V19.9889H20.0004V14.4453Z" />
                     </svg>
                     
 
             </button>
 
-            <button class="border border-solid border-crimson p-2 rounded-meddButton  hover:bg-lightGray mr-5">
+            <button id="grid"  class="border  border-solid border-middleGray p-2 rounded-meddButton  hover:bg-lightGray ">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="fill-crimson" d="M5.50101 0H0V5.5651H5.50101V0Z" />
-                    <path class="fill-crimson" d="M5.50101 7.2168H0V12.7819H5.50101V7.2168Z" />
-                    <path class="fill-crimson" d="M5.50101 14.4336H0V19.9987H5.50101V14.4336Z" />
-                    <path class="fill-crimson" d="M12.751 0H7.25V5.5651H12.751V0Z" />
-                    <path class="fill-crimson" d="M12.751 7.2168H7.25V12.7819H12.751V7.2168Z" />
-                    <path class="fill-crimson" d="M12.751 14.4336H7.25V19.9987H12.751V14.4336Z" />
-                    <path class="fill-crimson" d="M20 0H14.499V5.5651H20V0Z" />
-                    <path class="fill-crimson" d="M20 7.2168H14.499V12.7819H20V7.2168Z" />
-                    <path class="fill-crimson" d="M20 14.4336H14.499V19.9987H20V14.4336Z" />
+                    <path class="gridPath fill-middleGray" d="M5.50101 0H0V5.5651H5.50101V0Z" />
+                    <path class="gridPath fill-middleGray" d="M5.50101 7.2168H0V12.7819H5.50101V7.2168Z" />
+                    <path class="gridPath fill-middleGray" d="M5.50101 14.4336H0V19.9987H5.50101V14.4336Z" />
+                    <path class="gridPath fill-middleGray" d="M12.751 0H7.25V5.5651H12.751V0Z" />
+                    <path class="gridPath fill-middleGray" d="M12.751 7.2168H7.25V12.7819H12.751V7.2168Z" />
+                    <path class="gridPath fill-middleGray" d="M12.751 14.4336H7.25V19.9987H12.751V14.4336Z" />
+                    <path class="gridPath fill-middleGray" d="M20 0H14.499V5.5651H20V0Z" />
+                    <path class="gridPath fill-middleGray" d="M20 7.2168H14.499V12.7819H20V7.2168Z" />
+                    <path class="gridPath fill-middleGray" d="M20 14.4336H14.499V19.9987H20V14.4336Z" />
                     </svg>
                     
             </button>
@@ -194,8 +194,219 @@
                    <button class="px-1 py-1 smm:px-2 smm:py2 sm:px-4 sm:py-3 bg-crimson text-white hover:bg-crimsonHover font-medium  text-xs smm:text-textBox rounded-meddButton mx-auto">Search</button>
                 </div>
             </div>
+            </div>
+            </div>
+
+
             
-            <div class="flex px-8 md:px-16 lg:px-20 xl:px-28 xxl:px-32">
+            <div id="cont" class="flex flex-wrap xl:flex-nowrap px-8 md:px-16 lg:px-20 xl:px-20 xxl:px-32">
+                <div class="flex flex-wrap items-center w-full">
+                    <div class="flex justify-center px-3">
+                        <div class="propCard mt-7 shadow-card flex rounded-listRound">
+                            <!-- img -->
+                
+                            <img src="assets/prop1st.svg" class="w-56 smm:w-propImage  pb-px  rounded-meddButton" alt="">
+                            <!-- location -->
+                            <div class="cardDis smm:w-60 w-56  flex-col space-y-3">
+                            <div class="flex items-start pt-3 px-5 pb-3">
+                                <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
+                                <div class="pl-px">
+                                    <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
+                                    <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
+                                </div>
+                
+                            </div>
+                            <!-- props of the prop -->
+                            <div class="pt-px px-5 justify-between flex">
+                                <div class="flex">
+                                    <img src="assets/redBeds.svg" class="h-redlo pr-1"  alt="">
+                                    <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
+                                </div>
+                                <div class="flex">
+                                    <img src="assets/redArea.svg" class="h-3 pr-1"  alt="">
+                                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">150 ft<sup>2</sup> </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="assets/redBath.svg" class="w-5 pr-1"  alt="">
+                                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
+                                </div>
+                            </div>
+                            <!-- horizontal break -->
+                            <div class="py-4 px-6"><div class="border-solid border-t-2 border-middleGray"></div></div>
+                            
+                            <!-- price -->
+                            <div class="flex justify-between items-center pl-5 pr-4 pb-5">
+                                <div class="flex items-center">
+                                    <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
+                                    <p class="text-price font-semibold text-darkGray">99.000$</p>
+                
+                                </div>
+                                <button class="py-3 px-2 border rounded-meddButton border-middleGray border-solid bg-white hover:bg-lightGray">
+                                    <img src="assets/grayHeart.svg" class="h-4 mx-px" alt="">
+                                </button>
+                
+                            </div>
+                        </div>
+                
+                        </div>
+                
+                    </div>
+                    <div class="flex justify-center px-3">
+                        <div class="propCard mt-7 shadow-card flex rounded-listRound">
+                            <!-- img -->
+                
+                            <img src="assets/prop1st.svg" class="w-56 smm:w-propImage  pb-px  rounded-meddButton" alt="">
+                            <!-- location -->
+                            <div class="cardDis smm:w-60 w-56  flex-col space-y-3">
+                            <div class="flex items-start pt-3 px-5 pb-3">
+                                <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
+                                <div class="pl-px">
+                                    <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
+                                    <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
+                                </div>
+                
+                            </div>
+                            <!-- props of the prop -->
+                            <div class="pt-px px-5 justify-between flex">
+                                <div class="flex">
+                                    <img src="assets/redBeds.svg" class="h-redlo pr-1"  alt="">
+                                    <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
+                                </div>
+                                <div class="flex">
+                                    <img src="assets/redArea.svg" class="h-3 pr-1"  alt="">
+                                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">150 ft<sup>2</sup> </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="assets/redBath.svg" class="w-5 pr-1"  alt="">
+                                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
+                                </div>
+                            </div>
+                            <!-- horizontal break -->
+                            <div class="py-4 px-6"><div class="border-solid border-t-2 border-middleGray"></div></div>
+                            
+                            <!-- price -->
+                            <div class="flex justify-between items-center pl-5 pr-4 pb-5">
+                                <div class="flex items-center">
+                                    <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
+                                    <p class="text-price font-semibold text-darkGray">99.000$</p>
+                
+                                </div>
+                                <button class="py-3 px-2 border rounded-meddButton border-middleGray border-solid bg-white hover:bg-lightGray">
+                                    <img src="assets/grayHeart.svg" class="h-4 mx-px" alt="">
+                                </button>
+                
+                            </div>
+                        </div>
+                
+                        </div>
+                
+                    </div>
+                    <div class="flex justify-center px-3">
+                        <div class="propCard mt-7 shadow-card flex rounded-listRound">
+                            <!-- img -->
+                
+                            <img src="assets/prop1st.svg" class="w-56 smm:w-propImage  pb-px  rounded-meddButton" alt="">
+                            <!-- location -->
+                            <div class="cardDis smm:w-60 w-56  flex-col space-y-3">
+                            <div class="flex items-start pt-3 px-5 pb-3">
+                                <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
+                                <div class="pl-px">
+                                    <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
+                                    <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
+                                </div>
+                
+                            </div>
+                            <!-- props of the prop -->
+                            <div class="pt-px px-5 justify-between flex">
+                                <div class="flex">
+                                    <img src="assets/redBeds.svg" class="h-redlo pr-1"  alt="">
+                                    <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
+                                </div>
+                                <div class="flex">
+                                    <img src="assets/redArea.svg" class="h-3 pr-1"  alt="">
+                                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">150 ft<sup>2</sup> </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="assets/redBath.svg" class="w-5 pr-1"  alt="">
+                                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
+                                </div>
+                            </div>
+                            <!-- horizontal break -->
+                            <div class="py-4 px-6"><div class="border-solid border-t-2 border-middleGray"></div></div>
+                            
+                            <!-- price -->
+                            <div class="flex justify-between items-center pl-5 pr-4 pb-5">
+                                <div class="flex items-center">
+                                    <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
+                                    <p class="text-price font-semibold text-darkGray">99.000$</p>
+                
+                                </div>
+                                <button class="py-3 px-2 border rounded-meddButton border-middleGray border-solid bg-white hover:bg-lightGray">
+                                    <img src="assets/grayHeart.svg" class="h-4 mx-px" alt="">
+                                </button>
+                
+                            </div>
+                        </div>
+                
+                        </div>
+                
+                    </div>
+                    <div class="flex justify-center px-3">
+                        <div class="propCard mt-7 shadow-card flex rounded-listRound">
+                            <!-- img -->
+                
+                            <img src="assets/prop1st.svg" class="w-56 smm:w-propImage  pb-px  rounded-meddButton" alt="">
+                            <!-- location -->
+                            <div class="cardDis smm:w-60 w-56  flex-col space-y-3">
+                            <div class="flex items-start pt-3 px-5 pb-3">
+                                <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
+                                <div class="pl-px">
+                                    <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
+                                    <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
+                                </div>
+                
+                            </div>
+                            <!-- props of the prop -->
+                            <div class="pt-px px-5 justify-between flex">
+                                <div class="flex">
+                                    <img src="assets/redBeds.svg" class="h-redlo pr-1"  alt="">
+                                    <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
+                                </div>
+                                <div class="flex">
+                                    <img src="assets/redArea.svg" class="h-3 pr-1"  alt="">
+                                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">150 ft<sup>2</sup> </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="assets/redBath.svg" class="w-5 pr-1"  alt="">
+                                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
+                                </div>
+                            </div>
+                            <!-- horizontal break -->
+                            <div class="py-4 px-6"><div class="border-solid border-t-2 border-middleGray"></div></div>
+                            
+                            <!-- price -->
+                            <div class="flex justify-between items-center pl-5 pr-4 pb-5">
+                                <div class="flex items-center">
+                                    <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
+                                    <p class="text-price font-semibold text-darkGray">99.000$</p>
+                
+                                </div>
+                                <button class="py-3 px-2 border rounded-meddButton border-middleGray border-solid bg-white hover:bg-lightGray">
+                                    <img src="assets/grayHeart.svg" class="h-4 mx-px" alt="">
+                                </button>
+                
+                            </div>
+                        </div>
+                
+                        </div>
+                
+                    </div>
+
+                </div>
+                <div class="w-full  md:h-800 h-96  mt-8 bg-cover bg-center bg-no-repeat" style="background-image: url(assets/findHome/Basemap\ image.svg);">
+                    
+
+                </div>
 
             </div>
            
@@ -203,11 +414,11 @@
         
 
 
-    </div>
+    
     
 
 
-    </div>
+    
     <footer class="w-full mx-0 mt-8 flex flex-wrap-reverse  bg-footer border-t border-t-crimson border-solid ">
       <div class="w-full flex pt-14 justify-around md:justify-around md:pl-16 xl:pl-36  items-start  py-5 md:w-1/2">
           <div class="">
@@ -286,7 +497,7 @@
   
 
 
-
+    <script src="findHome.js"></script>
     <script src="toggle.js"></script>
   </body>
 </html>
