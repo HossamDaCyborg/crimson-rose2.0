@@ -5,8 +5,9 @@ module.exports = {
     screens:{
       smm:'300px',
       sm:'480px',
+      smp:'622px',
       md:'800px',
-      lg:'976px',
+      lg:'966px',
       xl:'1200px',
       xxl:"1440px",
     },
@@ -34,6 +35,7 @@ module.exports = {
         footerBase:['20px','24px'],
         signUp:['50px','60px'],
         signUpLabel:['16px','19.2px'],
+        Home:['40px','30px'],
 
   
       },
@@ -48,7 +50,10 @@ module.exports = {
         redlo:'14px',
       },
       width:{
-        propImage:'270px'
+        propImage:'270px',
+        '40/100' :'40%',
+        '20/100' :'20%',
+        
       }
       
       

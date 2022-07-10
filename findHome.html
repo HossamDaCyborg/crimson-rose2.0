@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="css/main.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/favIcon.png" type="image/x-icon">
+    
+    <title>Find a Home</title>
+  </head>
+  <body>
+
+    <div class="relative">
+
+        <!-- background -->
+
+
+        <!-- <div class="w-full flex -z-10  h-full bg-cover bg-no-repeat bg-top absolute top-0 left-0" style="background-image: url('assets/signup/back.svg');">
+            <div class="h-full w-full bg-cover bg-left md:bg-center bg-no-repeat" style="background-image:url('assets/signup/backLight.svg') ;"></div>
+            
+        </div> -->
+
+        <!-- top nav -->
+
+        <div class="bg-transparent flex justify-end space-x-8 items-center pr-10 lg:pr-28 pt-4">
+          <a href="#"><img class="h-4" src="assets/gram.svg" alt=""></a>
+          <a href="#"><img class="h-4" src="assets/twitter.svg" alt=""></a>
+          <a href="#"><img class="h-5" src="assets/facebook.svg" alt=""></a>
+      </div>
+
+      <!-- main nav -->
+
+      <nav class="w-full pb-3 flex relative items-center px-0 lg:px-10  xl:px-24 pr-3 smm:pr-4 sm:pr-8 md:pr-12">
+        <!-- logo -->
+        <a href="#"><img src="assets/logo.svg" class="h-14 md:h-20 ml-2 smm:ml-3 sm:ml-4 md:ml-6 lg:m-0" alt=""></a>
+        <!-- navs -->
+        <ul class="hidden lg:flex justify-around items-center  grow px-5">
+            <a href="index.html" class="font-extrabold text-xl text-darkGray hover:first-letter:text-middleGray">Home</a>
+            <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >Find a home</a>
+            <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >About us</a>
+            <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >contact us</a>
+        </ul>
+        <!-- red second nav -->
+        <ul class="hidden lg:flex items-center">
+            <a href=""><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
+            <select name="ff" class="bg-transparent underline ml-7 font-medium text-price outline-none text-crimson" id="ff">
+                <option value="User Name" selected>User Name</option>
+                <option value="1">1</option>
+            </select>
+        </ul>
+        <!-- toggler -->
+       <div  class="lg:hidden  ml-auto z-40">
+        <label  class="btn btn-circle swap tggler bg-transparent border-0 hover:bg-transparent swap-rotate">
+
+            <!-- this hidden checkbox controls the state -->
+            <input id="toggler" type="checkbox" class="beer" />
+            
+            <!-- hamburger icon -->
+            <svg class="swap-off fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+            
+            <!-- close icon -->
+            <svg class="swap-on fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+            
+          </label>
+          <!-- toggle menu -->
+       </div>
+       <div id="navMenu" class="lg:hidden rounded-xl duration-500 absolute w-full hidden h-0 top-0 justify-center">
+        <div class="w-11/12 bg-white rounded pb-2">
+            <a href="index.html"><div class="flex w-full justify-center"> <button class="btn btn-ghost">Home</button></div></a>
+            <div class="flex w-full justify-center"> <button class="btn btn-ghost">find a home</button></div>
+            <div class="flex w-full justify-center"> <button class="btn btn-ghost">contact us</button></div>
+            <div class="flex w-full justify-center"> <button class="btn btn-ghost">about us</button></div>
+           
+            <ul class="flex items-center justify-center pb-12 pt-3">
+                <a href=""><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
+                <select name="ff" class="bg-transparent underline ml-7 font-medium text-price outline-none text-crimson" id="ff">
+                    <option value="User Name" selected>User Name</option>
+                    <option value="1">1</option>
+                </select>
+            </ul>
+
+           </div>
+
+
+       </div>
+    </nav>
+
+
+    <!-- page body -->
+    <div class="flex items-center flex-wrap">
+        <div class=" md:w-1/2 w-full pt-8">
+            <p id="mainHead" class="pl-2 sm:pl-24 lg:pl-32 text-darkGray font-bold text-Home">Find Home</p>
+
+        </div>
+        <div class="md:w-1/2 pt-8  w-full flex items-center justify-end pr-2 sm:pr-14 md:pr-20 xxl:pr-32">
+            <div class="w-36 lg:w-44 mr-5 border border-solid rounded-meddButton h-10 border-middleGray pl-3 flex items-center">
+                <p class="font-medium text-textBox text-middleGray ">Sort by</p>
+            </div>
+            <button class="border border-solid border-middleGray p-2 rounded-meddButton cursor-pointer hover:bg-lightGray mr-5">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-middleGray" d="M5.50409 0H0V5.5651H5.50409V0Z" />
+                    <path class="fill-middleGray" d="M5.50409 7.2168H0V12.7819H5.50409V7.2168Z" />
+                    <path class="fill-middleGray" d="M5.50409 14.4336H0V19.9987H5.50409V14.4336Z" />
+                    <path class="fill-middleGray" d="M20.0004 0.00976562H6.52246V5.55333H20.0004V0.00976562Z" />
+                    <path class="fill-middleGray" d="M20.0004 7.22656H6.52246V12.7701H20.0004V7.22656Z" />
+                    <path class="fill-middleGray" d="M20.0004 14.4453H6.52246V19.9889H20.0004V14.4453Z" />
+                    </svg>
+                    
+
+            </button>
+
+            <button class="border border-solid border-crimson p-2 rounded-meddButton  hover:bg-lightGray mr-5">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-crimson" d="M5.50101 0H0V5.5651H5.50101V0Z" />
+                    <path class="fill-crimson" d="M5.50101 7.2168H0V12.7819H5.50101V7.2168Z" />
+                    <path class="fill-crimson" d="M5.50101 14.4336H0V19.9987H5.50101V14.4336Z" />
+                    <path class="fill-crimson" d="M12.751 0H7.25V5.5651H12.751V0Z" />
+                    <path class="fill-crimson" d="M12.751 7.2168H7.25V12.7819H12.751V7.2168Z" />
+                    <path class="fill-crimson" d="M12.751 14.4336H7.25V19.9987H12.751V14.4336Z" />
+                    <path class="fill-crimson" d="M20 0H14.499V5.5651H20V0Z" />
+                    <path class="fill-crimson" d="M20 7.2168H14.499V12.7819H20V7.2168Z" />
+                    <path class="fill-crimson" d="M20 14.4336H14.499V19.9987H20V14.4336Z" />
+                    </svg>
+                    
+            </button>
+        </div>
+        <div class="pb-3 flex pl-4 sm:pl-24 lg:pl-32 pt-5 space-x-5 items-center">
+            <button class="py-3 px-6 smm:px-10 sm:px-16 font-medium text-medButton bg-crimson hover:bg-crimsonHover text-white rounded-meddButton">Rent</button>
+            <button class="py-3 px-6 smm:px-10 sm:px-16 font-medium text-medButton bg-white text-middleGray hover:bg-middleGray hover:text-white border border-middleGray border-solid rounded-meddButton">Buy</button>
+        </div>
+    </div>
+
+
+
+    <div class="px-8 md:px-16 lg:px-20 xl:px-28 xxl:px-32">
+        <div class="bg-lightGray w-full items-center rounded-2xl flex flex-wrap">
+            
+            <!-- first 2 -->
+
+
+            <div class="w-full flex py-3 lg:py-5 lg:w-40/100">
+                <div class="w-full pl-3 lg:pl-5 pr-3 lg:pr-0">
+                    <div class="flex border border-solid border-middleGray items-center rounded-meddButton px-2 xxl:px-3 bg-white ">
+                        <select class="w-full text-middleGray outline-none h-10 font-semibold text-textBox">
+                            <option value="Resedintials" selected disabled>Resedintials</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- second two -->
+
+
+            <div class="w-full lg:w-40/100 py-3 lg:py-5 flex">
+                
+                <div class="w-full pl-3 lg:pl-5 pr-3 lg:pr-0">
+                    <div class="flex border border-solid border-middleGray items-center rounded-meddButton px-2 xxl:px-3 bg-white ">
+                        <img src="assets/Baths.svg" class="h-4 pr-2" alt="">
+                        <select class="w-full text-middleGray outline-none h-10 font-semibold text-textBox">
+                            <option value="location" selected disabled>location</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- final three -->
+
+
+
+
+            <div class="w-full lg:w-20/100 py-3 lg:py-5 flex items-center">
+                
+                <div class="w-1/2  pl-1 smm:pl-2 sm:pl-3 lg:pl-4">
+                    <div class="flex   items-center rounded-meddButton  bg-transparent">
+                            <select class="bg-transparent text-middleGray underline w-16 smm:w-24 mx-auto h-10 font-semibold text-xs smm:text-textBox outline-none ">
+                            <option value="More filters" selected disabled>More filters</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="">3</option>
+                        </select>    
+                    </div>
+                </div>
+                <div class="w-1/2  pl-1 smm:pl-2 sm:pl-3 flex lg:pl-4 pr-3 lg:pr-4 xl:pr-5">
+                   <button class="px-1 py-1 smm:px-2 smm:py2 sm:px-4 sm:py-3 bg-crimson text-white hover:bg-crimsonHover font-medium  text-xs smm:text-textBox rounded-meddButton mx-auto">Search</button>
+                </div>
+            </div>
+            
+            <div class="flex px-8 md:px-16 lg:px-20 xl:px-28 xxl:px-32">
+
+            </div>
+           
+        </div>
+        
+
+
+    </div>
+    
+
+
+    </div>
+    <footer class="w-full mx-0 mt-8 flex flex-wrap-reverse  bg-footer border-t border-t-crimson border-solid ">
+      <div class="w-full flex pt-14 justify-around md:justify-around md:pl-16 xl:pl-36  items-start  py-5 md:w-1/2">
+          <div class="">
+              <img src="assets/footerLogo.svg" class="h-20 pb-10 smm:h-32 " alt="">
+              <div class="flex items-center justify-center pt-1 space-x-8">
+                  <img src="assets/redGram.svg" class="h-6" alt="">
+                  <img src="assets/redTwitter.svg" class="h-6" alt="">
+                  <img src="assets/redFacebook.svg" class="h-6" alt="">
+              </div>
+          </div>
+          <div class="flex-col flex space-y-3">
+              <a href="#" class="text-crimson font-medium text-footerHeader">your accout</a>
+              <a href="#" class="text-darkGray text-footerBase font-medium">Notfications</a>
+              <a href="#" class="text-darkGray text-footerBase font-medium">your profile</a>
+              <a href="#" class="text-darkGray text-footerBase font-medium"> favorates</a>
+
+          </div>
+
+          
+
+      </div>
+      <div class="w-full flex pt-14 justify-around py-5 md:w-1/2">
+          <div class="flex-col flex space-y-3">
+              <a href="#" class="text-crimson font-medium text-footerHeader">important links</a>
+              <a href="#" class="text-darkGray text-footerBase font-medium">About us</a>
+              <a href="#" class="text-darkGray text-footerBase font-medium">Find home</a>
+
+          </div>
+          <div class="flex-col flex space-y-3">
+              <a href="#" class="text-crimson font-medium text-footerHeader">Contact us</a>
+              <a href="#">
+                  <div class="flex items-start">
+                      <img src="assets/redLoc.svg" class="h-4 pr-3" alt="">
+                      <div>
+                          <p class="font-medium text-textBox text-darkGray pb-1">217 Speers Road, Unit 4 Oakville, </p>
+                          <p class="font-medium text-textBox text-darkGray">Ontario L6K 0J3</p>
+                      </div>
+
+                  </div> 
+              </a>
+              <a href="#">
+                  <div class="flex items-start">
+                      <img src="assets/redMessage.svg" class="h-3 pr-3" alt="">
+                      <p class="font-medium text-textBox text-darkGray pb-1"> info@crlpm.com </p>
+                          
+
+                  </div> 
+              </a>
+              <a href="#" >
+                  <div class="flex items-start">
+                   <img src="assets/phone.svg" class="h-3 pr-3" alt="">
+                   <p class="font-medium text-textBox text-darkGray pb-1"> +19 052 081 000 </p>
+                      
+
+                  </div>
+              </a>
+              <a href="#">
+                  <div class="flex items-start">
+                      <img src="assets/redInfo.svg" class="h-4 pr-3" alt="">
+                      <div>
+                          <p class="font-medium text-textBox text-darkGray pb-1">opening hours</p>
+                          <p class="font-medium text-textBox text-darkGray">8:00 a.m - 9:00 p.m</p>
+                      </div>
+
+                  </div> 
+              </a>
+
+
+          </div>
+          
+          
+
+      </div>
+  </footer>
+  <div class="py-3 flex justify-center w-full text-center bg-footer text-gray-400">© 2022 Crimson Rose Living. All rights reserved</div>
+  
+
+
+
+    <script src="toggle.js"></script>
+  </body>
+</html>
