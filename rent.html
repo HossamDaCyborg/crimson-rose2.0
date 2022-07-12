@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="css/main.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/favIcon.png" type="image/x-icon">
+    
+    <title>Rent</title>
+  </head>
+  <body>
+
+    <div class="relative">
+
+        <!-- background -->
+
+
+        <!-- <div class="w-full flex -z-10  h-full bg-cover bg-no-repeat bg-top absolute top-0 left-0" style="background-image: url('assets/signup/back.svg');">
+            <div class="h-full w-full bg-cover bg-left md:bg-center bg-no-repeat" style="background-image:url('assets/signup/backLight.svg') ;"></div>
+            
+        </div> -->
+
+        <!-- top nav -->
+
+        <div class="bg-transparent flex justify-end space-x-8 items-center pr-10 lg:pr-28 pt-4">
+          <a href="#"><img class="h-4" src="assets/gram.svg" alt=""></a>
+          <a href="#"><img class="h-4" src="assets/twitter.svg" alt=""></a>
+          <a href="#"><img class="h-5" src="assets/facebook.svg" alt=""></a>
+      </div>
+
+      <!-- main nav -->
+
+      <nav class="w-full pb-3 flex relative items-center px-0 lg:px-10  xl:px-24 pr-3 smm:pr-4 sm:pr-8 md:pr-12">
+        <!-- logo -->
+        <a href="#"><img src="assets/logo.svg" class="h-14 md:h-20 ml-2 smm:ml-3 sm:ml-4 md:ml-6 lg:m-0" alt=""></a>
+        <!-- navs -->
+        <ul class="hidden lg:flex justify-around items-center  grow px-5">
+            <a href="index.html" class="font-extrabold text-xl text-darkGray hover:first-letter:text-middleGray">Home</a>
+            <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >Find a home</a>
+            <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >About us</a>
+            <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >contact us</a>
+        </ul>
+        <!-- red second nav -->
+        <ul class="hidden lg:flex items-center">
+            <a href="#" class="text-crimson text-center hover:text-crimsonHover font-medium text-xl underline">add property</a>
+            <a href="login.html"><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">log in</button></a>
+            <a href="signup.html"><button class="bg-transparent active:bg-crimson active:text-white hover:bg-crimsonHover  hover:text-white text-crimson ml-3 text-lg font-medium rounded-xl border-crimson border-solid border  py-2 px-5">Sign Up</button></a>
+        </ul>
+        <!-- toggler -->
+       <div  class="lg:hidden  ml-auto z-40">
+        <label  class="btn btn-circle swap tggler bg-transparent border-0 hover:bg-transparent swap-rotate">
+
+            <!-- this hidden checkbox controls the state -->
+            <input id="toggler" type="checkbox" class="beer" />
+            
+            <!-- hamburger icon -->
+            <svg class="swap-off fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+            
+            <!-- close icon -->
+            <svg class="swap-on fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+            
+          </label>
+          <!-- toggle menu -->
+       </div>
+       <div id="navMenu" class="lg:hidden rounded-xl duration-500 absolute w-full hidden h-0 top-0 justify-center">
+        <div class="w-11/12 bg-white rounded pb-2">
+            <a href="index.html"><div class="flex w-full justify-center"> <button class="btn btn-ghost">Home</button></div></a>
+            <div class="flex w-full justify-center"> <button class="btn btn-ghost">find a home</button></div>
+            <div class="flex w-full justify-center"> <button class="btn btn-ghost">contact us</button></div>
+            <div class="flex w-full justify-center"> <button class="btn btn-ghost">about us</button></div>
+           
+            <ul class="flex items-center justify-center pb-12 pt-3">
+                <a href="#" class="text-crimson text-center hover:text-crimsonHover font-medium text-lg sm:text-xl underline">add property</a>
+                <a href="login.html"><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2  px-2 smm:px-5 ml-5">log in</button></a>
+                <a href="signup.html"><button class="bg-transparent active:bg-crimson active:text-white hover:bg-crimsonHover  hover:text-white text-crimson ml-3 text-lg font-medium rounded-xl border-crimson border-solid border  py-2  px-2 smm:px-5">Sign Up</button></a>
+            </ul>
+
+           </div>
+
+
+       </div>
+    </nav>
+    <!-- end of the nav -->
+
+    <!-- page body -->
+
+    <!-- for the horiazontal padding container -->
+    <div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 ">
+        <!-- gray heading -->
+     <div class="pt-10 mt-px font-bold text-Home text-darkGray">Property Details</div>
+        
+        <!-- location and buttons -->
+        <div class="flex items-center flex-wrap">
+            <!-- loc -->
+            <div class="flex items-center pt-9">
+                <img src="assets/redLoc.svg" class="h-9 mr-2" alt="">
+                <div>
+                    <p class="text-price text-darkGray font-normal">128 Fawn ST</p>
+                    <p class="text-price text-darkGray font-light">Nation, Ontario, K0a 2M0</p>
+                </div>
+
+            </div>
+            <!-- buttons -->
+            <div class="ml-auto flex items-center flex-wrap">
+                <!-- 1st button -->
+                <button class="bg-white outline-none mt-8 border-0 hover:bg-lightGray">
+                    <img src="assets/rent/grayMessage.svg" class="h-10" alt="">
+                </button>
+                <!-- 2nd button -->
+                <button class="bg-white outline-none mt-8 border-0 ml-8 hover:bg-lightGray">
+                    <img src="assets/rent/favButton.svg" class="h-10" alt="">
+                </button>
+                <!-- 3rd button -->
+                <button class="bg-white outline-none mt-8 border-0 ml-8 hover:bg-lightGray">
+                    <img src="assets/rent/shareButton.svg" class="h-10" alt="">
+                </button>
+                <!-- apply button -->
+                <button class="bg-crimson hover:bg-crimsonHover mt-8 ml-8 rounded-meddButton text-white flex pl-8 pr-3 items-center py-3">
+                    <p class="text-price pr-6 font-medium">Apply to Rent</p>
+                    <!-- svg -->
+                    <img src="assets/rent/signuture.svg" class="h-6" alt="">
+
+                </button>
+                
+
+                
+            </div>
+
+        </div>
+        <!-- end of location and buttons -->
+
+        <!-- image gallery -->
+        <div class="flex flex-wrap pt-10 relative">
+           
+            <div class="p-1.5 w-full ImageBreak:w-1/2 h-redlo relative">
+                <div class="absolute w-full h-full flex  flex-wrap p-5">
+                    <div>
+                        <button class="rounded-meddButton bg-crimson hover:bg-crimsonHover py-2 px-7 text-white font-medium text-price">
+                            For Rent
+                        </button>
+                        
+    
+                    </div>
+                    <div class="smm:w-full flex">
+                    <div class="rentBreak:w-full mr-auto px-3 justify-between rentBreak:flex-row flex-wrap sm:flex-nowrap sm:flex-col bg-white opacity-80 rounded-listRound flex mt-auto">
+                        <div class="flex items-center flex-shrink py-1 sm:py-4">
+                            <img src="assets/rent/nav1st.svg" class="mr-1 h-4" alt="">
+                            <p class="text-darkGray font-normal text-rentNav">4Bedrooms</p>
+
+                        </div>
+                        <div class="flex items-center py-1 sm:py-4">
+                            <img src="assets/rent/nav2nd.svg" class="mr-1 h-4" alt="">
+                            <p class="text-darkGray font-normal text-rentNav">3 Bathrooms</p>
+
+                        </div>
+                        <div class="flex items-center py-1 sm:py-4">
+                            <img src="assets/rent/nav3rd.svg" class="mr-1 h-4" alt="">
+                            <p class="text-darkGray font-normal text-rentNav">150 ft2 Size</p>
+
+                        </div>
+                        <div class="flex items-center py-1 sm:py-4">
+                            <img src="assets/rent/nav4th.svg" class="mr-1 h-4" alt="">
+                            <p class="text-darkGray font-normal text-rentNav">House</p>
+
+                        </div>
+                    </div>
+                </div>
+    
+                </div>
+              <img src="assets/rent/bgPrimary.svg" class="w-full rounded-l-listRound h-full" alt="">
+            </div>
+            
+            <!-- secondary pics -->
+            <div class="w-full ImageBreak:w-1/2 h-redlo">
+                <div class="flex w-full h-1/2">
+                    <div class="w-1/2 p-1.5">
+                        <img src="assets/rent/bg2nd.svg" class="h-full w-full" alt="">
+                    </div>
+                    <div class="w-1/2 p-1.5">
+                        <img src="assets/rent/bg3rd.svg" class="rounded-tr-listRound h-full w-full" alt="">
+                    </div>
+
+
+                </div>
+                <div class="flex w-full h-1/2">
+                    <div class="w-1/2 p-1.5">
+                        <img src="assets/rent/bg4th.svg" class="h-full w-full" alt="">
+                    </div>
+                    <div class="w-1/2 p-1.5 relative cursor-pointer">
+                        <div class="absolute w-full h-full t-0 l-0 bg-renr5th flex items-center justify-center">
+                            <p class="text-white font-medium text-signUp">+5</p>
+                        </div>
+                        <img src="assets/rent/bg5th.svg" class=" h-full w-full" alt="">
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex flex-wrap">
+            <div class="w-full renn:w-1/2 md:px-4 ">
+                <div class="shadow-card rounded-meddButton py-8 mt-10 px-8">
+                    <p class="text-explore pb-5 shrink font-bold text-middleGray">Description</p>
+                    <p class="text-middleGray font-normal text-price">Welcome To This Beautiful 4 Plus 1 Bed Large Century Home Settled In The Beautiful Town Of Plantagenet. This Home Has A Lot Of Beautiful Original Features That You Will Fall In Love With. Equipped With A Steel Roof, Additional Insulation Surrounds The Home That Was Done Over Time Along With A Beautiful Front Garden Area, And A Separate Detached Garage With Electronic Opener. Come See This Home And See All Of The Potential It Holds! Great View Of The River!</p>
+
+                </div>
+                <div class="shadow-card py-8 mt-8 px-8 rounded-meddButton">
+                    <p class="text-explore font-bold text-middleGray">Amenities</p>
+                    <div class="flex flex-wrap mt-3">
+                        <div class="flex items-center mt-2  mr-6 sm:mr-8 xl:mr-12">
+                            <img src="assets/rent/disCars1st.svg" class="h-5 mr-2" alt="">
+                            <p class="text-middleGray font-normal text-xl">Family Room</p>
+                        </div>
+                        <div class="flex mt-2 items-center">
+                            <img src="assets/rent/disCard2nd.svg" class="h-5 mr-2" alt="">
+                            <p class="text-middleGray font-normal text-xl">Kitchens</p>
+                        </div>
+                    </div>
+                    <p class="text-explore font-bold text-middleGray mt-14">Neighbourhood Features</p>
+                    <div class="flex flex-wrap mt-3">
+                        <div class="flex items-center mt-2  mr-6 sm:mr-8 xl:mr-12">
+                            <img src="assets/rent/cardDis3rd.svg" class="h-5 mr-2" alt="">
+                            <p class="text-middleGray font-normal text-xl">Clear View</p>
+                        </div>
+                        <div class="flex mt-2 items-center">
+                            <img src="assets/rent/cardDis4th.svg" class="h-5 mr-2" alt="">
+                            <p class="text-middleGray font-normal text-xl">River/Stream</p>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="shadow-card py-8 mt-8 px-3 md:px-8 rounded-meddButton">
+                    <p class="text-explore font-bold text-middleGray">Room Details</p>
+                    <div class="w-full pt-3 flex items-start">
+                        <div class="flex-col flex">
+                            <div class=" border-b pb-2 border-r border-solid border-middleGray pr-4 md:pr-12 text-price  md:text-footerBase font-medium text-darkGray">
+                                Room
+
+                            </div>
+                            
+                               <p class="border-r text-sm md:text-footerBase text-middleGray border-middleGray py-3"> Kitchen</p>	
+                               <p class="border-r text-sm md:text-footerBase text-middleGray border-middleGray py-3"> Family</p>	
+                               <p class="border-r text-sm md:text-footerBase text-middleGray border-middleGray py-3"> Dining</p>	
+                               <p class="border-r text-sm md:text-footerBase text-middleGray border-middleGray py-3"> Living</p>	
+                               <p class="border-r text-sm md:text-footerBase text-middleGray border-middleGray py-3"> Br	</p>
+                               <p class="border-r text-sm md:text-footerBase text-middleGray border-middleGray py-3"> 2nd Br</p>	
+                               <p class="border-r text-sm md:text-footerBase text-middleGray border-middleGray py-3"> 3rd Br</p>	
+                               <p class="border-r text-sm md:text-footerBase text-middleGray border-middleGray py-3"> 4th 4</p>	
+                               <p class="border-r text-sm md:text-footerBase text-middleGray border-middleGray py-3"> Den	</p>
+                                
+
+                            
+
+                        </div>
+                        <div class="flex-col flex">
+                            <div class=" border-b pl-2 sm:pl-5 xxl:pl-7 pb-2 border-r border-solid border-middleGray pr-4 md:pr-12 text-price  md:text-footerBase font-medium text-darkGray">
+                                Dimensions
+
+                            </div>
+                            
+                               <p class="border-r pl-1 text-sm md:text-footerBase sm:pl-3 text-middleGray border-middleGray py-3"> 6.1 m X 3.05 m</p>	
+                               <p class="border-r pl-1 text-sm md:text-footerBase sm:pl-3 text-middleGray border-middleGray py-3"> 6.3 m X 3 m</p>	
+                               <p class="border-r pl-1 text-sm md:text-footerBase sm:pl-3 text-middleGray border-middleGray py-3"> 6.1 m X 3.05 m</p>	
+                               <p class="border-r pl-1 text-sm md:text-footerBase sm:pl-3 text-middleGray border-middleGray py-3"> 4 m X 3 m</p>	
+                               <p class="border-r pl-1 text-sm md:text-footerBase sm:pl-3 text-middleGray border-middleGray py-3"> 2 m X 4 m	</p>
+                               <p class="border-r pl-1 text-sm md:text-footerBase sm:pl-3 text-middleGray border-middleGray py-3"> 6.1 m X 3.05 m</p>	
+                               <p class="border-r pl-1 text-sm md:text-footerBase sm:pl-3 text-middleGray border-middleGray py-3"> 5 m X 5 m</p>	
+                               <p class="border-r pl-1 text-sm md:text-footerBase sm:pl-3 text-middleGray border-middleGray py-3"> 6.2 m X 4 m</p>	
+                               <p class="border-r pl-1 text-sm md:text-footerBase sm:pl-3 text-middleGray border-middleGray py-3"> 6.1 m X 3.05 m	</p>
+                                
+
+                            
+
+                        </div>
+                        <div class="flex-col flex-1 flex">
+                            <div class=" border-b pl-2 md:pl-5 xxl:pl-7 pb-2 border-solid border-middleGray pr-4 md:pr-12 text-price  md:text-footerBase font-medium text-darkGray">
+                                Description
+
+                            </div>
+                            
+                               <p class=" pl-1 text-sm md:text-footerBase md:pl-3 text-middleGray border-middleGray py-3"> Laminate</p>	
+                               <p class=" pl-1 text-sm md:text-footerBase md:pl-3 text-middleGray border-middleGray py-3"> Laminate</p>	
+                               <p class=" pl-1 text-sm md:text-footerBase md:pl-3 text-middleGray border-middleGray py-3"> Laminate</p>	
+                               <p class=" pl-1 text-sm md:text-footerBase md:pl-3 text-middleGray border-middleGray py-3"> Laminate</p>	
+                               <p class=" pl-1 text-sm md:text-footerBase md:pl-3 text-middleGray border-middleGray py-3"> Laminate</p>
+                               <p class=" pl-1 text-sm md:text-footerBase md:pl-3 text-middleGray border-middleGray py-3"> Laminate</p>	
+                               <p class=" pl-1 text-sm md:text-footerBase md:pl-3 text-middleGray border-middleGray py-3"> Laminate</p>	
+                               <p class=" pl-1 text-sm md:text-footerBase md:pl-3 text-middleGray border-middleGray py-3"> Laminate </p>	
+                               <p class=" pl-1 text-sm md:text-footerBase md:pl-3 text-middleGray border-middleGray py-3"> Laminate</p>
+                                
+
+                            
+
+                        </div>
+
+                    </div>
+                   
+
+                </div>
+                <div class="shadow-card py-8 mt-8 px-8 rounded-meddButton">
+                    <p class="text-explore font-bold text-middleGray">3D Tour or Video</p>
+                    <div class="mt-5 rounded-meddButton flex justify-center items-center w-full  aspect-video bg-middleGray">
+                        <img src="assets/rent/playButton.svg" class="h-8 sm:h-12 md:h-24" alt="">
+
+                    </div>
+                  
+
+
+                </div>
+
+            </div>
+            <!-- sec col -->
+            <div class="w-full flex-col flex renn:w-1/2 md:px-4">
+                <!-- 1st card 2nd col -->
+                <div class="shadow-card rounded-meddButton py-8 mt-10 px-8">
+                    <p class="text-explore font-bold text-middleGray">Agent Information</p>
+                    <p class="text-xl font-normal pt-5  text-middleGray">RE/MAX REALTY ENTERPRISES INC., BROKERAGE</p>
+                    
+
+                </div>
+                <div class="shadow-card rounded-meddButton py-8 mt-8 px-8">
+                    <p class="text-explore font-bold text-middleGray">Property Details</p>
+                    <div class="flex pt-5">
+                        <p class="text-footerBase text-middleGray font-normal pr-1">Property MLS:</p>
+                        <p class="text-footerBase text-darkGray font-extrabold pl-px"> X5485218</p>
+
+                    </div>
+                    <div class="flex pt-5">
+                        <p class="text-footerBase text-middleGray font-normal pr-1">Property Type:</p>
+                        <p class="text-footerBase text-darkGray font-extrabold pl-px"> 2-Storey</p>
+
+                    </div>
+                    <div class="flex pt-5">
+                        <p class="text-footerBase text-middleGray font-normal pr-1">Property Price:</p>
+                        <p class="text-footerBase text-darkGray font-extrabold pl-px">389,000$</p>
+
+                    </div>
+                    <div class="flex pt-5">
+                        <p class="text-footerBase text-middleGray font-normal pr-1">Parking Type:</p>
+                        <p class="text-footerBase text-darkGray font-extrabold pl-px"> Detached</p>
+
+                    </div>
+                    <div class="flex pt-5">
+                        <p class="text-footerBase text-middleGray font-normal pr-1">Annual Property Taxes:</p>
+                        <p class="text-footerBase text-darkGray font-extrabold pl-px">2801.54 $</p>
+
+                    </div>
+                    
+                    
+
+                </div>
+                <div class="shadow-card rounded-meddButton py-8 mt-8 px-8">
+                    <p class="text-explore font-bold text-middleGray">Building Details</p>
+                    <div class="flex pt-5">
+                        <p class="text-footerBase text-middleGray font-normal pr-1">Cooling:</p>
+                        <p class="text-footerBase text-darkGray font-extrabold pl-px"> Wall Unit</p>
+
+                    </div>
+                    <div class="flex pt-5">
+                        <p class="text-footerBase text-middleGray font-normal pr-1">Heating:</p>
+                        <p class="text-footerBase text-darkGray font-extrabold pl-px"> Water</p>
+
+                    </div>
+                    <div class="flex pt-5">
+                        <p class="text-footerBase text-middleGray font-normal pr-1">Bedrooms:</p>
+                        <p class="text-footerBase text-darkGray font-extrabold pl-px">4</p>
+
+                    </div>
+                    <div class="flex pt-5">
+                        <p class="text-footerBase text-middleGray font-normal pr-1">Bathrooms Total:</p>
+                        <p class="text-footerBase text-darkGray font-extrabold pl-px"> 3</p>
+
+                    </div>
+                    <div class="flex pt-5">
+                        <p class="text-footerBase text-middleGray font-normal pr-1">Bedrooms Plus:</p>
+                        <p class="text-footerBase text-darkGray font-extrabold pl-px">3</p>
+
+                    </div>
+
+
+            </div>
+            <div class="shadow-card rounded-meddButton py-8 mt-8 px-8">
+                <p class="text-explore font-bold text-middleGray">Exterior Features</p>
+                <div class="flex pt-5">
+                    <p class="text-footerBase text-middleGray font-normal pr-1">Exterior Finish:</p>
+                    <p class="text-footerBase text-darkGray font-extrabold pl-px"> Alum Siding</p>
+
+                </div>
+                <div class="flex pt-5">
+                    <p class="text-footerBase text-middleGray font-normal pr-1">Basement:</p>
+                    <p class="text-footerBase text-darkGray font-extrabold pl-px"> Full</p>
+
+                </div>
+                <div class="flex pt-5">
+                    <p class="text-footerBase text-middleGray font-normal pr-1">Secondry Basement:</p>
+                    <p class="text-footerBase text-darkGray font-extrabold pl-px"> Unfinished</p>
+
+                </div>
+                <div class="flex pt-5">
+                    <p class="text-footerBase text-middleGray font-normal pr-1">Sewer:</p>
+                    <p class="text-footerBase text-darkGray font-extrabold pl-px"> Sewers</p>
+
+                </div>
+
+
+        </div>
+        <div class="shadow-card rounded-meddButton py-8 mt-auto px-8">
+            <p class="text-explore font-bold text-middleGray">Location on maps</p>
+            <div class="pt-5 relative w-full">
+                <button class="absolute bottom-5 right-5 bg-crimson rounded-meddButton hover:bg-crimsonHover text-white text-price  font-medium py-2 px-4">Show Directions</button>
+             <img src="assets/rent/Basemap image.svg" class="w-full aspect-video " alt="">
+            </div>
+                
+            
+
+        </div>
+        </div>
+
+    </div>
+ </div>
+
+ <div class="pl-6 pt-24 sm:pl-16 lg:pl-24 xl:pl-32 font-bold text-darkGray text-lg sm:text-explore">More like this</div>
+
+
+ <div class="flex flex-wrap pt-7 px-0 smm:px-7">
+    <div class="flex justify-center w-full xl:w-1/4 lg:w-1/3 xxl:w-360 smp:w-1/2">
+        <div class="mt-7 shadow-card rounded-meddButton">
+            <!-- img -->
+
+            <img src="assets/prop1st.svg" class="w-56 smm:w-propImage  pb-px  " alt="">
+            <!-- location -->
+            <div class="flex items-start pt-3 px-5 pb-3">
+                <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
+                <div class="pl-px">
+                    <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
+                    <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
+                </div>
+
+            </div>
+            <!-- props of the prop -->
+            <div class="pt-px px-5 justify-between flex">
+                <div class="flex">
+                    <img src="assets/redBeds.svg" class="h-redlo pr-1"  alt="">
+                    <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
+                </div>
+                <div class="flex">
+                    <img src="assets/redArea.svg" class="h-3 pr-1"  alt="">
+                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">150 ft<sup>2</sup> </div>
+                </div>
+                <div class="flex">
+                    <img src="assets/redBath.svg" class="w-5 pr-1"  alt="">
+                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
+                </div>
+            </div>
+            <!-- horizontal break -->
+            <div class="py-4 px-6"><div class="border-solid border-t-2 border-middleGray"></div></div>
+            
+            <!-- price -->
+            <div class="flex justify-between items-center pl-5 pr-4 pb-5">
+                <div class="flex items-center">
+                    <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
+                    <p class="text-price font-semibold text-darkGray">99.000$</p>
+
+                </div>
+                <button class="py-3 px-2 border rounded-meddButton border-middleGray border-solid bg-white hover:bg-lightGray">
+                    <img src="assets/grayHeart.svg" class="h-4 mx-px" alt="">
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="flex justify-center w-full xl:w-1/4 lg:w-1/3 xxl:w-360 smp:w-1/2">
+        <div class="mt-7 shadow-card rounded-meddButton">
+            <!-- img -->
+
+            <img src="assets/rent/Rectangle 14.svg" class="w-56 smm:w-propImage  pb-px  " alt="">
+            <!-- location -->
+            <div class="flex items-start pt-3 px-5 pb-3">
+                <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
+                <div class="pl-px">
+                    <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
+                    <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
+                </div>
+
+            </div>
+            <!-- props of the prop -->
+            <div class="pt-px px-5 justify-between flex">
+                <div class="flex">
+                    <img src="assets/redBeds.svg" class="h-redlo pr-1"  alt="">
+                    <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
+                </div>
+                <div class="flex">
+                    <img src="assets/redArea.svg" class="h-3 pr-1"  alt="">
+                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">150 ft<sup>2</sup> </div>
+                </div>
+                <div class="flex">
+                    <img src="assets/redBath.svg" class="w-5 pr-1"  alt="">
+                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
+                </div>
+            </div>
+            <!-- horizontal break -->
+            <div class="py-4 px-6"><div class="border-solid border-t-2  border-middleGray"></div></div>
+            
+            <!-- price -->
+            <div class="flex justify-between items-center pl-5 pr-4 pb-5">
+                <div class="flex items-center">
+                    <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
+                    <p class="text-price font-semibold text-darkGray">99.000$</p>
+
+                </div>
+                <button class="py-3 px-2 border rounded-meddButton border-middleGray border-solid bg-white hover:bg-lightGray">
+                    <img src="assets/grayHeart.svg" class="h-4 mx-px" alt="">
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="flex justify-center w-full xl:w-1/4 lg:w-1/3 xxl:w-360 smp:w-1/2">
+        <div class="mt-7 shadow-card rounded-meddButton">
+            <!-- img -->
+
+            <img src="assets/rent/Rectangle 14 (2).svg" class="w-56 smm:w-propImage  pb-px  " alt="">
+            <!-- location -->
+            <div class="flex items-start pt-3 px-5 pb-3">
+                <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
+                <div class="pl-px">
+                    <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
+                    <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
+                </div>
+
+            </div>
+            <!-- props of the prop -->
+            <div class="pt-px px-5 justify-between flex">
+                <div class="flex">
+                    <img src="assets/redBeds.svg" class="h-redlo pr-1"  alt="">
+                    <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
+                </div>
+                <div class="flex">
+                    <img src="assets/redArea.svg" class="h-3 pr-1"  alt="">
+                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">150 ft<sup>2</sup> </div>
+                </div>
+                <div class="flex">
+                    <img src="assets/redBath.svg" class="w-5 pr-1"  alt="">
+                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
+                </div>
+            </div>
+            <!-- horizontal break -->
+            <div class="py-4 px-6"><div class="border-solid border-t-2 border-middleGray"></div></div>
+            
+            <!-- price -->
+            <div class="flex justify-between items-center pl-5 pr-4 pb-5">
+                <div class="flex items-center">
+                    <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
+                    <p class="text-price font-semibold text-darkGray">99.000$</p>
+
+                </div>
+                <button class="py-3 px-2 border rounded-meddButton border-middleGray border-solid bg-white hover:bg-lightGray">
+                    <img src="assets/grayHeart.svg" class="h-4 mx-px" alt="">
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="flex justify-center w-full xl:w-1/4 lg:w-1/3 xxl:w-360 smp:w-1/2">
+        <div class="mt-7 shadow-card rounded-meddButton">
+            <!-- img -->
+
+            <img src="assets/rent/Rectangle 14 (3).svg" class="w-56 smm:w-propImage  pb-px " alt="">
+            <!-- location -->
+            <div class="flex items-start pt-3 px-5 pb-3">
+                <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
+                <div class="pl-px">
+                    <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
+                    <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
+                </div>
+
+            </div>
+            <!-- props of the prop -->
+            <div class="pt-px px-5 justify-between flex">
+                <div class="flex">
+                    <img src="assets/redBeds.svg" class="h-redlo pr-1"  alt="">
+                    <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
+                </div>
+                <div class="flex">
+                    <img src="assets/redArea.svg" class="h-3 pr-1"  alt="">
+                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">150 ft<sup>2</sup> </div>
+                </div>
+                <div class="flex">
+                    <img src="assets/redBath.svg" class="w-5 pr-1"  alt="">
+                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
+                </div>
+            </div>
+            <!-- horizontal break -->
+            <div class="py-4 px-6"><div class="border-solid border-t-2 border-middleGray"></div></div>
+            
+            <!-- price -->
+            <div class="flex justify-between items-center pl-5 pr-4 pb-5">
+                <div class="flex items-center">
+                    <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
+                    <p class="text-price font-semibold text-darkGray">99.000$</p>
+
+                </div>
+                <button class="py-3 px-2 border rounded-meddButton border-middleGray border-solid bg-white hover:bg-lightGray">
+                    <img src="assets/grayHeart.svg" class="h-4 mx-px" alt="">
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+    <!-- end of the page body -->
+
+    <!-- page footer -->
+
+    </div>
+    <footer class="w-full mx-0 mt-8 flex flex-wrap-reverse  bg-footer border-t border-t-crimson border-solid ">
+      <div class="w-full flex pt-14 justify-around md:justify-around md:pl-16 xl:pl-36  items-start  py-5 md:w-1/2">
+          <div class="">
+              <img src="assets/footerLogo.svg" class="h-20 pb-10 smm:h-32 " alt="">
+              <div class="flex items-center justify-center pt-1 space-x-8">
+                  <img src="assets/redGram.svg" class="h-6" alt="">
+                  <img src="assets/redTwitter.svg" class="h-6" alt="">
+                  <img src="assets/redFacebook.svg" class="h-6" alt="">
+              </div>
+          </div>
+          <div class="flex-col flex space-y-3">
+              <a href="#" class="text-crimson font-medium text-footerHeader">your accout</a>
+              <a href="#" class="text-darkGray text-footerBase font-medium">Notfications</a>
+              <a href="#" class="text-darkGray text-footerBase font-medium">your profile</a>
+              <a href="#" class="text-darkGray text-footerBase font-medium"> favorates</a>
+
+          </div>
+
+          
+
+      </div>
+      <div class="w-full flex pt-14 justify-around py-5 md:w-1/2">
+          <div class="flex-col flex space-y-3">
+              <a href="#" class="text-crimson font-medium text-footerHeader">important links</a>
+              <a href="#" class="text-darkGray text-footerBase font-medium">About us</a>
+              <a href="#" class="text-darkGray text-footerBase font-medium">Find home</a>
+
+          </div>
+          <div class="flex-col flex space-y-3">
+              <a href="#" class="text-crimson font-medium text-footerHeader">Contact us</a>
+              <a href="#">
+                  <div class="flex items-start">
+                      <img src="assets/redLoc.svg" class="h-4 pr-3" alt="">
+                      <div>
+                          <p class="font-medium text-textBox text-darkGray pb-1">217 Speers Road, Unit 4 Oakville, </p>
+                          <p class="font-medium text-textBox text-darkGray">Ontario L6K 0J3</p>
+                      </div>
+
+                  </div> 
+              </a>
+              <a href="#">
+                  <div class="flex items-start">
+                      <img src="assets/redMessage.svg" class="h-3 pr-3" alt="">
+                      <p class="font-medium text-textBox text-darkGray pb-1"> info@crlpm.com </p>
+                          
+
+                  </div> 
+              </a>
+              <a href="#" >
+                  <div class="flex items-start">
+                   <img src="assets/phone.svg" class="h-3 pr-3" alt="">
+                   <p class="font-medium text-textBox text-darkGray pb-1"> +19 052 081 000 </p>
+                      
+
+                  </div>
+              </a>
+              <a href="#">
+                  <div class="flex items-start">
+                      <img src="assets/redInfo.svg" class="h-4 pr-3" alt="">
+                      <div>
+                          <p class="font-medium text-textBox text-darkGray pb-1">opening hours</p>
+                          <p class="font-medium text-textBox text-darkGray">8:00 a.m - 9:00 p.m</p>
+                      </div>
+
+                  </div> 
+              </a>
+
+
+          </div>
+          
+          
+
+      </div>
+  </footer>
+  <div class="py-3 flex justify-center w-full text-center bg-footer text-gray-400">© 2022 Crimson Rose Living. All rights reserved</div>
+  
+
+
+
+    <script src="toggle.js"></script>
+  </body>
+</html>

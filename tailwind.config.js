@@ -7,8 +7,11 @@ module.exports = {
       sm:'480px',
       smp:'622px',
       md:'800px',
+      rentBreak:'1110px',
+      ImageBreak:'1060px',
       lg:'966px',
       xl:'1200px',
+      renn:'1280px',
       xxl:"1440px",
     },
     
@@ -21,11 +24,13 @@ module.exports = {
         lightGray:'hsla(0, 0%, 96%, 1)',
         middleGray:'hsla(240, 2%, 64%, 1)',
         footer:'rgba(250, 250, 250, 1)',
+        renr5th:'hsla(0, 0%, 0%, 0.7)',
       },
       fontSize:{
         head:['50px','34px'],
         textBox:['15px','18px'],
         medButton:['15px','17.58px'],
+        rentNav:['15px','30px'],
         explore:['30px','30px'],
         listHead:['28px','30px'],
         propLoc:['14px','16.8px'],
@@ -48,8 +53,13 @@ module.exports = {
       },
       height:{
         redlo:'14px',
+        bgprim:'448px',
+      },
+      padding:{
+        '1.5':'1.5px'
       },
       width:{
+        '360':'360px',
         propImage:'270px',
         '40/100' :'40%',
         '20/100' :'20%',
