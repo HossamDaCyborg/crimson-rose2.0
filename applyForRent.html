@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>apply for rent</title>
+</head>
+
+<body>
+    <div>
+        <!-- top nav -->
+        <div class="bg-transparent flex justify-end space-x-8 items-center pr-10 lg:pr-28 pt-4">
+            <a href="#"><img class="h-4" src="assets/gram.svg" alt=""></a>
+            <a href="#"><img class="h-4" src="assets/twitter.svg" alt=""></a>
+            <a href="#"><img class="h-5" src="assets/facebook.svg" alt=""></a>
+        </div>
+        <!-- main nav -->
+
+        <nav class="w-full pb-3 flex relative items-center px-0 lg:px-10  xl:px-24 pr-3 smm:pr-4 sm:pr-8 md:pr-12">
+            <!-- logo -->
+            <a href="#"><img src="assets/logo.svg" class="h-14 md:h-20 ml-2 smm:ml-3 sm:ml-4 md:ml-6 lg:m-0" alt=""></a>
+            <!-- navs -->
+            <ul class="hidden lg:flex justify-around items-center  grow px-5">
+                <a href="index.html" class="font-extrabold text-xl text-darkGray hover:first-letter:text-middleGray">Home</a>
+                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >Find a home</a>
+                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >About us</a>
+                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >contact us</a>
+            </ul>
+            <!-- red second nav -->
+            <ul class="hidden lg:flex items-center">
+                <a href="#" class="text-crimson text-center hover:text-crimsonHover font-medium text-xl underline">add property</a>
+                <a href="login.html"><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">log in</button></a>
+                <a href="signup.html"><button class="bg-transparent active:bg-crimson active:text-white hover:bg-crimsonHover  hover:text-white text-crimson ml-3 text-lg font-medium rounded-xl border-crimson border-solid border  py-2 px-5">Sign Up</button></a>
+            </ul>
+            <!-- toggler -->
+           <div  class="lg:hidden  ml-auto z-40">
+            <label  class="btn btn-circle swap tggler bg-transparent border-0 hover:bg-transparent swap-rotate">
+    
+                <!-- this hidden checkbox controls the state -->
+                <input id="toggler" type="checkbox" class="beer" />
+                
+                <!-- hamburger icon -->
+                <svg class="swap-off fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+                
+                <!-- close icon -->
+                <svg class="swap-on fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+                
+              </label>
+              <!-- toggle menu -->
+           </div>
+           <div id="navMenu" class="lg:hidden rounded-xl duration-500 absolute w-full hidden h-0 top-0 justify-center">
+            <div class="w-11/12 bg-white rounded pb-2">
+                <a href="index.html"><div class="flex w-full justify-center"> <button class="btn btn-ghost">Home</button></div></a>
+                <div class="flex w-full justify-center"> <button class="btn btn-ghost">find a home</button></div>
+                <div class="flex w-full justify-center"> <button class="btn btn-ghost">contact us</button></div>
+                <div class="flex w-full justify-center"> <button class="btn btn-ghost">about us</button></div>
+               
+                <ul class="flex items-center justify-center pb-12 pt-3">
+                    <a href="#" class="text-crimson text-center hover:text-crimsonHover font-medium text-lg sm:text-xl underline">add property</a>
+                    <a href="login.html"><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2  px-2 smm:px-5 ml-5">log in</button></a>
+                    <a href="signup.html"><button class="bg-transparent active:bg-crimson active:text-white hover:bg-crimsonHover  hover:text-white text-crimson ml-3 text-lg font-medium rounded-xl border-crimson border-solid border  py-2  px-2 smm:px-5">Sign Up</button></a>
+                </ul>
+    
+               </div>
+    
+    
+           </div>
+        </nav>
+        <!-- end of the nav section -->
+
+        <!-- page body -->
+
+        <div class="flex flex-wrap">
+
+            <div class="items-center pl-2 smm:pl-4 sm:pr-7 md:pl-14 lg:pl-24 xl:pl-32 w-full md:w-1/2 py-12 text-middleGray font-bold text-explore">
+
+                Apply For Rent
+
+            </div>
+            <div class="w-full md:w-1/2 justify-end flex  pr-2 smm:pr-4 sm:pr-7 md:pr-14 lg:pr-24 xl:pr-32 items-center">
+                <button class="rounded-meddButton text-white bg-crimson hover:bg-crimsonHover font-medium text-listHead py-4 pl-5 pr-6">
+                    Submit and Apply
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="px-2 smm:px-4 sm:px-7 md:px-14 lg:pr-24 xl:px-32">
+            <div class="flex shadow-card rounded-meddButton flex-wrap lg:flex-nowrap">
+                <div class="pt-5 pl-7 pb-7">
+                    <div class="text-crimson font-bold text-explore flex-none">
+                        Property Summary
+                    </div>
+                    <div class="flex items-center pt-7">
+                        <img src="assets/redLoc.svg" class="h-9 mr-2" alt="">
+                        <div>
+                            <p class="text-price text-darkGray font-normal">128 Fawn ST</p>
+                            <p class="text-price text-darkGray font-light">Nation, Ontario, K0a 2M0</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-nowrap pt-8">
+                        <p class="font-normal text-middleGray text-footerBase">Property MLS:
+
+                        </p>
+                        <p class="text-darkGray text-footerBase font-extrabold pl-1 ml-px"> X5485218
+
+                        </p>
+                        
+                    </div>
+                    <div class="flex flex-nowrap pt-5">
+                        <p class="font-normal text-middleGray text-footerBase">Property Price:
+
+                        </p>
+                        <p class="text-darkGray text-footerBase font-extrabold pl-1 ml-px">389,000$
+
+                        </p>
+                        
+                    </div>
+               </div>
+               <div class="flex w-full 520:w-auto pl-7 520:pl-0 520:mx-auto lg:pr-16 ImageBreak:pr-24 xl:pr-28 flex-col justify-end pt-5 pb-7">
+                <div class="flex flex-nowrap">
+                    <p class="font-normal text-middleGray text-footerBase">Bedrooms:
+
+                    </p>
+                    <p class="text-darkGray text-footerBase font-extrabold pl-1 ml-px"> 4
+
+                    </p>
+                    
+                </div>
+                <div class="flex flex-nowrap pt-5">
+                    <p class="flex-none font-normal text-middleGray text-footerBase">Bathrooms Total:
+
+                    </p>
+                    <p class="text-darkGray text-footerBase font-extrabold pl-1 ml-px">3
+
+                    </p>
+                    
+                </div>
+                
+
+                </div>
+                <div class="p-7">
+                    <img src="assets/rent/0.svg" class=" rounded-listRound h-52 w-propImage" alt="">
+
+                </div>
+                
+
+               </div>
+
+
+               <div class="flex flex-wrap">
+                <div class="w-full 700:w-1/2 pt-8">
+                    <p class="font-bold text-crimson text-explore">
+                        Personal information
+                    </p>
+                    <div class="flex pt-7">
+                        <p class="text-darkGray font-normal text-footerBase">
+                            First Name:
+
+                        </p>
+                        <p class="font-extrabold pl-1 ml-px text-footerBase text-middleGray">
+                            Shorouk
+
+                        </p>
+
+                    </div>
+                    <div class="flex pt-5">
+                        <p class="text-darkGray font-normal text-footerBase">Job:
+
+                        </p>
+                        <p class="font-extrabold pl-1 ml-px text-footerBase text-middleGray">
+                            UI/UX Designer 
+
+                        </p>
+
+                    </div>
+
+
+
+                </div>
+                <div class="w-full 700:w-1/2">
+                    <div class="flex pt-7 700:pt-14">
+                        <p class="text-darkGray font-normal text-footerBase">
+                            Second Name:
+
+                        </p>
+                        <p class="font-extrabold pl-1 ml-px text-footerBase text-middleGray">
+                            Abdelsalam
+
+                        </p>
+
+                    </div>
+                    <div class="flex pt-5">
+                        <p class="text-darkGray font-normal text-footerBase">Company:
+
+                        </p>
+                        <p class="font-extrabold pl-1 ml-px text-footerBase text-middleGray">
+                            Company Name
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+               </div>
+
+               <div class="flex justify-center pt-7">
+                <div class="h-0 w-8/12  border-t border-middleGray border-solid">
+
+                </div>
+
+               </div>
+               <div class="flex flex-wrap">
+                <div class="w-full 700:w-1/2 pt-8">
+                    <p class="font-bold text-crimson text-explore">
+                        Contact Info
+                    </p>
+                    <div class="flex pt-7">
+                        <p class="text-darkGray font-normal text-footerBase">
+                            Number:
+
+                        </p>
+                        <p class="font-extrabold pl-1 ml-px text-footerBase text-middleGray">
+                            +20123456789
+
+                        </p>
+
+                    </div>
+
+
+
+                </div>
+                <div class="w-full 700:w-1/2">
+                    <div class="flex pt-7 700:pt-14">
+                        <p class="text-darkGray font-normal text-footerBase">
+                            Email:
+
+                        </p>
+                        <p class="font-extrabold pl-1 ml-px text-footerBase text-middleGray">
+                            Shorouk@gmail.com
+
+                        </p>
+
+                    </div>
+                    
+
+
+                </div>
+
+               </div>
+               <div class="flex justify-center pt-7">
+                <div class="h-0 w-8/12  border-t border-middleGray border-solid">
+
+                </div>
+
+               </div>
+               <p class="pt-6 font-bold text-crimson text-explore">
+                Address
+               </p>
+
+               <div class="flex flex-wrap ">
+                   <div class="w-full 700:w-1/2">
+                    <div class="flex items-center pt-5">
+                        <div class="font-medium text-middleGray flex-none w-28 text-signUpLabel">Unit</div>
+                          <input type="text" placeholder="Unit" class="w-full flex-1 pl-2  ml-px  bg-lightGray focus:bg-white outline-none border border-solid border-middleGray h-10 rounded-meddButton ">
+                
+                    </div>
+                    <div class="flex items-center pt-5">
+                        <div class="font-medium text-middleGray flex-none w-28 text-signUpLabel">Street Number</div>
+                          <input type="text" placeholder="Street Number" class="w-full flex-1 pl-2  ml-px  bg-lightGray focus:bg-white outline-none border border-solid border-middleGray h-10 rounded-meddButton ">
+                
+                    </div>
+                    <div class="flex items-center pt-5">
+                        <div class="font-medium text-middleGray flex-none w-28 text-signUpLabel">City/Town</div>
+                          <input type="text" placeholder="City/Town" class="w-full flex-1 pl-2  ml-px  bg-lightGray focus:bg-white outline-none border border-solid border-middleGray h-10 rounded-meddButton ">
+                
+                    </div>
+                    <div class="flex items-center pt-5">
+                        <div class="font-medium text-middleGray flex-none w-28 text-signUpLabel">Postal Code</div>
+                          <input type="text" placeholder="Postal Code" class="w-full flex-1 pl-2  ml-px  bg-lightGray focus:bg-white outline-none border border-solid border-middleGray h-10 rounded-meddButton ">
+                
+                    </div>
+                    
+
+
+                   </div>
+                   <div class="w-full 700:w-1/2 700:pl-8">
+                    <div class="flex items-center pt-5">
+                        <div class="font-medium text-middleGray flex-none w-28 text-signUpLabel">PO Box</div>
+                          <input type="text" placeholder="PO Box" class="w-full flex-1 pl-2  ml-px  bg-lightGray focus:bg-white outline-none border border-solid border-middleGray h-10 rounded-meddButton ">
+                
+                    </div>
+                    <div class="flex items-center pt-5">
+                        <div class="font-medium text-middleGray flex-none w-28 text-signUpLabel">Street Name</div>
+                          <input type="text" placeholder="Street Name" class="w-full flex-1 pl-2  ml-px  bg-lightGray focus:bg-white outline-none border border-solid border-middleGray h-10 rounded-meddButton ">
+                
+                    </div>
+                    <div class="flex items-center pt-5">
+                        <div class="font-medium text-middleGray flex-none w-28 text-signUpLabel">Province</div>
+                          <input type="text" placeholder="Province" class="w-full flex-1 pl-2  ml-px  bg-lightGray focus:bg-white outline-none border border-solid border-middleGray h-10 rounded-meddButton ">
+                
+                    </div>
+                   </div>
+
+               </div>
+               <div class="flex justify-center pt-7">
+                <div class="h-0 w-8/12  border-t border-middleGray border-solid">
+
+                </div>
+
+
+               </div>
+               <div class="flex flex-wrap">
+                <div class="w-full 700:w-1/2 pt-8">
+                    <p class="font-bold text-crimson text-explore">
+                        Documents
+                    </p>
+                    <div class="flex pt-7">
+                        <p class="text-darkGray font-normal text-footerBase">
+                            ID:
+
+                        </p>
+                        <p class="font-extrabold pl-1 ml-px text-footerBase text-middleGray">
+                            MyID.JPG
+
+                        </p>
+
+                    </div>
+                    <div class="flex pt-5">
+                        <p class="text-darkGray font-normal text-footerBase">Pay Check:
+
+                        </p>
+                        <p class="font-extrabold pl-1 ml-px text-footerBase text-middleGray">
+                            PayCheck.JPG 
+
+                        </p>
+
+                    </div>
+
+
+
+                </div>
+                <div class="w-full 700:w-1/2">
+                    <div class="flex pt-7 700:pt-14">
+                        <p class="text-darkGray font-normal text-footerBase">
+                            Credit Score:
+
+                        </p>
+                        <p class="font-extrabold pl-1 ml-px text-footerBase text-middleGray">
+                            MyCreditScore.PDF
+
+                        </p>
+
+                    </div>
+                    <div class="flex pt-5">
+                        <p class="text-darkGray font-normal text-footerBase">Other:
+
+                        </p>
+                        <p class="font-extrabold pl-1 ml-px text-footerBase text-middleGray">
+                            CV.JPG
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+               </div>
+               
+
+           </div>
+
+
+        </div>
+        <footer class="w-full mx-0 mt-8 flex flex-wrap-reverse  bg-footer border-t border-t-crimson border-solid ">
+            <div class="w-full flex pt-14 justify-around md:justify-around md:pl-16 xl:pl-36  items-start  py-5 md:w-1/2">
+                <div class="">
+                    <img src="assets/footerLogo.svg" class="h-20 pb-10 smm:h-32 " alt="">
+                    <div class="flex items-center justify-center pt-1 space-x-8">
+                        <img src="assets/redGram.svg" class="h-6" alt="">
+                        <img src="assets/redTwitter.svg" class="h-6" alt="">
+                        <img src="assets/redFacebook.svg" class="h-6" alt="">
+                    </div>
+                </div>
+                <div class="flex-col flex space-y-3">
+                    <a href="#" class="text-crimson font-medium text-footerHeader">your accout</a>
+                    <a href="#" class="text-darkGray text-footerBase font-medium">Notfications</a>
+                    <a href="#" class="text-darkGray text-footerBase font-medium">your profile</a>
+                    <a href="#" class="text-darkGray text-footerBase font-medium"> favorates</a>
+    
+                </div>
+    
+                
+    
+            </div>
+            <div class="w-full flex pt-14 justify-around py-5 md:w-1/2">
+                <div class="flex-col flex space-y-3">
+                    <a href="#" class="text-crimson font-medium text-footerHeader">important links</a>
+                    <a href="#" class="text-darkGray text-footerBase font-medium">About us</a>
+                    <a href="findHome.html" class="text-darkGray text-footerBase font-medium">Find home</a>
+    
+                </div>
+                <div class="flex-col flex space-y-3">
+                    <a href="#" class="text-crimson font-medium text-footerHeader">Contact us</a>
+                    <a href="#">
+                        <div class="flex items-start">
+                            <img src="assets/redLoc.svg" class="h-4 pr-3" alt="">
+                            <div>
+                                <p class="font-medium text-textBox text-darkGray pb-1">217 Speers Road, Unit 4 Oakville, </p>
+                                <p class="font-medium text-textBox text-darkGray">Ontario L6K 0J3</p>
+                            </div>
+    
+                        </div> 
+                    </a>
+                    <a href="#">
+                        <div class="flex items-start">
+                            <img src="assets/redMessage.svg" class="h-3 pr-3" alt="">
+                            <p class="font-medium text-textBox text-darkGray pb-1"> info@crlpm.com </p>
+                                
+    
+                        </div> 
+                    </a>
+                    <a href="#" >
+                        <div class="flex items-start">
+                         <img src="assets/phone.svg" class="h-3 pr-3" alt="">
+                         <p class="font-medium text-textBox text-darkGray pb-1"> +19 052 081 000 </p>
+                            
+    
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="flex items-start">
+                            <img src="assets/redInfo.svg" class="h-4 pr-3" alt="">
+                            <div>
+                                <p class="font-medium text-textBox text-darkGray pb-1">opening hours</p>
+                                <p class="font-medium text-textBox text-darkGray">8:00 a.m - 9:00 p.m</p>
+                            </div>
+    
+                        </div> 
+                    </a>
+    
+    
+                </div>
+                
+                
+    
+            </div>
+        </footer>
+        <div class="py-3 flex justify-center w-full text-center bg-footer text-gray-400">© 2022 Crimson Rose Living. All rights reserved</div>
+   <script src="toggle.js"></script>    
+    
+</body>
+</html>

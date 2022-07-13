@@ -7,6 +7,8 @@ module.exports = {
       sm:'480px',
       smp:'622px',
       md:'800px',
+      '520':'520px',
+      '700':'700px',
       rentBreak:'1110px',
       ImageBreak:'1060px',
       lg:'966px',

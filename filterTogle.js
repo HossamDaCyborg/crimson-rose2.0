@@ -19,6 +19,14 @@ upper.addEventListener('mousemove',()=>{
     vall.innerHTML=`From ${lower.value}$ - to ${upper.value}$`;
 
 });
+upper.addEventListener('touchmove',()=>{
+    
+    vall.innerHTML=`From ${lower.value}$ - to ${upper.value}$`;
+
+});
 lower.addEventListener('mousemove',()=>{
+    vall.innerHTML=`From ${lower.value}$ - to ${upper.value}$`;
+});
+lower.addEventListener('touchmove',()=>{
     vall.innerHTML=`From ${lower.value}$ - to ${upper.value}$`;
 });

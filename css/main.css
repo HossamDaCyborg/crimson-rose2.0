@@ -1734,9 +1734,21 @@ html {
   }
 }
 
+@media (min-width: 520px) {
+  .container {
+    max-width: 520px;
+  }
+}
+
 @media (min-width: 622px) {
   .container {
     max-width: 622px;
+  }
+}
+
+@media (min-width: 700px) {
+  .container {
+    max-width: 700px;
   }
 }
 
@@ -3086,12 +3098,12 @@ body[dir="rtl"] .checkbox:checked,
   right: 1.25rem;
 }
 
-.-z-10 {
-  z-index: -10;
-}
-
 .z-40 {
   z-index: 40;
+}
+
+.-z-10 {
+  z-index: -10;
 }
 
 .mx-auto {
@@ -3117,12 +3129,24 @@ body[dir="rtl"] .checkbox:checked,
   margin-left: 1.25rem;
 }
 
-.ml-7 {
-  margin-left: 1.75rem;
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
 .ml-auto {
   margin-left: auto;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.ml-px {
+  margin-left: 1px;
+}
+
+.ml-7 {
+  margin-left: 1.75rem;
 }
 
 .mr-5 {
@@ -3137,20 +3161,16 @@ body[dir="rtl"] .checkbox:checked,
   margin-top: 2rem;
 }
 
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
 .mr-3 {
   margin-right: 0.75rem;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
-.ml-px {
-  margin-left: 1px;
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mt-px {
@@ -3201,14 +3221,6 @@ body[dir="rtl"] .checkbox:checked,
   margin-top: 1.25rem;
 }
 
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
 .flex {
   display: flex;
 }
@@ -3225,10 +3237,6 @@ body[dir="rtl"] .checkbox:checked,
   aspect-ratio: 16 / 9;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-4 {
   height: 1rem;
 }
@@ -3243,6 +3251,18 @@ body[dir="rtl"] .checkbox:checked,
 
 .h-0 {
   height: 0px;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-52 {
+  height: 13rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-10 {
@@ -3285,10 +3305,6 @@ body[dir="rtl"] .checkbox:checked,
   height: 3rem;
 }
 
-.h-9 {
-  height: 2.25rem;
-}
-
 .h-1\/2 {
   height: 50%;
 }
@@ -3305,12 +3321,16 @@ body[dir="rtl"] .checkbox:checked,
   width: 91.666667%;
 }
 
-.w-36 {
-  width: 9rem;
+.w-propImage {
+  width: 270px;
 }
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-36 {
+  width: 9rem;
 }
 
 .w-16 {
@@ -3349,6 +3369,10 @@ body[dir="rtl"] .checkbox:checked,
   width: 3rem;
 }
 
+.w-8\/12 {
+  width: 66.666667%;
+}
+
 .flex-none {
   flex: none;
 }
@@ -3369,16 +3393,6 @@ body[dir="rtl"] .checkbox:checked,
   flex-grow: 1;
 }
 
-.rotate-90 {
-  --tw-rotate: 90deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-180 {
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -3397,6 +3411,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .flex-wrap-reverse {
   flex-wrap: wrap-reverse;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
 }
 
 .items-start {
@@ -3463,22 +3481,12 @@ body[dir="rtl"] .checkbox:checked,
   border-radius: 10px;
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
 .rounded-listRound {
   border-radius: 20px;
 }
 
-.rounded-l-listRound {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-.rounded-b-none {
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .rounded-b-2xl {
@@ -3486,16 +3494,21 @@ body[dir="rtl"] .checkbox:checked,
   border-bottom-left-radius: 1rem;
 }
 
+.rounded-l-listRound {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
 .rounded-tr-listRound {
   border-top-right-radius: 20px;
 }
 
-.border-0 {
-  border-width: 0px;
-}
-
 .border {
   border-width: 1px;
+}
+
+.border-0 {
+  border-width: 0px;
 }
 
 .border-t-2 {
@@ -3518,12 +3531,12 @@ body[dir="rtl"] .checkbox:checked,
   border-style: solid;
 }
 
-.border-middleGray {
-  border-color: hsla(240, 2%, 64%, 1);
-}
-
 .border-crimson {
   border-color: hsla(357, 82%, 39%, 1);
+}
+
+.border-middleGray {
+  border-color: hsla(240, 2%, 64%, 1);
 }
 
 .border-t-crimson {
@@ -3596,6 +3609,10 @@ body[dir="rtl"] .checkbox:checked,
   fill: hsla(240, 2%, 64%, 1);
 }
 
+.p-7 {
+  padding: 1.75rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -3631,6 +3648,21 @@ body[dir="rtl"] .checkbox:checked,
   padding-bottom: 0.5rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -3644,11 +3676,6 @@ body[dir="rtl"] .checkbox:checked,
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .px-1 {
@@ -3666,14 +3693,14 @@ body[dir="rtl"] .checkbox:checked,
   padding-right: 0.75rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-7 {
@@ -3684,11 +3711,6 @@ body[dir="rtl"] .checkbox:checked,
 .py-px {
   padding-top: 1px;
   padding-bottom: 1px;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .py-8 {
@@ -3724,10 +3746,6 @@ body[dir="rtl"] .checkbox:checked,
   padding-top: 0.75rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
-}
-
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -3736,20 +3754,48 @@ body[dir="rtl"] .checkbox:checked,
   padding-right: 0.5rem;
 }
 
-.pl-3 {
-  padding-left: 0.75rem;
+.pl-5 {
+  padding-left: 1.25rem;
 }
 
-.pl-4 {
-  padding-left: 1rem;
+.pr-6 {
+  padding-right: 1.5rem;
 }
 
 .pt-5 {
   padding-top: 1.25rem;
 }
 
+.pl-7 {
+  padding-left: 1.75rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .pl-1 {
   padding-left: 0.25rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .pb-px {
@@ -3772,20 +3818,12 @@ body[dir="rtl"] .checkbox:checked,
   padding-right: 0.25rem;
 }
 
-.pl-5 {
-  padding-left: 1.25rem;
-}
-
 .pr-4 {
   padding-right: 1rem;
 }
 
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
 }
 
 .pb-10 {
@@ -3812,16 +3850,8 @@ body[dir="rtl"] .checkbox:checked,
   padding-bottom: 1.5rem;
 }
 
-.pr-6 {
-  padding-right: 1.5rem;
-}
-
 .pl-6 {
   padding-left: 1.5rem;
-}
-
-.pt-7 {
-  padding-top: 1.75rem;
 }
 
 .pr-12 {
@@ -3840,10 +3870,6 @@ body[dir="rtl"] .checkbox:checked,
   padding-top: 2.5rem;
 }
 
-.pl-7 {
-  padding-left: 1.75rem;
-}
-
 .pr-5 {
   padding-right: 1.25rem;
 }
@@ -3854,6 +3880,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .pt-9 {
   padding-top: 2.25rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {
@@ -3874,9 +3904,24 @@ body[dir="rtl"] .checkbox:checked,
   line-height: 1.75rem;
 }
 
+.text-explore {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.text-listHead {
+  font-size: 28px;
+  line-height: 30px;
+}
+
 .text-price {
   font-size: 18px;
   line-height: 21.6px;
+}
+
+.text-footerBase {
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .text-Home {
@@ -3914,11 +3959,6 @@ body[dir="rtl"] .checkbox:checked,
   line-height: 26px;
 }
 
-.text-footerBase {
-  font-size: 20px;
-  line-height: 24px;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -3944,11 +3984,6 @@ body[dir="rtl"] .checkbox:checked,
   line-height: 60px;
 }
 
-.text-explore {
-  font-size: 30px;
-  line-height: 30px;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -3966,16 +4001,16 @@ body[dir="rtl"] .checkbox:checked,
   font-weight: 700;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-normal {
   font-weight: 400;
 }
 
 .font-light {
   font-weight: 300;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .font-black {
@@ -3990,13 +4025,13 @@ body[dir="rtl"] .checkbox:checked,
   color: hsla(240, 2%, 64%, 1);
 }
 
+.text-crimson {
+  color: hsla(357, 82%, 39%, 1);
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-crimson {
-  color: hsla(357, 82%, 39%, 1);
 }
 
 .text-gray-400 {
@@ -4090,13 +4125,13 @@ rnnn::-webkit-slider-runnable-track{
   color: hsla(0, 0%, 38%, 1);
 }
 
+.hover\:text-crimsonHover:hover {
+  color: hsla(357, 82%, 39%,0.6 );
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-crimsonHover:hover {
-  color: hsla(357, 82%, 39%,0.6 );
 }
 
 .hover\:first-letter\:text-middleGray:hover::first-letter {
@@ -4131,6 +4166,35 @@ rnnn::-webkit-slider-runnable-track{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 520px) {
+  .\35 20\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .\35 20\:w-auto {
+    width: auto;
+  }
+
+  .\35 20\:pl-0 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 700px) {
+  .\37 00\:w-1\/2 {
+    width: 50%;
+  }
+
+  .\37 00\:pt-14 {
+    padding-top: 3.5rem;
+  }
+
+  .\37 00\:pl-8 {
+    padding-left: 2rem;
+  }
+}
+
 @media (min-width: 300px) {
   .smm\:ml-3 {
     margin-left: 0.75rem;
@@ -4156,6 +4220,16 @@ rnnn::-webkit-slider-runnable-track{
     width: 100%;
   }
 
+  .smm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .smm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .smm\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -4164,11 +4238,6 @@ rnnn::-webkit-slider-runnable-track{
   .smm\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-  }
-
-  .smm\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 
   .smm\:px-7 {
@@ -4183,6 +4252,10 @@ rnnn::-webkit-slider-runnable-track{
 
   .smm\:pr-4 {
     padding-right: 1rem;
+  }
+
+  .smm\:pl-4 {
+    padding-left: 1rem;
   }
 
   .smm\:pl-2 {
@@ -4236,6 +4309,11 @@ rnnn::-webkit-slider-runnable-track{
     flex-wrap: nowrap;
   }
 
+  .sm\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
   .sm\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -4249,6 +4327,11 @@ rnnn::-webkit-slider-runnable-track{
   .sm\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .sm\:px-12 {
@@ -4266,13 +4349,12 @@ rnnn::-webkit-slider-runnable-track{
     padding-bottom: 1rem;
   }
 
-  .sm\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
   .sm\:pr-8 {
     padding-right: 2rem;
+  }
+
+  .sm\:pr-7 {
+    padding-right: 1.75rem;
   }
 
   .sm\:pl-24 {
@@ -4398,6 +4480,11 @@ rnnn::-webkit-slider-runnable-track{
     background-position: center;
   }
 
+  .md\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
   .md\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -4425,6 +4512,14 @@ rnnn::-webkit-slider-runnable-track{
 
   .md\:pr-12 {
     padding-right: 3rem;
+  }
+
+  .md\:pl-14 {
+    padding-left: 3.5rem;
+  }
+
+  .md\:pr-14 {
+    padding-right: 3.5rem;
   }
 
   .md\:pr-20 {
@@ -4498,6 +4593,10 @@ rnnn::-webkit-slider-runnable-track{
   .ImageBreak\:flex-nowrap {
     flex-wrap: nowrap;
   }
+
+  .ImageBreak\:pr-24 {
+    padding-right: 6rem;
+  }
 }
 
 @media (min-width: 966px) {
@@ -4537,6 +4636,10 @@ rnnn::-webkit-slider-runnable-track{
     width: 50%;
   }
 
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -4566,6 +4669,18 @@ rnnn::-webkit-slider-runnable-track{
     padding-right: 7rem;
   }
 
+  .lg\:pl-24 {
+    padding-left: 6rem;
+  }
+
+  .lg\:pr-24 {
+    padding-right: 6rem;
+  }
+
+  .lg\:pr-16 {
+    padding-right: 4rem;
+  }
+
   .lg\:pl-32 {
     padding-left: 8rem;
   }
@@ -4586,16 +4701,8 @@ rnnn::-webkit-slider-runnable-track{
     padding-right: 1rem;
   }
 
-  .lg\:pr-24 {
-    padding-right: 6rem;
-  }
-
   .lg\:pl-28 {
     padding-left: 7rem;
-  }
-
-  .lg\:pl-24 {
-    padding-left: 6rem;
   }
 
   .lg\:pl-12 {
@@ -4646,6 +4753,11 @@ rnnn::-webkit-slider-runnable-track{
     padding-right: 6rem;
   }
 
+  .xl\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
   .xl\:px-28 {
     padding-left: 7rem;
     padding-right: 7rem;
@@ -4656,9 +4768,16 @@ rnnn::-webkit-slider-runnable-track{
     padding-right: 5rem;
   }
 
-  .xl\:px-32 {
+  .xl\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .xl\:pr-32 {
     padding-right: 8rem;
+  }
+
+  .xl\:pr-28 {
+    padding-right: 7rem;
   }
 
   .xl\:pr-5 {
@@ -4667,10 +4786,6 @@ rnnn::-webkit-slider-runnable-track{
 
   .xl\:pl-36 {
     padding-left: 9rem;
-  }
-
-  .xl\:pl-32 {
-    padding-left: 8rem;
   }
 
   .xl\:pl-5 {
