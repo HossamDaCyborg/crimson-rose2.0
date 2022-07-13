@@ -16,14 +16,13 @@ grid.addEventListener('click',()=>{
         
 
         for(let card of PC){
-            card.classList.remove('flex');
+            card.classList.remove('smp:flex');
         }
 
         for(let item of CD){
-            item.classList.remove('smm:w-60');
-            item.classList.remove('w-56');
-            item.classList.remove('flex-col');
-            item.classList.remove('space-y-3')
+            item.classList.remove('smp:w-60');
+            item.classList.remove('smp:flex-col');
+            item.classList.remove('smp:space-y-3')
         }
         
 
@@ -53,13 +52,12 @@ cards.addEventListener('click',()=>{
 
 
         for(let item of CD){
-            item.classList.add('smm:w-60');
-            item.classList.add('w-56');
-            item.classList.add('flex-col');
-            item.classList.add('space-y-3')
+            item.classList.add('smp:w-60');
+            item.classList.add('smp:flex-col');
+            item.classList.add('smp:space-y-3')
         }
         for(let card of PC){
-            card.classList.add('flex');
+            card.classList.add('smp:flex');
         }
 
         for(let path of gridPaths){

@@ -13,6 +13,7 @@ module.exports = {
       xl:'1200px',
       renn:'1280px',
       xxl:"1440px",
+      filterBreak:'514px',
     },
     
     extend: {

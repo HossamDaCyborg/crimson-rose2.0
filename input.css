@@ -5,3 +5,13 @@
 .open{
     display: flex !important;
 }
+.rnnn::-webkit-slider-thumb{
+    color: crimson;
+    background-color: crimson;
+}
+rnnn::-webkit-slider-runnable-track{
+    background-color: red;
+}
+.rnnn{
+    background-color: red;
+}
