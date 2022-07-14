@@ -3250,6 +3250,10 @@ body[dir="rtl"] .checkbox:checked,
   margin-top: 3.5rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .flex {
   display: flex;
 }
@@ -3586,6 +3590,14 @@ body[dir="rtl"] .checkbox:checked,
 
 .border-t {
   border-top-width: 1px;
+}
+
+.border-t-8 {
+  border-top-width: 8px;
+}
+
+.border-t-4 {
+  border-top-width: 4px;
 }
 
 .border-solid {
@@ -3975,6 +3987,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .pr-7 {
   padding-right: 1.75rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .text-left {
