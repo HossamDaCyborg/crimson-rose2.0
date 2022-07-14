@@ -11,7 +11,35 @@
 </head>
 
 <body>
+
+    <div id="pageState" class="fixed hidden items-center justify-center  top-0 left-0 h-screen w-screen  bg-rentconfermed">
+        <div class="bg-white rounded-meddButton w-10/12 z-50 sm:w-9/12 520:w-8/12 700:w-7/12">
+            <div class="text-center text-darkGray text-xl sm:text-2xl md:text-3xl lg:text-rentConfermation pt-12 font-extrabold ">
+                Your application has been successfully submitted
+
+            </div>
+            <div class="pt-9 px-3 sm:px-4 md:px-8 lg:px-16 xl:px-24 text-center  text-middleGray font-medium text-lg md:text-xl:text-2xl">
+                The Landlord will review the application and will email you with the response
+
+
+            </div>
+            <div class="pt-9 pb-12 flex justify-center">
+                <button id="pageActive" class="bg-crimson hover:bg-crimsonHover px-8 sm:px-10 rounded-meddButton py-4 text-white font-medium text-2xl md:px-12 lg:px-14 xl:px-16 xxl:px-20">
+                    Okay
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+    
+    
     <div>
+        
         <!-- top nav -->
         <div class="bg-transparent flex justify-end space-x-8 items-center pr-10 lg:pr-28 pt-4">
             <a href="#"><img class="h-4" src="assets/gram.svg" alt=""></a>
@@ -20,7 +48,7 @@
         </div>
         <!-- main nav -->
 
-        <nav class="w-full pb-3 flex relative items-center px-0 lg:px-10  xl:px-24 pr-3 smm:pr-4 sm:pr-8 md:pr-12">
+        <nav class="w-full pb-3 flex  items-center px-0 lg:px-10  xl:px-24 pr-3 smm:pr-4 sm:pr-8 md:pr-12">
             <!-- logo -->
             <a href="#"><img src="assets/logo.svg" class="h-14 md:h-20 ml-2 smm:ml-3 sm:ml-4 md:ml-6 lg:m-0" alt=""></a>
             <!-- navs -->
@@ -37,7 +65,7 @@
                 <a href="signup.html"><button class="bg-transparent active:bg-crimson active:text-white hover:bg-crimsonHover  hover:text-white text-crimson ml-3 text-lg font-medium rounded-xl border-crimson border-solid border  py-2 px-5">Sign Up</button></a>
             </ul>
             <!-- toggler -->
-           <div  class="lg:hidden  ml-auto z-40">
+           <div id="lo"  class="lg:hidden  ml-auto z-40">
             <label  class="btn btn-circle swap tggler bg-transparent border-0 hover:bg-transparent swap-rotate">
     
                 <!-- this hidden checkbox controls the state -->
@@ -76,13 +104,13 @@
 
         <div class="flex flex-wrap">
 
-            <div class="items-center pl-2 smm:pl-4 sm:pr-7 md:pl-14 lg:pl-24 xl:pl-32 w-full md:w-1/2 py-12 text-middleGray font-bold text-explore">
+            <div class="items-center pl-2 smm:pl-4 sm:pr-7 md:pl-14 lg:pl-24 xl:pl-32  w-full md:w-1/2 py-12 text-middleGray font-bold text-explore">
 
                 Apply For Rent
 
             </div>
-            <div class="w-full md:w-1/2 justify-end flex  pr-2 smm:pr-4 sm:pr-7 md:pr-14 lg:pr-24 xl:pr-32 items-center">
-                <button class="rounded-meddButton text-white bg-crimson hover:bg-crimsonHover font-medium text-listHead py-4 pl-5 pr-6">
+            <div class="w-full pb-5 md:pb-0 md:w-1/2 justify-end flex  pr-2 smm:pr-4 sm:pr-7 md:pr-14  lg:pr-24 xl:pr-32 items-center">
+                <button id="pageInactive" class="rounded-meddButton text-white bg-crimson hover:bg-crimsonHover font-medium text-listHead py-4 pl-5 pr-6">
                     Submit and Apply
                 </button>
 
@@ -456,6 +484,7 @@
         </footer>
         <div class="py-3 flex justify-center w-full text-center bg-footer text-gray-400">© 2022 Crimson Rose Living. All rights reserved</div>
    <script src="toggle.js"></script>    
+   <script src="applicationSubmitted.js"></script>
     
 </body>
 </html>

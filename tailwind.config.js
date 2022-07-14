@@ -20,6 +20,7 @@ module.exports = {
     
     extend: {
       colors:{
+        rentconfermed:'hsla(0, 0%, 0%, 0.6)',
         crimson : 'hsla(357, 82%, 39%, 1)',
         crimsonHover:'hsla(357, 82%, 39%,0.6 )',
         rreed:'hsla(357, 82%, 39%, .3)',
@@ -44,6 +45,7 @@ module.exports = {
         signUp:['50px','60px'],
         signUpLabel:['16px','19.2px'],
         Home:['40px','30px'],
+        rentConfermation:['40px','48px'],
 
   
       },
