@@ -56,12 +56,17 @@ module.exports = {
       boxShadow:{
         card:'0px 0px 60px 0px rgba(0, 0, 0, 0.1)',
       },
+      spacing:{
+        '448':'448px'
+
+      },
       height:{
         redlo:'14px',
         bgprim:'448px',
       },
       padding:{
-        '1.5':'1.5px'
+        '1.5':'1.5px',
+        '2px':'2px',
       },
       width:{
         '360':'360px',
@@ -72,6 +77,9 @@ module.exports = {
       },
      height:{
       '800':'803px'
+     },
+     aspectRatio:{
+      '578/448':'578/448'
      }
       
       
