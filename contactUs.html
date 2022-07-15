@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <link rel="shortcut icon" href="assets/favIcon.png" type="image/x-icon">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/main.css">
+     <title>Notfications</title>
+     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"><style>
+        *{
+            font-family: 'Lato', sans-serif;
+        }
+     </style>
+    </head>
+    <body>
+        <!-- top nav -->
+        <div class="bg-transparent flex justify-end space-x-8 items-center pr-10 lg:pr-28 pt-4">
+            <a href="#"><img class="h-4" src="assets/gram.svg" alt=""></a>
+            <a href="#"><img class="h-4" src="assets/twitter.svg" alt=""></a>
+            <a href="#"><img class="h-5" src="assets/facebook.svg" alt=""></a>
+        </div>
+        <nav class="w-full pb-3 flex relative items-center px-0 lg:px-10  xl:px-24 pr-3 smm:pr-4 sm:pr-8 md:pr-12">
+            <!-- logo -->
+            <a href="#"><img src="assets/logo.svg" class="h-14 md:h-20 ml-2 smm:ml-3 sm:ml-4 md:ml-6 lg:m-0" alt=""></a>
+            <!-- navs -->
+            <ul class="hidden lg:flex justify-around items-center  grow px-5">
+                <a href="index.html" class="font-extrabold text-xl text-darkGray hover:first-letter:text-middleGray">Home</a>
+                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >Find a home</a>
+                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >About us</a>
+                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >contact us</a>
+            </ul>
+            <!-- red second nav -->
+            <ul class="hidden lg:flex items-center">
+                <a href=""><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
+                <button id="userButton" class="bg-transparent  ml-7 items-center relative outline-none flex ">
+                    <ul id="userMenu" class="absolute top-full rounded  w-200% shadow-card  right-0  bg-white flex-col hidden ">
+                        <li class=" flex pl-1 md:pl-3 hover:bg-lightGray  items-center py-3 sm:py-5">
+                            <img src="assets/rent/Nots.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                            <p class="text-darkGray font-medium text-xs sm:text-price">
+                                Notifications
+
+                            </p>
+
+                        </li>
+                        <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                            <img src="assets/rent/Vector.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                            <p class="text-darkGray font-medium text-xs sm:text-price">
+                                My profile
+
+                            </p>
+
+                        </li>
+                        <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                            <img src="assets/rent/Vector (1).svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                            <p class="text-darkGray font-medium text-xs sm:text-price">
+                                Favorites
+
+                            </p>
+
+                        </li>
+                        <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                            <img src="assets/rent/logOut.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                            <p class="text-darkGray font-medium text-xs sm:text-price">
+                                Log out
+
+                            </p>
+
+                         </li>
+
+                    </ul>
+                    <p class="font-medium pr-3  text-price text-crimson">
+                        User Name
+                    </p>
+                    <img src="assets/rent/Vector 7.svg" alt="">
+                </button>
+            </ul>
+            <!-- toggler -->
+           <div id="lo" class="lg:hidden ml-auto z-40">
+            <label  class="btn btn-circle swap tggler bg-transparent border-0 hover:bg-transparent swap-rotate">
+      
+                <!-- this hidden checkbox controls the state -->
+                <input id="toggler" type="checkbox" class="beer" />
+                
+                <!-- hamburger icon -->
+                <svg class="swap-off fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+                
+                <!-- close icon -->
+                <svg class="swap-on fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+                
+              </label>
+              <!-- toggle menu -->
+           </div>
+           <div id="navMenu" class="lg:hidden rounded-xl duration-500 absolute w-full hidden h-0 top-0 justify-center">
+            <div class="w-11/12 bg-white rounded pb-2">
+                <a href="index.html"><div class="flex w-full justify-center"> <button class="btn btn-ghost">Home</button></div></a>
+                <div class="flex w-full justify-center"> <button class="btn btn-ghost">find a home</button></div>
+                <div class="flex w-full justify-center"> <button class="btn btn-ghost">contact us</button></div>
+                <div class="flex w-full justify-center"> <button class="btn btn-ghost">about us</button></div>
+               
+                <ul class="flex items-center justify-center pb-12 pt-3">
+                    <a href=""><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
+                    <button id="userButtonToo" class="bg-transparent  ml-7 items-center relative outline-none flex ">
+                        <ul id="userMenuToo" class="absolute top-full rounded  w-150% shadow-card  right-0 pl-3 md:pl-3 bg-white flex-col hidden">
+                            <li class=" flex pl-1 md:pl-3 hover:bg-lightGray  items-center py-3 sm:py-5">
+                                <img src="assets/rent/Nots.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                                <p class="text-darkGray font-medium text-xs sm:text-price">
+                                    Notifications
+    
+                                </p>
+    
+                            </li>
+                            <li class="flex  hover:bg-lightGray items-center py-3 sm:py-5">
+                                <img src="assets/rent/Vector.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                                <p class="text-darkGray font-medium text-xs sm:text-price">
+                                    My profile
+    
+                                </p>
+    
+                            </li>
+                            <li class="flex hover:bg-lightGray items-center py-3 sm:py-5">
+                                <img src="assets/rent/Vector (1).svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                                <p class="text-darkGray font-medium text-xs sm:text-price">
+                                    Favorites
+    
+                                </p>
+    
+                            </li>
+                            <li class="flex hover:bg-lightGray items-center py-3 sm:py-5">
+                                <img src="assets/rent/logOut.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                                <p class="text-darkGray font-medium text-xs sm:text-price">
+                                    Log out
+    
+                                </p>
+    
+                            </li>
+    
+                        </ul>
+                        <p class="font-medium pr-3  text-price text-crimson">
+                            User Name
+                        </p>
+                        <img src="assets/rent/Vector 7.svg" alt="">
+                    </button>
+                </ul>
+      
+               </div>
+      
+      
+           </div>
+        </nav>
+
+        <div class="px-6 sm:px-12 md:px-16 lg:px-20 xl:px-28 xxl:px-32">
+            <div class="w-full  flex pt-10 flex-wrap">
+                <div class="py-4 md:pr-4 w-full md:w-1/2">
+                    <div class="flex py-2 w-full items-center">
+                        <p class="text-base sm:text-lg flex-none  w-20 smm:w-24 sm:w-28 520:w-36 ">First name</p>
+                        <input type="text" placeholder="First name" class="input h-10 border-middleGray border border-solid input-bordered w-full " />
+                    </div>
+                    <div class="flex w-full py-2 items-center">
+                        <p class="text-base sm:text-lg  w-20 smm:w-24 sm:w-28 520:w-36 flex-none ">Last name</p>
+                        <input type="text" placeholder="Last name" class="input h-10 border-middleGray border border-solid input-bordered w-full " />
+                    </div>
+                    <div class="flex w-full py-2 items-center">
+                        <p class="text-base sm:text-lg  w-20 smm:w-24 sm:w-28 520:w-36 flex-none">E-mail</p>
+                        <input type="text" placeholder="example@email.com" class="input h-10 border-middleGray border border-solid input-bordered w-full " />
+                    </div>
+                    <div class="flex w-full py-2 items-start">
+                        <p class="text-base sm:text-lg w-20 smm:w-24 sm:w-28 520:w-36 flex-none"> message</p>
+                        <textarea name="dgdsg"  placeholder="type your message" rows="20" id="gfg"  class="resize-none textarea h-28 textarea-bordered w-full"></textarea>
+                    </div>
+                    <div class="flex py-2">
+                        <button class="ml-auto rounded-meddButton bg-crimson hover:bg-crimsonHover py-2 sm:px-4 px-2 text-white font-medium text-base sm:text-footerBase sm:py-3">
+                            Send Message
+        
+                        </button>
+        
+                    </div>
+        
+                </div>
+                <div class="w-full md:w-1/2 h-80 md:h-auto  p-3">
+                    <a href="#"><div class="w-full h-full bg-cover rounded-listRound bg-no-repeat bg-center" style="background-image:url('assets/Basemap\ image.svg') ;"></div></a>
+                </div>
+
+                </div>
+                <div class="flex 884:flex-nowrap flex-wrap">
+                    <div class="w-full flex pt-16 flex-col items-center text-center">
+                        <img src="assets/redLoc.svg" class="h-8 sm:h-12" alt="">
+                        <p class="sm:pt-10 pt-8 text-middleGray font-extrabold text-xl sm:text-3xl">Corporate Office</p>
+                        <p class="pt-4 text-darkGray font-medium text-sm sm:text-footerBase">217 Speers Road, Unit 4 Oakville, </p>
+                        <p class="pt-1 text-darkGray font-medium text-sm sm:text-footerBase">Ontario L6K 0J3</p>
+
+                    </div>
+                    <div class="w-full flex pt-16 flex-col items-center text-center">
+                        <img src="assets/phone.svg" class="h-8 sm:h-12" alt="">
+                        <p class="sm:pt-10 pt-8 text-middleGray font-extrabold text-xl sm:text-3xl">Direct Contact</p>
+                        <p class="pt-4 text-darkGray font-medium text-sm sm:text-footerBase">Phone : +19 052 081 000 </p>
+                        <p class="pt-1 text-darkGray font-medium text-sm sm:text-footerBase"> Email : info@crlpm.com</p>
+
+                    </div>
+                    <div class="w-full flex pt-16 flex-col items-center text-center">
+                        <img src="assets/redInfo.svg" class="h-8 sm:h-12" alt="">
+                        <p class="sm:pt-10 pt-8 text-middleGray font-extrabold text-xl sm:text-3xl">Business Hours</p>
+                        <p class="pt-4 text-darkGray font-medium text-sm sm:text-footerBase">8:00 a.m - 9:00 p.m </p>
+
+                    </div>
+
+                </div>
+       
+
+        </div>
+        <footer class="w-full mx-0 mt-16 flex flex-wrap-reverse bg-footer border-t-4 border-crimson border-solid ">
+            <div class="w-full flex pt-14 justify-around md:justify-around md:pl-16 xl:pl-36  items-start  py-5 md:w-1/2">
+                <div class="">
+                    <img src="assets/footerLogo.svg" class="h-20 pb-10 smm:h-32 " alt="">
+                    <div class="flex items-center justify-center pt-1 space-x-8">
+                        <img src="assets/redGram.svg" class="h-6" alt="">
+                        <img src="assets/redTwitter.svg" class="h-6" alt="">
+                        <img src="assets/redFacebook.svg" class="h-6" alt="">
+                    </div>
+                </div>
+                <div class="flex-col flex space-y-3">
+                    <a href="#" class="text-crimson font-medium text-base sm:text-footerHeader">your accout</a>
+                    <a href="#" class="text-darkGray text-sm sm:text-footerBase font-medium">Notfications</a>
+                    <a href="#" class="text-darkGray text-sm sm:text-footerBase font-medium">your profile</a>
+                    <a href="#" class="text-darkGray text-sm sm:text-footerBase font-medium"> favorates</a>
+      
+                </div>
+      
+                
+      
+            </div>
+            <div class="w-full flex pt-14 justify-around py-5 md:w-1/2">
+                <div class="flex-col flex space-y-3">
+                    <a href="#" class="text-crimson font-medium text-base sm:text-footerHeader">important links</a>
+                    <a href="#" class="text-darkGray text-sm sm:text-footerBase font-medium">About us</a>
+                    <a href="#" class="text-darkGray text-sm sm:text-footerBase font-medium">Find home</a>
+      
+                </div>
+                <div class="flex-col flex space-y-3">
+                    <a href="#" class="text-crimson font-medium text-base sm:text-footerHeader">Contact us</a>
+                    <a href="#">
+                        <div class="flex items-start">
+                            <img src="assets/redLoc.svg" class="h-3 sm:h-4 pr-2 sm:pr-3" alt="">
+                            <div>
+                                <p class="font-medium text-xs sm:text-textBox text-darkGray pb-1">217 Speers Road, Unit 4 Oakville, </p>
+                                <p class="font-medium text-xs sm:text-textBox text-darkGray">Ontario L6K 0J3</p>
+                            </div>
+      
+                        </div> 
+                    </a>
+                    <a href="#">
+                        <div class="flex items-start">
+                            <img src="assets/redMessage.svg" class="h-3 pr-2 sm:pr-3" alt="">
+                            <p class="font-medium text-xs sm:text-textBox text-darkGray pb-1"> info@crlpm.com </p>
+                                
+      
+                        </div> 
+                    </a>
+                    <a href="#" >
+                        <div class="flex items-start">
+                         <img src="assets/phone.svg" class="h-3 pr-2 sm:pr-3" alt="">
+                         <p class="font-medium text-xs sm:text-textBox text-darkGray pb-1"> +19 052 081 000 </p>
+                            
+      
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="flex items-start">
+                            <img src="assets/redInfo.svg" class="h-3 sm:h-4 sm:pr-3 pr-2" alt="">
+                            <div>
+                                <p class="font-medium text-xs sm:text-textBox text-darkGray pb-1">opening hours</p>
+                                <p class="font-medium text-xs sm:text-textBox text-darkGray">8:00 a.m - 9:00 p.m</p>
+                            </div>
+      
+                        </div> 
+                    </a>
+      
+      
+                </div>
+                
+                
+      
+            </div>
+        </footer>
+        <div class="py-3 flex justify-center w-full text-center bg-footer text-gray-400">© 2022 Crimson Rose Living. All rights reserved</div>
+
+
+
+
+        <script src="toggle.js"></script>
+        <script src="user.js"></script>
+
+    </body>
+
+</html>

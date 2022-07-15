@@ -10,6 +10,7 @@ module.exports = {
       '444':'444px',
       '520':'520px',
       '700':'700px',
+      '884':'884px',
       rentBreak:'1110px',
       ImageBreak:'1060px',
       lg:'966px',
