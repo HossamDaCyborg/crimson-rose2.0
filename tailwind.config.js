@@ -32,6 +32,8 @@ module.exports = {
         middleGray:'hsla(240, 2%, 64%, 1)',
         footer:'rgba(250, 250, 250, 1)',
         renr5th:'hsla(0, 0%, 0%, 0.7)',
+        aboutImage:'hsla(0, 0%, 0%, 0.4)',
+        Arrow:'hsla(0, 0%, 85%, 1)',
       },
       fontSize:{
         head:['50px','34px'],
@@ -58,6 +60,7 @@ module.exports = {
       },
       boxShadow:{
         card:'0px 0px 60px 0px rgba(0, 0, 0, 0.1)',
+        Bob:'0px 0px 7px 0px hsla(0, 0%, 0%, 0.1)',
       },
       spacing:{
         '448':'448px'
@@ -84,7 +87,8 @@ module.exports = {
       '800':'803px'
      },
      aspectRatio:{
-      '578/448':'578/448'
+      '578/448':'578/448',
+      '570/395':'578/395',
      }
       
       
