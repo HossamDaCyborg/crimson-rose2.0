@@ -3695,10 +3695,6 @@ body[dir="rtl"] .checkbox:checked,
   overflow: hidden;
 }
 
-.overflow-scroll {
-  overflow: scroll;
-}
-
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -3989,14 +3985,14 @@ body[dir="rtl"] .checkbox:checked,
   padding-bottom: 1px;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pr-10 {
@@ -4187,10 +4183,6 @@ body[dir="rtl"] .checkbox:checked,
   padding-right: 2rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
 .pr-20 {
   padding-right: 5rem;
 }
@@ -4297,6 +4289,11 @@ body[dir="rtl"] .checkbox:checked,
   line-height: 2.25rem;
 }
 
+.text-profNav {
+  font-size: 8px;
+  line-height: 12px;
+}
+
 .text-rentNav {
   font-size: 15px;
   line-height: 30px;
@@ -4305,11 +4302,6 @@ body[dir="rtl"] .checkbox:checked,
 .text-signUp {
   font-size: 50px;
   line-height: 60px;
-}
-
-.text-profNav {
-  font-size: 8px;
-  line-height: 12px;
 }
 
 .font-extrabold {
@@ -4538,10 +4530,6 @@ rnnn::-webkit-slider-runnable-track{
 
   .\35 20\:w-36 {
     width: 9rem;
-  }
-
-  .\35 20\:w-8\/12 {
-    width: 66.666667%;
   }
 
   .\35 20\:flex-nowrap {
