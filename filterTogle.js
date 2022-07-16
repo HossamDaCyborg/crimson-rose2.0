@@ -3,6 +3,7 @@ let toggleMenu=document.getElementById('filters');
 let mainMenu = document.getElementById('mainMenu');
 let arrow = document.getElementById('timesArrow');
 
+
 btn.addEventListener('click',()=>{
     toggleMenu.classList.toggle('hidden');
     toggleMenu.classList.toggle('flex');

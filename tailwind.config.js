@@ -37,6 +37,7 @@ module.exports = {
       },
       fontSize:{
         head:['50px','34px'],
+        profNav:['8px','12px'],
         textBox:['15px','18px'],
         medButton:['15px','17.58px'],
         rentNav:['15px','30px'],

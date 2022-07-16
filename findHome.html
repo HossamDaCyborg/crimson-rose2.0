@@ -7,9 +7,16 @@
       href="css/main.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/dualSlider.css">
     <link rel="shortcut icon" href="assets/favIcon.png" type="image/x-icon">
     
     <title>Find a Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <style>
+           *{
+               font-family: 'Lato', sans-serif;
+           }
+        </style>
   </head>
   <body>
 
@@ -32,7 +39,6 @@
       </div>
 
       <!-- main nav -->
-
       <nav class="w-full pb-3 flex relative items-center px-0 lg:px-10  xl:px-24 pr-3 smm:pr-4 sm:pr-8 md:pr-12">
         <!-- logo -->
         <a href="#"><img src="assets/logo.svg" class="h-14 md:h-20 ml-2 smm:ml-3 sm:ml-4 md:ml-6 lg:m-0" alt=""></a>
@@ -46,15 +52,52 @@
         <!-- red second nav -->
         <ul class="hidden lg:flex items-center">
             <a href=""><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
-            <select name="ff" class="bg-transparent underline ml-7 font-medium text-price outline-none text-crimson" id="ff">
-                <option value="User Name" selected>User Name</option>
-                <option value="1">1</option>
-            </select>
+            <button id="userButton" class="bg-transparent  ml-7 items-center relative outline-none flex ">
+                <ul id="userMenu" class="absolute top-full rounded  w-200% shadow-card  right-0  bg-white flex-col hidden ">
+                    <li class=" flex pl-1 md:pl-3 hover:bg-lightGray  items-center py-3 sm:py-5">
+                        <img src="assets/rent/Nots.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                        <p class="text-darkGray font-medium text-xs sm:text-price">
+                            Notifications
+
+                        </p>
+
+                    </li>
+                    <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                        <img src="assets/rent/Vector.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                        <p class="text-darkGray font-medium text-xs sm:text-price">
+                            My profile
+
+                        </p>
+
+                    </li>
+                    <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                        <img src="assets/rent/Vector (1).svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                        <p class="text-darkGray font-medium text-xs sm:text-price">
+                            Favorites
+
+                        </p>
+
+                    </li>
+                    <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                        <img src="assets/rent/logOut.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                        <p class="text-darkGray font-medium text-xs sm:text-price">
+                            Log out
+
+                        </p>
+
+                     </li>
+
+                </ul>
+                <p class="font-medium pr-3  text-price text-crimson">
+                    User Name
+                </p>
+                <img src="assets/rent/Vector 7.svg" alt="">
+            </button>
         </ul>
         <!-- toggler -->
-       <div  class="lg:hidden  ml-auto z-40">
+       <div id="lo" class="lg:hidden ml-auto z-40">
         <label  class="btn btn-circle swap tggler bg-transparent border-0 hover:bg-transparent swap-rotate">
-
+  
             <!-- this hidden checkbox controls the state -->
             <input id="toggler" type="checkbox" class="beer" />
             
@@ -76,17 +119,55 @@
            
             <ul class="flex items-center justify-center pb-12 pt-3">
                 <a href=""><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
-                <select name="ff" class="bg-transparent underline ml-7 font-medium text-price outline-none text-crimson" id="ff">
-                    <option value="User Name" selected>User Name</option>
-                    <option value="1">1</option>
-                </select>
+                <button id="userButtonToo" class="bg-transparent  ml-7 items-center relative outline-none flex ">
+                    <ul id="userMenuToo" class="absolute top-full rounded  w-150% shadow-card  right-0 pl-3 md:pl-3 bg-white flex-col hidden">
+                        <li class=" flex pl-1 md:pl-3 hover:bg-lightGray  items-center py-3 sm:py-5">
+                            <img src="assets/rent/Nots.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                            <p class="text-darkGray font-medium text-xs sm:text-price">
+                                Notifications
+
+                            </p>
+
+                        </li>
+                        <li class="flex  hover:bg-lightGray items-center py-3 sm:py-5">
+                            <img src="assets/rent/Vector.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                            <p class="text-darkGray font-medium text-xs sm:text-price">
+                                My profile
+
+                            </p>
+
+                        </li>
+                        <li class="flex hover:bg-lightGray items-center py-3 sm:py-5">
+                            <img src="assets/rent/Vector (1).svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                            <p class="text-darkGray font-medium text-xs sm:text-price">
+                                Favorites
+
+                            </p>
+
+                        </li>
+                        <li class="flex hover:bg-lightGray items-center py-3 sm:py-5">
+                            <img src="assets/rent/logOut.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                            <p class="text-darkGray font-medium text-xs sm:text-price">
+                                Log out
+
+                            </p>
+
+                        </li>
+
+                    </ul>
+                    <p class="font-medium pr-3  text-price text-crimson">
+                        User Name
+                    </p>
+                    <img src="assets/rent/Vector 7.svg" alt="">
+                </button>
             </ul>
-
+  
            </div>
-
-
+  
+  
        </div>
     </nav>
+
    
 
     <!-- page body -->
@@ -136,7 +217,110 @@
 
 
     <div class="px-8 md:px-16 lg:px-20 xl:px-28 xxl:px-32">
-        <div class="bg-lightGray w-full items-center rounded-2xl flex flex-wrap">
+        <div id="mainMenu" class="bg-lightGray w-full items-center rounded-2xl flex flex-wrap relative">
+            <div id="filters" class="absolute w-full rounded-b-2xl transition-all duration-300 bg-lightGray top-full flex-wrap ImageBreak:flex-nowrap  hidden">
+                <div class="px-5 w-full ImageBreak:w-5/12 flex-shrink py-2">
+                    <p class="font-semibold text-footerBase text-middleGray">
+                        Price:
+                        
+
+                    </p>
+                    <div class="w-full pt-4 flex justify-center">
+                        <p id="vall" class="text-darkGray font-normal sm:text-footerBase text-sm">From 0$ - to 10000000$</p>
+                    </div>
+                    <div class="w-full pb-12 ">
+                        <div class="multi-range flex w-full">
+                            <input type="range" min="0" max="10000000" value="0" id="lower">
+                            <input type="range" min="0" max="10000000" value="10000000" id="upper">
+                        </div>
+                        <div class="flex justify-between"> 
+                            <p class="text-middleGray font-semibold text-price">0$ </p>
+                            <p class="text-middleGray font-semibold text-price">10000000$ </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="px-5 py-2 flex flex-wrap smp:flex-nowrap">
+                    <div class="flex flex-col pr-6">
+                        <div class="flex pb-3 items-center pt-px ">
+                            <input type="checkbox" class="h-5 w-5 flex-none mr-2">
+                            <p class="pl-px ml-px text-middleGray text-lg flex-none">caple Tv</p>
+                        </div>
+                        <div class="flex pb-3 items-center pt-px ">
+                            <input type="checkbox" class="h-5 w-5 flex-none mr-2">
+                            <p class="pl-px ml-px text-middleGray text-lg flex-none">CAC</p>
+                        </div>
+                        <div class="flex pb-3 items-center pt-px ">
+                            <input type="checkbox" class="h-5 w-5 flex-none mr-2">
+                            <p class="pl-px ml-px text-middleGray text-lg flex-none">Central Vac</p>
+                        </div>
+                        <div class="flex pb-3 items-center pt-px ">
+                            <input type="checkbox" class="h-5 w-5 flex-none mr-2">
+                            <p class="pl-px ml-px text-middleGray text-lg flex-none">Common Elements</p>
+                        </div>
+                        <div class="flex pb-3 items-center pt-px ">
+                            <input type="checkbox" class="h-5 w-5 flex-none mr-2">
+                            <p class="pl-px ml-px text-middleGray text-lg flex-none">Family Room</p>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col filterBreak:pl-6 w-full filterBreak:w-auto ">
+                        <div class="flex pb-3 items-center pt-px ">
+                            <input type="checkbox" class="h-5 w-5 flex-none mr-2">
+                            <p class="pl-px ml-px text-middleGray text-lg flex-none">Energy Certfication</p>
+                        </div>
+                        <div class="flex pb-3 items-center pt-px ">
+                            <input type="checkbox" class="h-5 w-5 flex-none mr-2">
+                            <p class="pl-px ml-px text-middleGray text-lg flex-none">Fireplace Stove</p>
+                        </div>
+                        <div class="flex pb-3 items-center pt-px ">
+                            <input type="checkbox" class="h-5 w-5 flex-none mr-2">
+                            <p class="pl-px ml-px text-middleGray text-lg flex-none">Heat</p>
+                        </div>
+                        <div class="flex pb-3 items-center pt-px ">
+                            <input type="checkbox" class="h-5 w-5 flex-none mr-2">
+                            <p class="pl-px ml-px text-middleGray text-lg flex-none">Hydro</p>
+                        </div>
+                        <div class="flex pb-3 items-center pt-px ">
+                            <input type="checkbox" class="h-5 w-5 flex-none mr-2">
+                            <p class="pl-px ml-px text-middleGray text-lg flex-none">Kitchens</p>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col smp:pl-6 w-full smp:w-auto">
+                        <div class="flex pb-3 items-center pt-px ">
+                            <input type="checkbox" class="h-5 w-5 flex-none mr-2">
+                            <p class="pl-px ml-px text-middleGray text-lg flex-none">Parking</p>
+                        </div>
+                        <div class="flex pb-3 items-center pt-px ">
+                            <input type="checkbox" class="h-5 w-5 flex-none mr-2">
+                            <p class="pl-px ml-px text-middleGray text-lg flex-none">Private Enterance</p>
+                        </div>
+                        <div class="flex pb-3 items-center pt-px ">
+                            <input type="checkbox" class="h-5 w-5 flex-none mr-2">
+                            <p class="pl-px ml-px text-middleGray text-lg flex-none">Street Direction</p>
+                        </div>
+                        <div class="flex pb-3 items-center pt-px ">
+                            <input type="checkbox" class="h-5 w-5 flex-none mr-2">
+                            <p class="pl-px ml-px text-middleGray text-lg flex-none">Water</p>
+                        </div>
+                        <div class="flex pb-3 items-center pt-px ">
+                            <input type="checkbox" class="h-5 w-5 flex-none mr-2">
+                            <p class="pl-px ml-px text-middleGray text-lg flex-none">Family Room</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                </div>
+
+
+            </div>
             
             <!-- first 2 -->
 
@@ -178,17 +362,22 @@
 
 
 
-            <div class="w-full lg:w-20/100 py-3 lg:py-5 flex items-center">
+            <div class="w-full lg:w-20/100 py-3 lg:py-5 flex pr-2 items-center">
                 
-                <div class="w-1/2  pl-1 smm:pl-2 sm:pl-3 lg:pl-4">
+                <div class="w-1/2  pl-1 smm:pl-2 sm:pl-3 lg:pl-2">
                     <div class="flex   items-center rounded-meddButton  bg-transparent">
-                            <select class="bg-transparent text-middleGray underline w-16 smm:w-24 mx-auto h-10 font-semibold text-xs smm:text-textBox outline-none ">
+                        <!-- <select class="bg-transparent text-middleGray underline w-16 smm:w-24 mx-auto h-10 font-semibold text-xs smm:text-textBox outline-none ">
+                        more filters
                             <option value="More filters" selected disabled>More filters</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="">3</option>
-                        </select>    
-                    </div>
+                        </select>     -->
+                        <button id="filterTogler" class="flex-none bg-transparent flex items-center text-middleGray underline w-16 smm:w-24 mx-auto h-10 font-semibold text-xs smm:text-textBox outline-none"> 
+                            More filters <img src="assets/rent/Vector 3.svg" id="timesArrow" class="ml-1 mt-1  transition-all duration-300" alt="">
+                        </button>
+                        
+                 </div>
                 </div>
                 <div class="w-1/2  pl-1 smm:pl-2 sm:pl-3 flex lg:pl-4 pr-3 lg:pr-4 xl:pr-5">
                    <button class="px-1 py-1 smm:px-2 smm:py2 sm:px-4 sm:py-3 bg-crimson text-white hover:bg-crimsonHover font-medium  text-xs smm:text-textBox rounded-meddButton mx-auto">Search</button>
@@ -499,5 +688,8 @@
 
     <script src="findHome.js"></script>
     <script src="toggle.js"></script>
+    <script src="dualSlider.js"></script>
+    <script src="filterTogle.js"></script>
+    <script src="user.js"></script>
   </body>
 </html>
