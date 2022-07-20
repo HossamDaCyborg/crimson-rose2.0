@@ -29,63 +29,59 @@
             <div class="h-full w-full bg-cover bg-left md:bg-center bg-no-repeat" style="background-image:url('assets/signup/backLight.svg') ;"></div>
             
         </div> -->
-
-        <!-- top nav -->
-
-        <div class="bg-transparent flex justify-end space-x-8 items-center pr-10 lg:pr-28 pt-4">
-          <a href="#"><img class="h-4" src="assets/gram.svg" alt=""></a>
-          <a href="#"><img class="h-4" src="assets/twitter.svg" alt=""></a>
-          <a href="#"><img class="h-5" src="assets/facebook.svg" alt=""></a>
-      </div>
-
-      <!-- main nav -->
-      <nav class="w-full pb-3 flex relative items-center px-0 lg:px-10  xl:px-24 pr-3 smm:pr-4 sm:pr-8 md:pr-12">
+      <!-- top nav -->
+      <div class="bg-transparent flex justify-end space-x-8 items-center pr-10 lg:pr-28 pt-4">
+        <a href="#" id="distrac"><img class="h-4" src="assets/gram.svg" alt=""></a>
+        <a href="#"><img class="h-4" src="assets/twitter.svg" alt=""></a>
+        <a href="#"><img class="h-5" src="assets/facebook.svg" alt=""></a>
+    </div>
+    <nav class="w-full pb-3 flex relative items-center px-0 lg:px-10  xl:px-24 pr-3 smm:pr-4 sm:pr-8 md:pr-12">
         <!-- logo -->
         <a href="#"><img src="assets/logo.svg" class="h-14 md:h-20 ml-2 smm:ml-3 sm:ml-4 md:ml-6 lg:m-0" alt=""></a>
         <!-- navs -->
         <ul class="hidden lg:flex justify-around items-center  grow px-5">
-            <a href="index.html" class="font-extrabold text-xl text-darkGray hover:first-letter:text-middleGray">Home</a>
-            <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >Find a home</a>
-            <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >About us</a>
-            <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >contact us</a>
+            <a href="index.html" class="font-medium text-xl text-middleGray hover:text-darkGray">Home</a>
+            <a href="findHome.html"  class="font-extrabold  text-darkGray hover:text-darkGray text-xl" >Find a home</a>
+            <a href="aboutUs.html"  class="font-medium text-middleGray hover:text-darkGray text-xl" >About us</a>
+            <a href="contactUs.html"  class="font-medium text-middleGray hover:text-darkGray text-xl" >contact us</a>
         </ul>
         <!-- red second nav -->
         <ul class="hidden lg:flex items-center">
             <a href=""><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
             <button id="userButton" class="bg-transparent  ml-7 items-center relative outline-none flex ">
-                <ul id="userMenu" class="absolute top-full rounded  w-200% shadow-card  right-0  bg-white flex-col hidden ">
-                    <li class=" flex pl-1 md:pl-3 hover:bg-lightGray  items-center py-3 sm:py-5">
+                <ul id="userMenu" class="absolute top-full rounded z-50  w-200% shadow-card  right-0  bg-white flex-col hidden ">
+                    <a href="notifications.html" class=" flex hover:bg-lightGray  items-center py-3 pl-1 md:pl-3 sm:py-5">
                         <img src="assets/rent/Nots.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                         <p class="text-darkGray font-medium text-xs sm:text-price">
                             Notifications
 
                         </p>
 
-                    </li>
-                    <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                    </a>
+                    <a href="profile.html" class="flex hover:bg-lightGray items-center py-3 sm:py-5 pl-1 md:pl-3">
                         <img src="assets/rent/Vector.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                         <p class="text-darkGray font-medium text-xs sm:text-price">
                             My profile
 
                         </p>
 
-                    </li>
-                    <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                    </a>
+                    <a href="favorate.html" class="flex hover:bg-lightGray items-center py-3 sm:py-5 pl-1 md:pl-3">
                         <img src="assets/rent/Vector (1).svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                         <p class="text-darkGray font-medium text-xs sm:text-price">
                             Favorites
 
                         </p>
 
-                    </li>
-                    <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                    </a>
+                    <li class="flex hover:bg-lightGray items-center py-3 sm:py-5 pl-1 md:pl-3">
                         <img src="assets/rent/logOut.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                         <p class="text-darkGray font-medium text-xs sm:text-price">
                             Log out
 
                         </p>
 
-                     </li>
+                    </li>
 
                 </ul>
                 <p class="font-medium pr-3  text-price text-crimson">
@@ -110,42 +106,42 @@
           </label>
           <!-- toggle menu -->
        </div>
-       <div id="navMenu" class="lg:hidden rounded-xl duration-500 absolute w-full hidden h-0 top-0 justify-center">
+       <div id="navMenu" class="lg:hidden rounded-xl z-30 duration-500 absolute w-full hidden h-0 top-0 justify-center">
         <div class="w-11/12 bg-white rounded pb-2">
-            <a href="index.html"><div class="flex w-full justify-center"> <button class="btn btn-ghost">Home</button></div></a>
-            <div class="flex w-full justify-center"> <button class="btn btn-ghost">find a home</button></div>
-            <div class="flex w-full justify-center"> <button class="btn btn-ghost">contact us</button></div>
-            <div class="flex w-full justify-center"> <button class="btn btn-ghost">about us</button></div>
+            <a href="index.html" class="flex w-full justify-center"> <button class="btn btn-ghost">Home</button></a>
+            <a href="findHome.html" class="flex w-full justify-center"> <button class="btn btn-ghost">find a home</button></a>
+            <a href="contactUs.html" class="flex w-full justify-center"> <button class="btn btn-ghost">contact us</button></a>
+            <a href="aboutUs.html" class="flex w-full justify-center"> <button class="btn btn-ghost">about us</button></a>
            
             <ul class="flex items-center justify-center pb-12 pt-3">
                 <a href=""><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
                 <button id="userButtonToo" class="bg-transparent  ml-7 items-center relative outline-none flex ">
-                    <ul id="userMenuToo" class="absolute top-full rounded  w-150% shadow-card  right-0 pl-3 md:pl-3 bg-white flex-col hidden">
-                        <li class=" flex pl-1 md:pl-3 hover:bg-lightGray  items-center py-3 sm:py-5">
+                    <ul id="userMenuToo" class="absolute z-50 top-full rounded  w-150% shadow-card  right-0 bg-white flex-col hidden">
+                        <a href="notifications.html" class=" flex hover:bg-lightGray  items-center py-3 sm:py-5 pl-1 md:pl-3">
                             <img src="assets/rent/Nots.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 Notifications
 
                             </p>
 
-                        </li>
-                        <li class="flex  hover:bg-lightGray items-center py-3 sm:py-5">
+                        </a>
+                        <a href="profile.html" class="pl-1 md:pl-3 flex hover:bg-lightGray items-center py-3 sm:py-5">
                             <img src="assets/rent/Vector.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 My profile
 
                             </p>
 
-                        </li>
-                        <li class="flex hover:bg-lightGray items-center py-3 sm:py-5">
+                        </a>
+                        <a href="favorate.html" class="flex pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
                             <img src="assets/rent/Vector (1).svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 Favorites
 
                             </p>
 
-                        </li>
-                        <li class="flex hover:bg-lightGray items-center py-3 sm:py-5">
+                        </a>
+                        <li class="flex pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
                             <img src="assets/rent/logOut.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 Log out
@@ -171,14 +167,25 @@
    
 
     <!-- page body -->
-    <div class="flex items-center flex-wrap">
+    <div class="flex items-start flex-wrap">
         <div class=" md:w-1/2 w-full pt-8">
             <p id="mainHead" class="pl-2 sm:pl-24 lg:pl-32 text-darkGray font-bold text-Home">Find Home</p>
 
         </div>
-        <div class="md:w-1/2 pt-8  w-full flex items-center justify-end pr-2 sm:pr-14 md:pr-20 xxl:pr-32">
-            <input type="text" placeholder="Sort by" class="w-36 lg:w-44 mr-5 border border-solid rounded-meddButton h-10 border-middleGray pl-3 flex items-center">
-                
+        <div class="md:w-1/2 pt-8  w-full flex items-start relative justify-end pr-2 sm:pr-14 md:pr-20 xxl:pr-32">
+            <!-- <input type="text" placeholder="Sort by" class="w-36 lg:w-44 mr-5 border border-solid rounded-meddButton h-10 border-middleGray pl-3 flex items-center">
+                 -->
+                 <div tabindex="0" id="collapsed" class="collapse z-40 timeArow  w-36 lg:w-44 mr-28 absolute border border-middleGray border-solid bg-base-100 rounded-box">
+                    <div id="sorted" class="collapse-title h-auto px-3 border-b-2 bg-lightGray active:bg-white hover:bg-white focus:bg-white  py-3 min-h-min text-textBox text-middleGray font-medium">
+                      Sort By
+                    </div>
+                    <div class="collapse-content px-0"> 
+                      <p class="optsion hover:bg-lightGray  px-2 cursor-pointer">newest</p>
+                      <p class="optsion hover:bg-lightGray  px-2 cursor-pointer">oldest</p>
+                      <p class="optsion hover:bg-lightGray  px-2 cursor-pointer">Price high to low</p>
+                      <p class="optsion hover:bg-lightGray  px-2 cursor-pointer">Price low to high</p>
+                    </div>
+                  </div>
             
             <button id="cards" class="border playing border-solid border-crimson p-2 rounded-meddButton cursor-pointer hover:bg-lightGray mr-5">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="" xmlns="http://www.w3.org/2000/svg">
@@ -209,15 +216,15 @@
             </button>
         </div>
         <div class="pb-3 flex pl-4 sm:pl-24 lg:pl-32 pt-5 space-x-5 items-center">
-            <a href="rent.html"><button class="py-3 px-6 smm:px-10 sm:px-16 font-medium text-medButton bg-crimson hover:bg-crimsonHover text-white rounded-meddButton">Rent</button></a>
-            <button class="py-3 px-6 smm:px-10 sm:px-16 font-medium text-medButton bg-white text-middleGray hover:bg-middleGray hover:text-white border border-middleGray border-solid rounded-meddButton">Buy</button>
+            <a href="rent.html"><button class="py-3 px-6 smm:px-10 sm:px-16 font-medium text-medButton shadow-card bg-crimson hover:bg-crimsonHover text-white rounded-meddButton">Rent</button></a>
+            <button class="py-3 px-6 smm:px-10 sm:px-16 font-medium text-medButton bg-white text-middleGray shadow-card hover:bg-middleGray hover:text-white border border-middleGray border-solid rounded-meddButton">Buy</button>
         </div>
     </div>
 
 
 
     <div class="px-8 md:px-16 lg:px-20 xl:px-28 xxl:px-32">
-        <div id="mainMenu" class="bg-lightGray w-full items-center rounded-2xl flex flex-wrap relative">
+        <div id="mainMenu" class="bg-lightGray shadow-filter w-full items-center rounded-2xl flex flex-wrap relative">
             <div id="filters" class="absolute w-full rounded-b-2xl transition-all duration-300 bg-lightGray top-full flex-wrap ImageBreak:flex-nowrap  hidden">
                 <div class="px-5 w-full ImageBreak:w-5/12 flex-shrink py-2">
                     <p class="font-semibold text-footerBase text-middleGray">
@@ -592,7 +599,8 @@
                     </div>
 
                 </div>
-                <div class="w-full  md:h-800 h-96  mt-8 bg-cover bg-center bg-no-repeat" style="background-image: url(assets/findHome/Basemap\ image.svg);">
+                <div class="w-full  h-screen sticky top-0 py-10">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=543&amp;hl=en&amp;q=bridle path&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.kokagames.com/fnf-friday-night-funkin-mods/">FNF Mods</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {width:100%!important;height:100%!important;}</style></div>
                     
 
                 </div>
@@ -687,6 +695,7 @@
 
 
     <script src="findHome.js"></script>
+    <script src="sorted.js"></script>
     <script src="toggle.js"></script>
     <script src="dualSlider.js"></script>
     <script src="filterTogle.js"></script>

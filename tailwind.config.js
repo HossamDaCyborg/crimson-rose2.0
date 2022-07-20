@@ -25,7 +25,8 @@ module.exports = {
       colors:{
         rentconfermed:'hsla(0, 0%, 0%, 0.6)',
         crimson : 'hsla(357, 82%, 39%, 1)',
-        crimsonHover:'hsla(357, 82%, 39%,0.6 )',
+        crimsonHover:'hsla(357, 54%, 75%, 1)',
+        crimsonActive:'hsla(357, 53%, 66%, 1)',
         rreed:'hsla(357, 82%, 39%, .3)',
         darkGray:'hsla(0, 0%, 38%, 1)',
         lightGray:'hsla(0, 0%, 96%, 1)',
@@ -52,6 +53,7 @@ module.exports = {
         signUpLabel:['16px','19.2px'],
         Home:['40px','30px'],
         rentConfermation:['40px','48px'],
+        edit:['16px','19.2px'],
 
   
       },
@@ -62,6 +64,7 @@ module.exports = {
       boxShadow:{
         card:'0px 0px 60px 0px rgba(0, 0, 0, 0.1)',
         Bob:'0px 0px 7px 0px hsla(0, 0%, 0%, 0.1)',
+        filter:'0px 4px 14px 0px hsla(0, 0%, 0%, 0.2)',  
       },
       spacing:{
         '448':'448px'
@@ -81,15 +84,18 @@ module.exports = {
         '40/100' :'40%',
         '20/100' :'20%',
         '200%':'200%',
-        '150%':'150%'
+        '150%':'150%',
+        '120%':'120%',
         
       },
      height:{
-      '800':'803px'
+      '800':'803px',
+      '450':'450px',
      },
      aspectRatio:{
       '578/448':'578/448',
       '570/395':'578/395',
+      
      }
       
       

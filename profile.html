@@ -6,67 +6,135 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/main.css">
-        <title>Notfications</title>
+        <title>Profile</title>
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"><style>
            *{
                font-family: 'Lato', sans-serif;
            }
         </style>
        </head>
+       
        <body>
         <!-- top nav -->
-        <div class="bg-transparent flex justify-end space-x-8 items-center pr-10 lg:pr-28 pt-4">
-            <a href="#"><img class="h-4" src="assets/gram.svg" alt=""></a>
-            <a href="#"><img class="h-4" src="assets/twitter.svg" alt=""></a>
-            <a href="#"><img class="h-5" src="assets/facebook.svg" alt=""></a>
-        </div>
-        <nav class="w-full pb-3 flex relative items-center px-0 lg:px-10  xl:px-24 pr-3 smm:pr-4 sm:pr-8 md:pr-12">
-            <!-- logo -->
-            <a href="#"><img src="assets/logo.svg" class="h-14 md:h-20 ml-2 smm:ml-3 sm:ml-4 md:ml-6 lg:m-0" alt=""></a>
-            <!-- navs -->
-            <ul class="hidden lg:flex justify-around items-center  grow px-5">
-                <a href="index.html" class="font-extrabold text-xl text-darkGray hover:first-letter:text-middleGray">Home</a>
-                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >Find a home</a>
-                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >About us</a>
-                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >contact us</a>
-            </ul>
-            <!-- red second nav -->
-            <ul class="hidden lg:flex items-center">
-                <a href=""><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
-                <button id="userButton" class="bg-transparent  ml-7 items-center relative outline-none flex ">
-                    <ul id="userMenu" class="absolute top-full rounded  w-200% shadow-card  right-0  bg-white flex-col hidden ">
-                        <li class=" flex pl-1 md:pl-3 hover:bg-lightGray  items-center py-3 sm:py-5">
+       <div class="bg-transparent flex justify-end space-x-8 items-center pr-10 lg:pr-28 pt-4">
+        <a href="#"><img class="h-4" src="assets/gram.svg" alt=""></a>
+        <a href="#"><img class="h-4" src="assets/twitter.svg" alt=""></a>
+        <a href="#"><img class="h-5" src="assets/facebook.svg" alt=""></a>
+    </div>
+    <nav class="w-full pb-3 flex relative items-center px-0 lg:px-10  xl:px-24 pr-3 smm:pr-4 sm:pr-8 md:pr-12">
+        <!-- logo -->
+        <a href="#"><img src="assets/logo.svg" class="h-14 md:h-20 ml-2 smm:ml-3 sm:ml-4 md:ml-6 lg:m-0" alt=""></a>
+        <!-- navs -->
+        <ul class="hidden lg:flex justify-around items-center  grow px-5">
+            <a href="index.html" class="font-medium text-xl text-middleGray hover:text-darkGray">Home</a>
+            <a href="findHome.html"  class="font-extrabold text-darkGray hover:text-darkGray text-xl" >Find a home</a>
+            <a href="aboutUs.html"  class=" hover:text-darkGray text-xl font-medium text-middleGray" >About us</a>
+            <a href="contactUs.html"  class="font-medium text-middleGray hover:text-darkGray text-xl" >contact us</a>
+        </ul>
+        <!-- red second nav -->
+        <ul class="hidden lg:flex items-center">
+            <a href="addProperty.html"><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
+            <button id="userButton" class="bg-transparent  ml-7 items-center relative outline-none flex ">
+                <ul id="userMenu" class="absolute top-full rounded z-50  w-200% shadow-card  right-0  bg-white flex-col hidden ">
+                    <a href="notifications.html" class=" flex hover:bg-lightGray  items-center py-3 pl-1 md:pl-3 sm:py-5">
+                        <img src="assets/rent/Nots.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                        <p class="text-darkGray font-medium text-xs sm:text-price">
+                            Notifications
+
+                        </p>
+
+                    </a>
+                    <a href="profile.html" class="flex hover:bg-lightGray items-center py-3 sm:py-5 pl-1 md:pl-3">
+                        <img src="assets/rent/Vector.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                        <p class="text-darkGray font-medium text-xs sm:text-price">
+                            My profile
+
+                        </p>
+
+                    </a>
+                    <a href="favorate.html" class="flex hover:bg-lightGray items-center py-3 sm:py-5 pl-1 md:pl-3">
+                        <img src="assets/rent/Vector (1).svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                        <p class="text-darkGray font-medium text-xs sm:text-price">
+                            Favorites
+
+                        </p>
+
+                    </a>
+                    <li class="flex hover:bg-lightGray items-center py-3 sm:py-5 pl-1 md:pl-3">
+                        <img src="assets/rent/logOut.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                        <p class="text-darkGray font-medium text-xs sm:text-price">
+                            Log out
+
+                        </p>
+
+                    </li>
+
+                </ul>
+                <p class="font-medium pr-3  text-price text-crimson">
+                    User Name
+                </p>
+                <img src="assets/rent/Vector 7.svg" alt="">
+            </button>
+        </ul>
+        <!-- toggler -->
+       <div id="lo" class="lg:hidden ml-auto z-40">
+        <label  class="btn btn-circle swap tggler bg-transparent border-0 hover:bg-transparent swap-rotate">
+  
+            <!-- this hidden checkbox controls the state -->
+            <input id="toggler" type="checkbox" class="beer" />
+            
+            <!-- hamburger icon -->
+            <svg class="swap-off fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+            
+            <!-- close icon -->
+            <svg class="swap-on fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+            
+          </label>
+          <!-- toggle menu -->
+       </div>
+       <div id="navMenu" class="lg:hidden rounded-xl z-30 duration-500 absolute w-full hidden h-0 top-0 justify-center">
+        <div class="w-11/12 bg-white rounded pb-2">
+            <a href="index.html" class="flex w-full justify-center"> <button class="btn btn-ghost">Home</button></a>
+            <a href="findHome.html" class="flex w-full justify-center"> <button class="btn btn-ghost">find a home</button></a>
+            <a href="contactUs.html" class="flex w-full justify-center"> <button class="btn btn-ghost">contact us</button></a>
+            <a href="aboutUs.html" class="flex w-full justify-center"> <button class="btn btn-ghost">about us</button></a>
+           
+            <ul class="flex items-center justify-center pb-12 pt-3">
+                <a href="addProperty.html"><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
+                <button id="userButtonToo" class="bg-transparent  ml-7 items-center relative outline-none flex ">
+                    <ul id="userMenuToo" class="absolute z-50 top-full rounded  w-150% shadow-card  right-0 bg-white flex-col hidden">
+                        <a href="notifications.html" class=" flex hover:bg-lightGray  items-center py-3 sm:py-5 pl-1 md:pl-3">
                             <img src="assets/rent/Nots.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 Notifications
 
                             </p>
 
-                        </li>
-                        <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                        </a>
+                        <a href="profile.html" class="pl-1 md:pl-3 flex hover:bg-lightGray items-center py-3 sm:py-5">
                             <img src="assets/rent/Vector.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 My profile
 
                             </p>
 
-                        </li>
-                        <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                        </a>
+                        <a href="favorate.html" class="flex pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
                             <img src="assets/rent/Vector (1).svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 Favorites
 
                             </p>
 
-                        </li>
-                        <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                        </a>
+                        <li class="flex pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
                             <img src="assets/rent/logOut.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 Log out
 
                             </p>
 
-                         </li>
+                        </li>
 
                     </ul>
                     <p class="font-medium pr-3  text-price text-crimson">
@@ -75,304 +143,568 @@
                     <img src="assets/rent/Vector 7.svg" alt="">
                 </button>
             </ul>
-            <!-- toggler -->
-           <div id="lo" class="lg:hidden ml-auto z-40">
-            <label  class="btn btn-circle swap tggler bg-transparent border-0 hover:bg-transparent swap-rotate">
-      
-                <!-- this hidden checkbox controls the state -->
-                <input id="toggler" type="checkbox" class="beer" />
-                
-                <!-- hamburger icon -->
-                <svg class="swap-off fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
-                
-                <!-- close icon -->
-                <svg class="swap-on fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
-                
-              </label>
-              <!-- toggle menu -->
+  
            </div>
-           <div id="navMenu" class="lg:hidden rounded-xl duration-500 absolute w-full hidden h-0 top-0 justify-center">
-            <div class="w-11/12 bg-white rounded pb-2">
-                <a href="index.html"><div class="flex w-full justify-center"> <button class="btn btn-ghost">Home</button></div></a>
-                <div class="flex w-full justify-center"> <button class="btn btn-ghost">find a home</button></div>
-                <div class="flex w-full justify-center"> <button class="btn btn-ghost">contact us</button></div>
-                <div class="flex w-full justify-center"> <button class="btn btn-ghost">about us</button></div>
-               
-                <ul class="flex items-center justify-center pb-12 pt-3">
-                    <a href=""><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
-                    <button id="userButtonToo" class="bg-transparent  ml-7 items-center relative outline-none flex ">
-                        <ul id="userMenuToo" class="absolute top-full rounded  w-150% shadow-card  right-0 pl-3 md:pl-3 bg-white flex-col hidden">
-                            <li class=" flex pl-1 md:pl-3 hover:bg-lightGray  items-center py-3 sm:py-5">
-                                <img src="assets/rent/Nots.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
-                                <p class="text-darkGray font-medium text-xs sm:text-price">
-                                    Notifications
-    
-                                </p>
-    
-                            </li>
-                            <li class="flex  hover:bg-lightGray items-center py-3 sm:py-5">
-                                <img src="assets/rent/Vector.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
-                                <p class="text-darkGray font-medium text-xs sm:text-price">
-                                    My profile
-    
-                                </p>
-    
-                            </li>
-                            <li class="flex hover:bg-lightGray items-center py-3 sm:py-5">
-                                <img src="assets/rent/Vector (1).svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
-                                <p class="text-darkGray font-medium text-xs sm:text-price">
-                                    Favorites
-    
-                                </p>
-    
-                            </li>
-                            <li class="flex hover:bg-lightGray items-center py-3 sm:py-5">
-                                <img src="assets/rent/logOut.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
-                                <p class="text-darkGray font-medium text-xs sm:text-price">
-                                    Log out
-    
-                                </p>
-    
-                            </li>
-    
-                        </ul>
-                        <p class="font-medium pr-3  text-price text-crimson">
-                            User Name
-                        </p>
-                        <img src="assets/rent/Vector 7.svg" alt="">
-                    </button>
-                </ul>
-      
-               </div>
-      
-      
-           </div>
-        </nav>
+  
+  
+       </div>
+    </nav>
         <div class="px-6 sm:px-12 md:px-16 lg:px-20 xl:px-28 xxl:px-32">
             <div class="flex justify-between flex-wrap items-center pt-10">
                 <p class="font-extrabold text-xl sm:text-rentConfermation  text-darkGray pr-12">My Profile
 
                 </p>
-                <button class="bg-crimson sm:px-7 px-3  sm:py-3 ml-auto py-2 rounded-meddButton hover:bg-crimsonHover flex items-center">
-                    <p class="text-white font-medium text-sm sm:text-price sm:pr-2">Edit Profile
-
-                    </p>
-                    <img src="assets/rent/Y8D0Ds.tif.svg" alt="">
-
-                </button>
+                <div class="flex items-center justify-end ml-auto">
+                    <button class="bg-crimson sm:px-7 px-3  sm:py-3 ml-auto py-2 rounded-meddButton hover:bg-crimsonHover flex items-center">
+                        <p class="text-white font-medium text-sm sm:text-price sm:pr-2">Edit Profile
+    
+                        </p>
+                        <img src="assets/rent/Y8D0Ds.tif.svg" alt="">
+    
+                    </button>
+                </div>
+                
 
             </div>
-            <div class="flex w-full sm:w-8/12 pt-7">
-                <a href="#" class="transition-all pt-1 pl-1 rounded-t-meddButton duration-300 hover:bg-lightGray w-1/3 flex border-middleGray border-b border-solid">
+            <div class="flex w-full 700:w-8/12  relative items-end ">
+                <div class="w-full flex items-end justify-start absolute h-1 mt-auto ">
+                    <div id="hiddenPlayer" class="transition-all duration-1000 w-0">
+
+                    </div>
+                    <div class="w-28 border bg-crimson rounded-md border-solid border-crimson">
+
+                    </div>
+
+                </div>
+                <!-- <a href="#" class=" pt-1 pl-1 font-medium hover:font-bold w-1/3 flex border-middleGray border-b border-solid">
                     <div class="text-crimson border-crimson border-b flex-none  w-28  pb:2  smp:pb-4   text-profNav smm:text-xs sm:text-footerBase flex border-solid"><p class="flex-none">My properties</p>
 
                     </div>
 
-                </a>
-                <a href="personalInfo.html" class="w-1/3 pt-1 pl-1 rounded-t-meddButton transition-all duration-300 hover:bg-lightGray flex border-middleGray border-b border-solid">
-                    <div class=" text-middleGray border-b flex-none pb:2  smp:pb-4 w-28  text-profNav smm:text-xs sm:text-footerBase flex border-solid"><p class="flex-none">Personal Info</p>
+                </a> -->
+                <button id="button1st"  class="text-crimson mt-7 flex justify-start  pl-1 w-1/3 tex bg-white border-b outline-none  border-middleGray border-solid pb-2 smp:pb-4 text-profNav smm:text-xs sm:text-footerBase font-bold ">
+                    <p class="flex-none transition-all ease-out duration-300 ">
+                        My properties
 
-                    </div>
+                    </p>
 
-                </a>
-                <a href="prefrences.html" class="w-1/3 pt-1 pl-1 rounded-t-meddButton flex transition-all duration-300 hover:bg-lightGray border-middleGray border-b border-solid">
-                    <div class=" text-middleGray border-b flex-none pb:2  smp:pb-4 w-28  text-profNav smm:text-xs sm:text-footerBase flex border-solid"><p class="flex-none">Prefrences</p>
+                </button>
+                <button id="button2nd"class="text-middleGray mt-7 flex justify-start  pl-1 w-1/3 tex bg-white border-b outline-none  border-middleGray border-solid pb-2 smp:pb-4 text-profNav smm:text-xs sm:text-footerBase font-medium ">
+                    <p class="flex-none transition-all ease-out duration-300 ">
+                        Personal Info
 
-                    </div>
+                    </p>
 
-                </a>
+                </button>
+                <button id="button3rd" class="flex justify-start text-middleGray mt-7  pl-1 w-1/3 tex bg-white border-b outline-none  border-middleGray border-solid pb-2 smp:pb-4 text-profNav smm:text-xs sm:text-footerBase font-medium ">
+                    <p class="flex-none transition-all ease-out duration-300 ">
+                        Prefrences
+
+                    </p>
+
+                </button>
 
 
 
             </div>
-            <div class="text-crimson text-lg sm:text-explore font-bold pt-7 ">Listed Properties
+            
 
-            </div>
-            <div class="flex flex-wrap space-x-7">
-                <div class="mt-7 shadow-card rounded-meddButton">
-                    <!-- img -->
-        
-                    <img src="assets/rent/Rectangle 14 (6).svg" class="w-56 smm:w-propImage  pb-px  " alt="">
-                    <!-- location -->
-                    <div class="flex items-start pt-3 px-5 pb-3">
-                        <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
-                        <div class="pl-px">
-                            <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
-                            <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
-                        </div>
-        
+            </div> 
+            <div id="scrollable" class="flex overflow-hidden flex-nowrap w-full scroll-smooth">
+                <div id="sec1" class="w-full flex-none px-6 sm:px-12 md:px-16 lg:px-20 xl:px-28 xxl:px-32">
+                    <div class="text-crimson text-lg sm:text-explore font-bold pt-7 ">Listed Properties
+    
                     </div>
-                    <!-- props of the prop -->
-                    <div class="pt-px px-5 justify-between flex">
-                        <div class="flex">
-                            <img src="assets/rent/blackBed.svg" class="h-redlo pr-1"  alt="">
-                            <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
-                        </div>
-                       
-                        <div class="flex">
-                            <img src="assets/rent/blackBath.svg" class="w-5 pr-1"  alt="">
-                            <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
-                        </div>
-                    </div>
-                    <!-- horizontal break -->
-                    <div class="py-4 px-6"><div class="border-solid border-t-2 border-middleGray"></div></div>
-                    
-                    <!-- price -->
-                    <div class="flex justify-between items-center pl-5 pr-4 pb-5">
-                        <div class="flex items-center">
-                            <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
-                            <p class="text-price font-semibold text-darkGray">99.000$</p>
-        
-                        </div>
-                        <button class="py-1 px-2  rounded-meddButton  bg-crimson hover:bg-crimsonHover flex ">
-                            <p class="text-white font-medium text-price pr-2">Edit
-
-                            </p>
-                            <img src="assets/rent/signuture.svg" class="h-4 mx-px" alt="">
-                        </button>
-        
-                    </div>
-        
-                </div>
-                <div class="mt-7 shadow-card rounded-meddButton">
-                    <!-- img -->
-        
-                    <img src="assets/rent/Rectangle 14 (9).svg" class="w-56 smm:w-propImage  pb-px  " alt="">
-                    <!-- location -->
-                    <div class="flex items-start pt-3 px-5 pb-3">
-                        <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
-                        <div class="pl-px">
-                            <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
-                            <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
-                        </div>
-        
-                    </div>
-                    <!-- props of the prop -->
-                    <div class="pt-px px-5 justify-between flex">
-                        <div class="flex">
-                            <img src="assets/rent/blackBed.svg" class="h-redlo pr-1"  alt="">
-                            <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
-                        </div>
-                       
-                        <div class="flex">
-                            <img src="assets/rent/blackBath.svg" class="w-5 pr-1"  alt="">
-                            <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
-                        </div>
-                    </div>
-                    <!-- horizontal break -->
-                    <div class="py-4 px-6"><div class="border-solid border-t-2 border-middleGray"></div></div>
-                    
-                    <!-- price -->
-                    <div class="flex justify-between items-center pl-5 pr-4 pb-5">
-                        <div class="flex items-center">
-                            <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
-                            <p class="text-price font-semibold text-darkGray">99.000$</p>
-        
-                        </div>
-                        <button class="py-1 px-2  rounded-meddButton  bg-crimson hover:bg-crimsonHover flex ">
-                            <p class="text-white font-medium text-price pr-2">Edit
-
-                            </p>
-                            <img src="assets/rent/signuture.svg" class="h-4 mx-px" alt="">
-                        </button>
-        
-                    </div>
-        
-                </div>
-                <div class="mt-7 shadow-card rounded-meddButton">
-                    <!-- img -->
-        
-                    <img src="assets/rent/Rectangle 14 (8).svg" class="w-56 smm:w-propImage  pb-px  " alt="">
-                    <!-- location -->
-                    <div class="flex items-start pt-3 px-5 pb-3">
-                        <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
-                        <div class="pl-px">
-                            <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
-                            <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
-                        </div>
-        
-                    </div>
-                    <!-- props of the prop -->
-                    <div class="pt-px px-5 justify-between flex">
-                        <div class="flex">
-                            <img src="assets/rent/blackBed.svg" class="h-redlo pr-1"  alt="">
-                            <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
-                        </div>
-                       
-                        <div class="flex">
-                            <img src="assets/rent/blackBath.svg" class="w-5 pr-1"  alt="">
-                            <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
-                        </div>
-                    </div>
-                    <!-- horizontal break -->
-                    <div class="py-4 px-6"><div class="border-solid border-t-2 border-middleGray"></div></div>
-                    
-                    <!-- price -->
-                    <div class="flex justify-between items-center pl-5 pr-4 pb-5">
-                        <div class="flex items-center">
-                            <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
-                            <p class="text-price font-semibold text-darkGray">99.000$</p>
-        
-                        </div>
-                        <button class="py-1 px-2  rounded-meddButton  bg-crimson hover:bg-crimsonHover flex ">
-                            <p class="text-white font-medium text-price pr-2">Edit
-
-                            </p>
-                            <img src="assets/rent/signuture.svg" class="h-4 mx-px" alt="">
-                        </button>
-        
-                    </div>
-        
-                </div> 
+                    <div class="flex flex-wrap space-x-7">
+                        <div class="mt-7 shadow-card rounded-meddButton">
+                            <!-- img -->
                 
-
-            </div>
-            <div class="text-crimson text-lg sm:text-explore font-bold pt-8 ">Rented/Bought properties
-
-            </div>
-            <div class="flex flex-wrap space-x-7">
-                <div class="mt-7 shadow-card rounded-meddButton">
-                    <!-- img -->
+                            <img src="assets/rent/Rectangle 14 (6).svg" class="w-56 smm:w-propImage  pb-px  " alt="">
+                            <!-- location -->
+                            <div class="flex items-start pt-3 px-5 pb-3">
+                                <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
+                                <div class="pl-px">
+                                    <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
+                                    <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
+                                </div>
+                
+                            </div>
+                            <!-- props of the prop -->
+                            <div class="pt-px px-5 justify-between flex">
+                                <div class="flex">
+                                    <img src="assets/rent/blackBed.svg" class="h-redlo pr-1"  alt="">
+                                    <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
+                                </div>
+                               
+                                <div class="flex">
+                                    <img src="assets/rent/blackBath.svg" class="w-5 pr-1"  alt="">
+                                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
+                                </div>
+                            </div>
+                            <!-- horizontal break -->
+                            <div class="py-4 px-6"><div class="border-solid border-t-2 border-middleGray"></div></div>
+                            
+                            <!-- price -->
+                            <div class="flex justify-between items-center pl-5 pr-4 pb-5">
+                                <div class="flex items-center">
+                                    <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
+                                    <p class="text-price font-semibold text-darkGray">99.000$</p>
+                
+                                </div>
+                                <button class="py-1 px-2  rounded-meddButton  bg-crimson hover:bg-crimsonHover flex ">
+                                    <p class="text-white font-medium text-edit pl-px ml-px py-px pr-2">Edit
         
-                    <img src="assets/rent/Rectangle 14 (9).svg" class="w-56 smm:w-propImage  pb-px  " alt="">
-                    <!-- location -->
-                    <div class="flex items-start pt-3 px-5 pb-3">
-                        <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
-                        <div class="pl-px">
-                            <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
-                            <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
+                                    </p>
+                                    <img src="assets/rent/signuture.svg" class="h-4 mx-px" alt="">
+                                </button>
+                
+                            </div>
+                
+                        </div>
+                        <div class="mt-7 shadow-card rounded-meddButton">
+                            <!-- img -->
+                
+                            <img src="assets/rent/Rectangle 14 (9).svg" class="w-56 smm:w-propImage  pb-px  " alt="">
+                            <!-- location -->
+                            <div class="flex items-start pt-3 px-5 pb-3">
+                                <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
+                                <div class="pl-px">
+                                    <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
+                                    <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
+                                </div>
+                
+                            </div>
+                            <!-- props of the prop -->
+                            <div class="pt-px px-5 justify-between flex">
+                                <div class="flex">
+                                    <img src="assets/rent/blackBed.svg" class="h-redlo pr-1"  alt="">
+                                    <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
+                                </div>
+                               
+                                <div class="flex">
+                                    <img src="assets/rent/blackBath.svg" class="w-5 pr-1"  alt="">
+                                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
+                                </div>
+                            </div>
+                            <!-- horizontal break -->
+                            <div class="py-4 px-6"><div class="border-solid border-t-2 border-middleGray"></div></div>
+                            
+                            <!-- price -->
+                            <div class="flex justify-between items-center pl-5 pr-4 pb-5">
+                                <div class="flex items-center">
+                                    <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
+                                    <p class="text-price font-semibold text-darkGray">99.000$</p>
+                
+                                </div>
+                                <button class="py-1 px-2  rounded-meddButton  bg-crimson hover:bg-crimsonHover flex ">
+                                    <p class="text-white font-medium text-edit pl-px ml-px py-px pr-2">Edit
+        
+                                    </p>
+                                    <img src="assets/rent/signuture.svg" class="h-4 mx-px" alt="">
+                                </button>
+                
+                            </div>
+                
+                        </div>
+                        <div class="mt-7 shadow-card rounded-meddButton">
+                            <!-- img -->
+                
+                            <img src="assets/rent/Rectangle 14 (8).svg" class="w-56 smm:w-propImage  pb-px  " alt="">
+                            <!-- location -->
+                            <div class="flex items-start pt-3 px-5 pb-3">
+                                <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
+                                <div class="pl-px">
+                                    <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
+                                    <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
+                                </div>
+                
+                            </div>
+                            <!-- props of the prop -->
+                            <div class="pt-px px-5 justify-between flex">
+                                <div class="flex">
+                                    <img src="assets/rent/blackBed.svg" class="h-redlo pr-1"  alt="">
+                                    <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
+                                </div>
+                               
+                                <div class="flex">
+                                    <img src="assets/rent/blackBath.svg" class="w-5 pr-1"  alt="">
+                                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
+                                </div>
+                            </div>
+                            <!-- horizontal break -->
+                            <div class="py-4 px-6"><div class="border-solid border-t-2 border-middleGray"></div></div>
+                            
+                            <!-- price -->
+                            <div class="flex justify-between items-center pl-5 pr-4 pb-5">
+                                <div class="flex items-center">
+                                    <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
+                                    <p class="text-price font-semibold text-darkGray">99.000$</p>
+                
+                                </div>
+                                <button class="py-1 px-2  rounded-meddButton  bg-crimson hover:bg-crimsonHover flex ">
+                                    <p class="text-white font-medium text-edit pl-px ml-px py-px pr-2">Edit
+        
+                                    </p>
+                                    <img src="assets/rent/signuture.svg" class="h-4 mx-px" alt="">
+                                </button>
+                
+                            </div>
+                
+                        </div> 
+                        
+        
+                    </div>
+                    <div class="text-crimson text-lg sm:text-explore font-bold pt-8 ">Rented/Bought properties
+        
+                    </div>
+                    <div class="flex flex-wrap space-x-7">
+                        <div class="mt-7 shadow-card rounded-meddButton">
+                            <!-- img -->
+                
+                            <img src="assets/rent/Rectangle 14 (9).svg" class="w-56 smm:w-propImage  pb-px  " alt="">
+                            <!-- location -->
+                            <div class="flex items-start pt-3 px-5 pb-3">
+                                <img src="assets/redLoc.svg" class="h-5 pr-2" alt="">
+                                <div class="pl-px">
+                                    <p class="text-darkGray font-normal text-propLoc pb-1">128 Fawn ST</p>
+                                    <p class="text-darkGray font-light text-propLoc">Nation, Ontario, K0a 2M0</p>
+                                </div>
+                
+                            </div>
+                            <!-- props of the prop -->
+                            <div class="pt-px px-5 justify-between flex">
+                                <div class="flex">
+                                    <img src="assets/rent/blackBed.svg" class="h-redlo pr-1"  alt="">
+                                    <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
+                                </div>
+                               
+                                <div class="flex">
+                                    <img src="assets/rent/blackBath.svg" class="w-5 pr-1"  alt="">
+                                    <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
+                                </div>
+                            </div>
+                            <!-- horizontal break -->
+                            <div class="py-4 px-6"><div class="border-solid border-t-2 border-middleGray"></div></div>
+                            
+                            <!-- price -->
+                            <div class="flex  items-center pl-5 pr-4 pb-5">
+                                <div class="flex items-center">
+                                    <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
+                                    <p class="text-price font-semibold text-darkGray">99.000$</p>
+                
+                                </div>
+                               
+                            </div>
+                
+                        </div>
+        
+        
+                    </div> 
+    
+                </div>
+                <div id="sec2" class="w-full flex-none px-6 sm:px-12 md:px-16 lg:px-20 xl:px-28 xxl:px-32">
+                    <div class="text-crimson text-lg sm:text-explore font-bold pt-7 ">Personal info
+    
+                    </div>
+                    <div class="smp:w-8/12">
+                        <div>
+                            <div class="flex justify-between flex-wrap">
+                                <div class="">
+                                    <div class="pt-7 flex">
+                                        <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">First Name:
+        
+                                        </p>
+                                        <p class="font-extrabold  text-sm sm:text-footerBase text-middleGray ">User
+        
+                                        </p>
+        
+        
+                                    </div>
+                                    <div class="pt-5 flex">
+                                        <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Job:
+        
+                                        </p>
+                                        <p class="font-extrabold  text-sm sm:text-footerBase text-middleGray ">Job title
+        
+                                        </p>
+        
+        
+                                    </div>
+        
+                                </div>
+                                <div class="">
+                                    <div class="pt-7 flex">
+                                        <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Second Name:
+        
+                                        </p>
+                                        <p class="font-extrabold  text-sm sm:text-footerBase text-middleGray ">Name
+        
+                                        </p>
+        
+        
+                                    </div>
+                                    <div class="pt-5 520:justify-end flex">
+                                        <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Company:
+        
+                                        </p>
+                                        <p class="font-extrabold  text-sm sm:text-footerBase text-middleGray ">Company Name
+        
+                                        </p>
+        
+        
+                                    </div> 
+        
+                                </div> 
+        
+                            </div> 
+                        </div> 
+        
+                    </div> 
+        
+                    <div class="w-auto smp:w-10/12 flex items-center">
+                        <p class="text-crimson text-lg sm:text-explore flex-none font-bold pr-3 sm:pr-8 py-7 ">Contact Info
+        
+                        </p>
+                        <div class="w-full border border-solid border-middleGray">
+        
                         </div>
         
                     </div>
-                    <!-- props of the prop -->
-                    <div class="pt-px px-5 justify-between flex">
-                        <div class="flex">
-                            <img src="assets/rent/blackBed.svg" class="h-redlo pr-1"  alt="">
-                            <div class="pl-px text-darkGray flex-none font-normal text-propOfTheProp">4 Beds</div>
-                        </div>
-                       
-                        <div class="flex">
-                            <img src="assets/rent/blackBath.svg" class="w-5 pr-1"  alt="">
-                            <div class="pl-px text-darkGray font-normal text-propOfTheProp">3 Baths</div>
-                        </div>
+                    <div class="smp:w-8/12">
+                        <div class="flex flex-wrap 520:flex-nowrap">
+                            <div class="w-full">
+                                <div class=" flex">
+                                    <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Number:
+            
+                                    </p>
+                                    <p class="font-extrabold  text-sm sm:text-footerBase text-middleGray ">+20123456789
+            
+                                    </p>
+            
+            
+                                </div>
+                                
+            
+                            </div>
+                            <div class="w-full">
+                                <div class="pt-7 520:pt-0 520:justify-end flex">
+                                    <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Email:
+            
+                                    </p>
+                                    <p class="font-extrabold  text-sm sm:text-footerBase text-middleGray ">user@email.com
+            
+                                    </p>
+            
+            
+                                </div>
+                                
+            
+                            </div> 
+            
+                        </div> 
+        
                     </div>
-                    <!-- horizontal break -->
-                    <div class="py-4 px-6"><div class="border-solid border-t-2 border-middleGray"></div></div>
-                    
-                    <!-- price -->
-                    <div class="flex  items-center pl-5 pr-4 pb-5">
-                        <div class="flex items-center">
-                            <img src="assets/redDollar.svg" class="h-4 pr-2"  alt="">
-                            <p class="text-price font-semibold text-darkGray">99.000$</p>
+                    <div class="w-auto smp:w-10/12 flex items-center">
+                        <p class="text-crimson text-lg sm:text-explore flex-none font-bold pr-3 sm:pr-8 py-7 ">Address
+        
+                        </p>
+                        <div class="w-full border border-solid border-middleGray">
         
                         </div>
-                       
+        
+                    </div> 
+                    <div class="smp:w-8/12">
+                        <div class="flex flex-wrap 520:flex-nowrap pb-5">
+                            <div class="w-full">
+                                <div class=" flex">
+                                    <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Unit::
+            
+                                    </p>
+                                </div>
+                                <div class=" pt-5 flex">
+                                    <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Street Number:
+            
+                                    </p>
+                                </div>
+                                <div class=" pt-5 flex">
+                                    <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">City/Town:
+            
+                                    </p>
+                                </div>
+                                <div class=" pt-5 flex">
+                                    <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Postal/ZIP Code:
+            
+                                    </p>
+                                </div>
+                                
+            
+                            </div>
+                            <div class="w-full">
+                                <div class="pt-7 520:pt-0 520:justify-end flex">
+                                    <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">PO Box:
+            
+                                    </p>
+                                </div>
+                                <div class="pt-5 520:justify-end flex">
+                                    <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Street Name:
+            
+                                    </p>
+                                </div>
+                                <div class="pt-5 520:justify-end flex">
+                                    <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Province:
+            
+                                    </p>
+                                </div>
+                                
+            
+                            </div> 
+            
+                        </div> 
+        
+                    </div> 
+                    <div class="w-auto smp:w-10/12 flex items-center">
+                        <p class="text-crimson text-lg sm:text-explore flex-none font-bold pr-3 sm:pr-8 py-7 ">Documents
+        
+                        </p>
+                        <div class="w-full border border-solid border-middleGray">
+        
+                        </div>
+        
+                    </div> 
+                    <div class="md:w-8/12">
+                        <div class="flex flex-wrap smp:flex-nowrap">
+                            <div class="w-full">
+                                <div class=" flex">
+                                    <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">ID:
+            
+                                    </p>
+                                    <p class="font-extrabold  text-sm sm:text-footerBase text-middleGray ">+MyID.JPG
+            
+                                    </p>
+            
+            
+                                </div>
+                                <div class="pt-5 flex">
+                                    <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Pay Check:
+            
+                                    </p>
+                                    <p class="font-extrabold  text-sm sm:text-footerBase text-middleGray ">PayCheck.JPG
+            
+                                    </p>
+            
+            
+                                </div>
+                                
+            
+                            </div>
+                            <div class="w-full">
+                                <div class="pt-7 smp:pt-0 smp:justify-end flex">
+                                    <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Credit Score:
+            
+                                    </p>
+                                    <p class="font-extrabold  text-sm sm:text-footerBase text-middleGray ">MyCreditScore.PDF
+            
+                                    </p>
+            
+            
+                                </div>
+                                <div class="pt-5 smp:justify-end flex">
+                                    <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Other:
+            
+                                    </p>
+                                    <p class="font-extrabold  text-sm sm:text-footerBase text-middleGray ">CV.JPG
+            
+                                    </p>
+            
+            
+                                </div>
+                                
+            
+                            </div> 
+            
+                        </div> 
+        
                     </div>
         
+    
                 </div>
 
+                <div id="sec3" class="w-full flex-none px-6 sm:px-12 md:px-16 lg:px-20 xl:px-28 xxl:px-32">
+                    <div class="text-crimson text-lg sm:text-explore font-bold pt-7 ">Preferences
 
+                    </div>
+                    <div class="smp:w-8/12 sm:pb-80">
+                        <div>
+                            <div class="flex justify-between flex-wrap">
+                                <div class="">
+                                    <div class="pt-7 flex">
+                                        <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">How many people in the apartment:
+        
+                                        </p>
+                                        <p class="font-extrabold  text-sm sm:text-footerBase text-middleGray ">5
+        
+                                        </p>
+        
+        
+                                    </div>
+                                    <div class="pt-5 flex">
+                                        <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Rooms:
+        
+                                        </p>
+                                        <p class="font-extrabold  text-sm sm:text-footerBase text-middleGray pr-20 xl:pr-32">3
+        
+                                        </p>
+                                        <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Toilets:
+        
+                                        </p>
+                                        <p class="font-extrabold  text-sm sm:text-footerBase text-middleGray ">2
+        
+                                        </p>
+        
+        
+        
+                                    </div>
+        
+                                </div>
+                                <div class="">
+                                    <div class="pt-7 flex">
+                                        <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Rent/Sale:
+        
+                                        </p>
+                                        <p class="font-extrabold  text-sm sm:text-footerBase text-middleGray ">Rent
+        
+                                        </p>
+        
+        
+                                    </div>
+                                    <div class="pt-5 520:justify-end flex">
+                                        <p class="font-normal pr-1 text-sm sm:text-footerBase text-darkGray ">Location::
+        
+                                        </p>
+                                        <p class="font-extrabold  text-sm sm:text-footerBase text-middleGray ">Toronto
+        
+                                        </p>
+        
+        
+                                    </div> 
+        
+                                </div> 
+        
+                            </div> 
+                        </div> 
+        
+                    </div>
+
+                </div>
             </div>
+
+            
+    
+            </div> 
+
+        </div>
+
+        
 
         </div>
         <footer class="w-full mx-0 mt-16 flex flex-wrap-reverse bg-footer border-t-4 border-crimson border-solid ">
@@ -450,12 +782,14 @@
             </div>
         </footer>
         <div class="py-3 flex justify-center w-full text-center bg-footer text-gray-400">© 2022 Crimson Rose Living. All rights reserved</div>
+        <div class="w-2/3 h-0">
 
+        </div>
 
-
-
-        <script src="toggle.js"></script>
-        <script src="user.js"></script>
+    
+       <script src="profile.js"></script>
+       <script src="user.js"></script>
+       <script src="toggle.js"></script>
         
        </body>
 </html>

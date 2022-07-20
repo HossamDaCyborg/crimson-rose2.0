@@ -14,8 +14,8 @@
         </style>
     </head>
     <body>
-         <!-- top nav -->
-         <div class="bg-transparent flex justify-end space-x-8 items-center pr-10 lg:pr-28 pt-4">
+        <!-- top nav -->
+        <div class="bg-transparent flex justify-end space-x-8 items-center pr-10 lg:pr-28 pt-4">
             <a href="#"><img class="h-4" src="assets/gram.svg" alt=""></a>
             <a href="#"><img class="h-4" src="assets/twitter.svg" alt=""></a>
             <a href="#"><img class="h-5" src="assets/facebook.svg" alt=""></a>
@@ -25,48 +25,48 @@
             <a href="#"><img src="assets/logo.svg" class="h-14 md:h-20 ml-2 smm:ml-3 sm:ml-4 md:ml-6 lg:m-0" alt=""></a>
             <!-- navs -->
             <ul class="hidden lg:flex justify-around items-center  grow px-5">
-                <a href="index.html" class="font-extrabold text-xl text-darkGray hover:first-letter:text-middleGray">Home</a>
-                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >Find a home</a>
-                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >About us</a>
-                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >contact us</a>
+                <a href="index.html" class="font-medium text-xl text-middleGray hover:text-darkGray">Home</a>
+                <a href="findHome.html"  class="font-medium text-middleGray hover:text-darkGray text-xl" >Find a home</a>
+                <a href="aboutUs.html"  class="font-extrabold text-darkGray hover:text-darkGray text-xl" >About us</a>
+                <a href="contactUs.html"  class="font-medium text-middleGray hover:text-darkGray text-xl" >contact us</a>
             </ul>
             <!-- red second nav -->
             <ul class="hidden lg:flex items-center">
                 <a href=""><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
                 <button id="userButton" class="bg-transparent  ml-7 items-center relative outline-none flex ">
-                    <ul id="userMenu" class="absolute top-full rounded  w-200% shadow-card  right-0  bg-white flex-col hidden ">
-                        <li class=" flex pl-1 md:pl-3 hover:bg-lightGray  items-center py-3 sm:py-5">
+                    <ul id="userMenu" class="absolute top-full rounded z-50  w-200% shadow-card  right-0  bg-white flex-col hidden ">
+                        <a href="notifications.html" class=" flex hover:bg-lightGray  items-center py-3 pl-1 md:pl-3 sm:py-5">
                             <img src="assets/rent/Nots.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 Notifications
 
                             </p>
 
-                        </li>
-                        <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                        </a>
+                        <a href="profile.html" class="flex hover:bg-lightGray items-center py-3 sm:py-5 pl-1 md:pl-3">
                             <img src="assets/rent/Vector.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 My profile
 
                             </p>
 
-                        </li>
-                        <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                        </a>
+                        <a href="favorate.html" class="flex hover:bg-lightGray items-center py-3 sm:py-5 pl-1 md:pl-3">
                             <img src="assets/rent/Vector (1).svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 Favorites
 
                             </p>
 
-                        </li>
-                        <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                        </a>
+                        <li class="flex hover:bg-lightGray items-center py-3 sm:py-5 pl-1 md:pl-3">
                             <img src="assets/rent/logOut.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 Log out
 
                             </p>
 
-                         </li>
+                        </li>
 
                     </ul>
                     <p class="font-medium pr-3  text-price text-crimson">
@@ -91,42 +91,42 @@
               </label>
               <!-- toggle menu -->
            </div>
-           <div id="navMenu" class="lg:hidden rounded-xl duration-500 absolute w-full hidden h-0 top-0 justify-center">
+           <div id="navMenu" class="lg:hidden rounded-xl z-30 duration-500 absolute w-full hidden h-0 top-0 justify-center">
             <div class="w-11/12 bg-white rounded pb-2">
-                <a href="index.html"><div class="flex w-full justify-center"> <button class="btn btn-ghost">Home</button></div></a>
-                <div class="flex w-full justify-center"> <button class="btn btn-ghost">find a home</button></div>
-                <div class="flex w-full justify-center"> <button class="btn btn-ghost">contact us</button></div>
-                <div class="flex w-full justify-center"> <button class="btn btn-ghost">about us</button></div>
+                <a href="index.html" class="flex w-full justify-center"> <button class="btn btn-ghost">Home</button></a>
+                <a href="findHome.html" class="flex w-full justify-center"> <button class="btn btn-ghost">find a home</button></a>
+                <a href="contactUs.html" class="flex w-full justify-center"> <button class="btn btn-ghost">contact us</button></a>
+                <a href="aboutUs.html" class="flex w-full justify-center"> <button class="btn btn-ghost">about us</button></a>
                
                 <ul class="flex items-center justify-center pb-12 pt-3">
                     <a href=""><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
                     <button id="userButtonToo" class="bg-transparent  ml-7 items-center relative outline-none flex ">
-                        <ul id="userMenuToo" class="absolute top-full rounded  w-150% shadow-card  right-0 pl-3 md:pl-3 bg-white flex-col hidden">
-                            <li class=" flex pl-1 md:pl-3 hover:bg-lightGray  items-center py-3 sm:py-5">
+                        <ul id="userMenuToo" class="absolute z-50 top-full rounded  w-150% shadow-card  right-0 bg-white flex-col hidden">
+                            <a href="notifications.html" class=" flex hover:bg-lightGray  items-center py-3 sm:py-5 pl-1 md:pl-3">
                                 <img src="assets/rent/Nots.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                                 <p class="text-darkGray font-medium text-xs sm:text-price">
                                     Notifications
     
                                 </p>
     
-                            </li>
-                            <li class="flex  hover:bg-lightGray items-center py-3 sm:py-5">
+                            </a>
+                            <a href="profile.html" class="pl-1 md:pl-3 flex hover:bg-lightGray items-center py-3 sm:py-5">
                                 <img src="assets/rent/Vector.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                                 <p class="text-darkGray font-medium text-xs sm:text-price">
                                     My profile
     
                                 </p>
     
-                            </li>
-                            <li class="flex hover:bg-lightGray items-center py-3 sm:py-5">
+                            </a>
+                            <a href="favorate.html" class="flex pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
                                 <img src="assets/rent/Vector (1).svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                                 <p class="text-darkGray font-medium text-xs sm:text-price">
                                     Favorites
     
                                 </p>
     
-                            </li>
-                            <li class="flex hover:bg-lightGray items-center py-3 sm:py-5">
+                            </a>
+                            <li class="flex pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
                                 <img src="assets/rent/logOut.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                                 <p class="text-darkGray font-medium text-xs sm:text-price">
                                     Log out
@@ -229,8 +229,9 @@ The company has gained a reputation for completing various significant projects,
                 <p class="text-middleGray font-medium text-base pt-2 mt-px sm:text-footerBase">
                     Ready to serve you the best
                 </p>
+
                 <div class="flex justify-between pt-5 overflow-hidden scroll-smooth transition-all duration-200 " id="scrollable">
-                    <div class="flex items-center absolute w-full h-full">
+                    <!-- <div class="flex items-center absolute w-full h-full">
                         <div class="flex justify-between w-full pb-7">
                             <button id="scrollLeft" class="px-1 py-3 shadow-Bob tou hover:bg-lightGray">
                                 <img src="assets/rent/Vector 7 (1).svg" alt="">
@@ -244,6 +245,17 @@ The company has gained a reputation for completing various significant projects,
 
                         </div>
 
+                    </div> -->
+                    <div class="absolute top-52 flex w-full justify-between ">
+                        <button id="scrollLeft" class="bg-Arrow rounded-meddButton py-3 sm:py-4  lg:py-4">
+                            <img src="assets/rent/Vector 7 (1).svg" class="sm:h-auto h-2" alt="">
+        
+                        </button>
+                        <button id="scrollRight" class="bg-Arrow py-3  rounded-meddButton sm:py-4  lg:py-4">
+                            <img src="assets/rent/Vector 8.svg" class="sm:h-auto h-2" alt="">
+        
+                        </button>
+        
                     </div>
                     <div class="shadow-Bob flex-col flex items-center rounded-meddButton flex-none mr-7">
                         <img src="assets/rent/image 8.svg" class="w-propImage flex-none rounded-meddButton" alt="">
@@ -325,24 +337,24 @@ The company has gained a reputation for completing various significant projects,
         </div>
         <!-- tes -->
         <div class="w-full relative">
-            <div class="absolute top-44 flex w-full justify-between px-2 sm:px-4 lg:px-8 xl:px-8">
-                <button id="btnR" class="bg-Arrow rounded-meddButton py-3 sm:py-7 sm:px-2 px-1 lg:px-5 lg:py-9">
+            <div class="absolute top-52 flex w-full justify-between px-2 sm:px-4 lg:px-8 xl:px-8">
+                <button id="btnR" class="bg-Arrow rounded-meddButton py-3 sm:py-4  lg:py-4">
                     <img src="assets/rent/Vector 7 (1).svg" class="sm:h-auto h-2" alt="">
 
                 </button>
-                <button id="btnL" class="bg-Arrow py-3  rounded-meddButton sm:py-7 sm:px-2 px-1 lg:px-5 lg:py-9">
+                <button id="btnL" class="bg-Arrow py-3  rounded-meddButton sm:py-4  lg:py-4">
                     <img src="assets/rent/Vector 8.svg" class="sm:h-auto h-2" alt="">
 
                 </button>
 
             </div>
-            <div class="px-6 sm:px-10 md:px-14 lg:px-20 xl:px-28 xxl:px-32">
-                <p class="pt-16  text-middleGray text-xl sm:text-explore font-bold">Testimonials
+            <div class="px-6 sm:px-10 md:px-14 lg:px-20 xl:px-24 xxl:px-28">
+                <p class="pt-16  text-middleGray text-xl sm:text-explore font-bold px-4">Testimonials
 
                 </p>
-                <div class="flex pt-10 overflow-hidden" id="scoll">
-                    <div class="w-full md:w-1/2 flex-none px-5">
-                        <div class="w-full shadow-card">
+                <div class="flex pt-10 overflow-hidden scroll-smooth"  id="scoll">
+                    <div class="w-full md:w-1/2 flex-none px-8 py-8">
+                        <div class="w-full shadow-card border border-solid border-middleGray rounded-meddButton">
                             <div class="flex">
                                 <img src="assets/rent/Mask group.svg" class="ml-2 h-14 520:h-24 mt-2 sm:mt-7 sm:ml-7" alt="">
                                 <div class="pl-2 sm:pl-7 pt-1 sm:pt-6">
@@ -364,15 +376,15 @@ The company has gained a reputation for completing various significant projects,
                         </div>
 
                     </div>
-                    <div class="w-full md:w-1/2 flex-none px-5 ">
-                        <div class="w-full shadow-card">
+                    <div class="w-full md:w-1/2 flex-none px-8 py-8">
+                        <div class="w-full shadow-card border border-solid border-middleGray rounded-meddButton">
                             <div class="flex">
                                 <img src="assets/rent/Mask group (1).svg" class="ml-2 h-14 520:h-24 mt-2 sm:mt-7 sm:ml-7" alt="">
                                 <div class="pl-2 sm:pl-7 pt-1 sm:pt-6">
-                                    <p class="font-medium sm:text-explore text-lg text-darkGray">Danny Larison
+                                    <p class="font-medium sm:text-explore text-lg text-darkGray">Mary Norris
 
                                     </p>
-                                    <p class="pt-1 mt-px text-darkGray font-medium text-sm pb-2 sm:text-footerBase ">House buyer
+                                    <p class="pt-1 mt-px text-darkGray font-medium text-sm pb-2 sm:text-footerBase ">House Renter
 
                                     </p>
                                     <img src="assets/rent/Group 642.svg" class="h-2 sm:h-6" alt="">

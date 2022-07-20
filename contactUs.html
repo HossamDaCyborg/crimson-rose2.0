@@ -14,59 +14,126 @@
      </style>
     </head>
     <body>
-        <!-- top nav -->
-        <div class="bg-transparent flex justify-end space-x-8 items-center pr-10 lg:pr-28 pt-4">
-            <a href="#"><img class="h-4" src="assets/gram.svg" alt=""></a>
-            <a href="#"><img class="h-4" src="assets/twitter.svg" alt=""></a>
-            <a href="#"><img class="h-5" src="assets/facebook.svg" alt=""></a>
-        </div>
-        <nav class="w-full pb-3 flex relative items-center px-0 lg:px-10  xl:px-24 pr-3 smm:pr-4 sm:pr-8 md:pr-12">
-            <!-- logo -->
-            <a href="#"><img src="assets/logo.svg" class="h-14 md:h-20 ml-2 smm:ml-3 sm:ml-4 md:ml-6 lg:m-0" alt=""></a>
-            <!-- navs -->
-            <ul class="hidden lg:flex justify-around items-center  grow px-5">
-                <a href="index.html" class="font-extrabold text-xl text-darkGray hover:first-letter:text-middleGray">Home</a>
-                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >Find a home</a>
-                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >About us</a>
-                <a href="#"  class="font-medium text-middleGray hover:text-darkGray text-xl" >contact us</a>
-            </ul>
-            <!-- red second nav -->
-            <ul class="hidden lg:flex items-center">
-                <a href=""><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
-                <button id="userButton" class="bg-transparent  ml-7 items-center relative outline-none flex ">
-                    <ul id="userMenu" class="absolute top-full rounded  w-200% shadow-card  right-0  bg-white flex-col hidden ">
-                        <li class=" flex pl-1 md:pl-3 hover:bg-lightGray  items-center py-3 sm:py-5">
+       <!-- top nav -->
+       <div class="bg-transparent flex justify-end space-x-8 items-center pr-10 lg:pr-28 pt-4">
+        <a href="#"><img class="h-4" src="assets/gram.svg" alt=""></a>
+        <a href="#"><img class="h-4" src="assets/twitter.svg" alt=""></a>
+        <a href="#"><img class="h-5" src="assets/facebook.svg" alt=""></a>
+    </div>
+    <nav class="w-full pb-3 flex relative items-center px-0 lg:px-10  xl:px-24 pr-3 smm:pr-4 sm:pr-8 md:pr-12">
+        <!-- logo -->
+        <a href="#"><img src="assets/logo.svg" class="h-14 md:h-20 ml-2 smm:ml-3 sm:ml-4 md:ml-6 lg:m-0" alt=""></a>
+        <!-- navs -->
+        <ul class="hidden lg:flex justify-around items-center  grow px-5">
+            <a href="index.html" class="font-medium text-xl text-middleGray hover:text-darkGray">Home</a>
+            <a href="findHome.html"  class="font-medium text-middleGray hover:text-darkGray text-xl" >Find a home</a>
+            <a href="aboutUs.html"  class=" hover:text-darkGray text-xl font-medium text-middleGray" >About us</a>
+            <a href="contactUs.html"  class="font-extrabold text-darkGray hover:text-darkGray text-xl" >contact us</a>
+        </ul>
+        <!-- red second nav -->
+        <ul class="hidden lg:flex items-center">
+            <a href="addProperty.html"><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
+            <button id="userButton" class="bg-transparent  ml-7 items-center relative outline-none flex ">
+                <ul id="userMenu" class="absolute top-full rounded z-50  w-200% shadow-card  right-0  bg-white flex-col hidden ">
+                    <a href="notifications.html" class=" flex hover:bg-lightGray  items-center py-3 pl-1 md:pl-3 sm:py-5">
+                        <img src="assets/rent/Nots.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                        <p class="text-darkGray font-medium text-xs sm:text-price">
+                            Notifications
+
+                        </p>
+
+                    </a>
+                    <a href="profile.html" class="flex hover:bg-lightGray items-center py-3 sm:py-5 pl-1 md:pl-3">
+                        <img src="assets/rent/Vector.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                        <p class="text-darkGray font-medium text-xs sm:text-price">
+                            My profile
+
+                        </p>
+
+                    </a>
+                    <a href="favorate.html" class="flex hover:bg-lightGray items-center py-3 sm:py-5 pl-1 md:pl-3">
+                        <img src="assets/rent/Vector (1).svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                        <p class="text-darkGray font-medium text-xs sm:text-price">
+                            Favorites
+
+                        </p>
+
+                    </a>
+                    <li class="flex hover:bg-lightGray items-center py-3 sm:py-5 pl-1 md:pl-3">
+                        <img src="assets/rent/logOut.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
+                        <p class="text-darkGray font-medium text-xs sm:text-price">
+                            Log out
+
+                        </p>
+
+                    </li>
+
+                </ul>
+                <p class="font-medium pr-3  text-price text-crimson">
+                    User Name
+                </p>
+                <img src="assets/rent/Vector 7.svg" alt="">
+            </button>
+        </ul>
+        <!-- toggler -->
+       <div id="lo" class="lg:hidden ml-auto z-40">
+        <label  class="btn btn-circle swap tggler bg-transparent border-0 hover:bg-transparent swap-rotate">
+  
+            <!-- this hidden checkbox controls the state -->
+            <input id="toggler" type="checkbox" class="beer" />
+            
+            <!-- hamburger icon -->
+            <svg class="swap-off fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+            
+            <!-- close icon -->
+            <svg class="swap-on fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+            
+          </label>
+          <!-- toggle menu -->
+       </div>
+       <div id="navMenu" class="lg:hidden rounded-xl z-30 duration-500 absolute w-full hidden h-0 top-0 justify-center">
+        <div class="w-11/12 bg-white rounded pb-2">
+            <a href="index.html" class="flex w-full justify-center"> <button class="btn btn-ghost">Home</button></a>
+            <a href="findHome.html" class="flex w-full justify-center"> <button class="btn btn-ghost">find a home</button></a>
+            <a href="contactUs.html" class="flex w-full justify-center"> <button class="btn btn-ghost">contact us</button></a>
+            <a href="aboutUs.html" class="flex w-full justify-center"> <button class="btn btn-ghost">about us</button></a>
+           
+            <ul class="flex items-center justify-center pb-12 pt-3">
+                <a href="addProperty.html"><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
+                <button id="userButtonToo" class="bg-transparent  ml-7 items-center relative outline-none flex ">
+                    <ul id="userMenuToo" class="absolute z-50 top-full rounded  w-150% shadow-card  right-0 bg-white flex-col hidden">
+                        <a href="notifications.html" class=" flex hover:bg-lightGray  items-center py-3 sm:py-5 pl-1 md:pl-3">
                             <img src="assets/rent/Nots.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 Notifications
 
                             </p>
 
-                        </li>
-                        <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                        </a>
+                        <a href="profile.html" class="pl-1 md:pl-3 flex hover:bg-lightGray items-center py-3 sm:py-5">
                             <img src="assets/rent/Vector.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 My profile
 
                             </p>
 
-                        </li>
-                        <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                        </a>
+                        <a href="favorate.html" class="flex pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
                             <img src="assets/rent/Vector (1).svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 Favorites
 
                             </p>
 
-                        </li>
-                        <li class="flex   pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
+                        </a>
+                        <li class="flex pl-1 md:pl-3 hover:bg-lightGray items-center py-3 sm:py-5">
                             <img src="assets/rent/logOut.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
                             <p class="text-darkGray font-medium text-xs sm:text-price">
                                 Log out
 
                             </p>
 
-                         </li>
+                        </li>
 
                     </ul>
                     <p class="font-medium pr-3  text-price text-crimson">
@@ -75,98 +142,30 @@
                     <img src="assets/rent/Vector 7.svg" alt="">
                 </button>
             </ul>
-            <!-- toggler -->
-           <div id="lo" class="lg:hidden ml-auto z-40">
-            <label  class="btn btn-circle swap tggler bg-transparent border-0 hover:bg-transparent swap-rotate">
-      
-                <!-- this hidden checkbox controls the state -->
-                <input id="toggler" type="checkbox" class="beer" />
-                
-                <!-- hamburger icon -->
-                <svg class="swap-off fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
-                
-                <!-- close icon -->
-                <svg class="swap-on fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
-                
-              </label>
-              <!-- toggle menu -->
+  
            </div>
-           <div id="navMenu" class="lg:hidden rounded-xl duration-500 absolute w-full hidden h-0 top-0 justify-center">
-            <div class="w-11/12 bg-white rounded pb-2">
-                <a href="index.html"><div class="flex w-full justify-center"> <button class="btn btn-ghost">Home</button></div></a>
-                <div class="flex w-full justify-center"> <button class="btn btn-ghost">find a home</button></div>
-                <div class="flex w-full justify-center"> <button class="btn btn-ghost">contact us</button></div>
-                <div class="flex w-full justify-center"> <button class="btn btn-ghost">about us</button></div>
-               
-                <ul class="flex items-center justify-center pb-12 pt-3">
-                    <a href=""><button class="bg-crimson hover:bg-crimsonHover focus:bg-crimson active:bg-crimson text-lg font-medium rounded-xl text-white py-2 px-5 ml-5">Add property</button></a>
-                    <button id="userButtonToo" class="bg-transparent  ml-7 items-center relative outline-none flex ">
-                        <ul id="userMenuToo" class="absolute top-full rounded  w-150% shadow-card  right-0 pl-3 md:pl-3 bg-white flex-col hidden">
-                            <li class=" flex pl-1 md:pl-3 hover:bg-lightGray  items-center py-3 sm:py-5">
-                                <img src="assets/rent/Nots.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
-                                <p class="text-darkGray font-medium text-xs sm:text-price">
-                                    Notifications
-    
-                                </p>
-    
-                            </li>
-                            <li class="flex  hover:bg-lightGray items-center py-3 sm:py-5">
-                                <img src="assets/rent/Vector.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
-                                <p class="text-darkGray font-medium text-xs sm:text-price">
-                                    My profile
-    
-                                </p>
-    
-                            </li>
-                            <li class="flex hover:bg-lightGray items-center py-3 sm:py-5">
-                                <img src="assets/rent/Vector (1).svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
-                                <p class="text-darkGray font-medium text-xs sm:text-price">
-                                    Favorites
-    
-                                </p>
-    
-                            </li>
-                            <li class="flex hover:bg-lightGray items-center py-3 sm:py-5">
-                                <img src="assets/rent/logOut.svg" class="h-4 sm:h5 mr-1 sm:mr-2" alt="">
-                                <p class="text-darkGray font-medium text-xs sm:text-price">
-                                    Log out
-    
-                                </p>
-    
-                            </li>
-    
-                        </ul>
-                        <p class="font-medium pr-3  text-price text-crimson">
-                            User Name
-                        </p>
-                        <img src="assets/rent/Vector 7.svg" alt="">
-                    </button>
-                </ul>
-      
-               </div>
-      
-      
-           </div>
-        </nav>
-
+  
+  
+       </div>
+    </nav>
         <div class="px-6 sm:px-12 md:px-16 lg:px-20 xl:px-28 xxl:px-32">
             <div class="w-full  flex pt-10 flex-wrap">
                 <div class="py-4 md:pr-4 w-full md:w-1/2">
                     <div class="flex py-2 w-full items-center">
                         <p class="text-base sm:text-lg flex-none  w-20 smm:w-24 sm:w-28 520:w-36 ">First name</p>
-                        <input type="text" placeholder="First name" class="input h-10 border-middleGray border border-solid input-bordered w-full " />
+                        <input type="text" placeholder="First name" class="input h-10 bg-lightGray hover:bg-white focus:bg-white outline-none border-middleGray border border-solid focus:outline-none w-full " />
                     </div>
                     <div class="flex w-full py-2 items-center">
                         <p class="text-base sm:text-lg  w-20 smm:w-24 sm:w-28 520:w-36 flex-none ">Last name</p>
-                        <input type="text" placeholder="Last name" class="input h-10 border-middleGray border border-solid input-bordered w-full " />
+                        <input type="text" placeholder="Last name" class="input h-10 border-middleGray border border-solid bg-lightGray hover:bg-white focus:bg-white input-bordered w-full focus:outline-none" />
                     </div>
                     <div class="flex w-full py-2 items-center">
                         <p class="text-base sm:text-lg  w-20 smm:w-24 sm:w-28 520:w-36 flex-none">E-mail</p>
-                        <input type="text" placeholder="example@email.com" class="input h-10 border-middleGray border border-solid input-bordered w-full " />
+                        <input type="text" placeholder="example@email.com" class="bg-lightGray hover:bg-white focus:bg-white input h-10 border-middleGray border border-solid input-bordered w-full focus:outline-none" />
                     </div>
                     <div class="flex w-full py-2 items-start">
                         <p class="text-base sm:text-lg w-20 smm:w-24 sm:w-28 520:w-36 flex-none"> message</p>
-                        <textarea name="dgdsg"  placeholder="type your message" rows="20" id="gfg"  class="resize-none textarea h-28 textarea-bordered w-full"></textarea>
+                        <textarea name="dgdsg"  placeholder="type your message" rows="20" id="gfg"  class="resize-none bg-lightGray hover:bg-white focus:bg-white textarea border-middleGray border border-solid h-28 focus:outline-none textarea-bordered w-full"></textarea>
                     </div>
                     <div class="flex py-2">
                         <button class="ml-auto rounded-meddButton bg-crimson hover:bg-crimsonHover py-2 sm:px-4 px-2 text-white font-medium text-base sm:text-footerBase sm:py-3">

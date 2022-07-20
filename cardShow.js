@@ -2,6 +2,7 @@ let scrollable = document.getElementById('scrollable');
 let scrollRight=document.getElementById('scrollRight');
 let scrollLeft=document.getElementById('scrollLeft');
 let scoll = document.getElementById('scoll');
+
 let btnR=document.getElementById('btnR');
 let BtnL=document.getElementById('btnL');
 
@@ -13,8 +14,10 @@ scrollLeft.addEventListener('click',()=>{
 });
 
 btnR.addEventListener('click',()=>{
-    scoll.scrollBy(-285,0);
+    let sc =scoll.scrollWidth
+    scoll.scrollTo(0,0);
 });
 BtnL.addEventListener('click',()=>{
-    scoll.scrollBy(285,0);
+    let sc =scoll.scrollWidth
+    scoll.scrollTo(sc,0);
 });

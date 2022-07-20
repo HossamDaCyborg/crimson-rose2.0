@@ -15,3 +15,36 @@ rnnn::-webkit-slider-runnable-track{
 .rnnn{
     background-color: red;
 }
+.timeArow .collapse-title:after {
+    position: absolute;
+    display: block;
+    height: 0.5rem/* 8px */;
+    width: 0.5rem/* 8px */;
+    transition-property: all;
+    transition-duration: 150ms;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    top: 1rem/* 22.4px */;
+    right: 1.4rem/* 22.4px */;
+    content: "";
+    transform-origin: 75% 75%;
+    transform: rotate(45deg);
+    box-shadow: 2px 2px;
+    pointer-events: none;
+}
+.collapse-open.timeArow .collapse-title:after,
+.timeArow:focus:not(.collapse-close) .collapse-title:after,
+.timeArow:not(.collapse-close) input[type="checkbox"]:checked ~ .collapse-title:after {
+    transform: rotate(225deg);
+}
+.collapse-open.timeArow .collapse-title:after,
+.timeArow:focus:not(.collapse-close) .collapse-title:after,
+.timeArow:not(.collapse-close) input[type="checkbox"]:checked ~ .collapse-title:after {
+    transform: rotate(225deg);
+}
+.collapse-open.timeArow .collapse-title:after,
+.timeArow:focus:not(.collapse-close) .collapse-title:after,
+.timeArow:not(.collapse-close) input[type="checkbox"]:checked ~ .collapse-title:after {
+    transform: rotate(225deg);
+}
+
